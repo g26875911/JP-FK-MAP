@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的旅遊地圖</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 樣式保持不變 */
+        body { margin: 0; padding: 0; font-family: "Microsoft JhengHei", sans-serif; display: flex; height: 100vh; }
+        #sidebar { width: 320px; background: #f8f9fa; display: flex; flex-direction: column; border-right: 1px solid #ddd; }
+        .header { padding: 20px; background: #2c3e50; color: white; }
+        .list-container { flex: 1; overflow-y: auto; }
+        .list-item { padding: 15px; border-bottom: 1px solid #eee; cursor: pointer; transition: 0.2s; }
+        .list-item:hover { background: #e9ecef; }
+        .list-item h3 { margin: 0 0 5px 0; font-size: 16px; color: #333; }
+        .list-item p { margin: 0; font-size: 13px; color: #666; line-height: 1.4; }
+        .badge { display: inline-block; padding: 3px 6px; font-size: 11px; border-radius: 4px; color: white; margin-right: 5px; vertical-align: middle; }
+        .cat-food { background-color: #e74c3c; }
+        .cat-spot { background-color: #3498db; }
+        .cat-hotel { background-color: #2ecc71; }
+        .cat-other { background-color: #9b59b6; }
+        #map { flex: 1; height: 100%; }
+        .popup-content b { font-size: 15px; display: block; margin-bottom: 5px; }
+        .popup-link { display: inline-block; margin-top: 8px; color: #3498db; text-decoration: none; font-size: 13px; }
+        @media (max-width: 768px) { #sidebar { display: none; } }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <div class="header">
+            <h2 style="margin:0">旅遊筆記地圖</h2>
+            <p style="margin:5px 0 0; font-size:12px; opacity:0.8">來源：GitHub notes.md</p>
+        </div>
+        <div id="list-container" class="list-container">
+            <div style="padding:20px; text-align:center; color:#666;">載入中...</div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script>
+        // 初始化地圖
+        var map = L.map('map').setView([33.1, 130.8], 8);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        const colors = { food: '#e74c3c', spot: '#3498db', hotel: '#2ecc71', other: '#9b59b6' };
+        const catNames = { food: '美食', spot: '景點', hotel: '住宿', other: '其他' };
+
+        // 解析 Markdown 的函數 (取代原本的 Python)
+        function parseMarkdown(text) {
+            const locations = [];
+            // 用 ## 切割區塊
+            const items = text.split(/^##\s+/gm);
+            
+            items.forEach((item, index) => {
+                if (!item.trim() || index === 0) return; // 跳過第一個空白或標頭
+                
+                const lines = item.trim().split('\n');
+                const name = lines[0].trim();
+                const content = lines.slice(1).join('\n');
+                
+                // 抓取座標
+                const coordMatch = content.match(/-\s*(?:座標|Coord|Location)[：:]\s*([0-9.]+)\s*,\s*([0-9.]+)/);
+                
+                if (coordMatch) {
+                    let note = '', link = '', category = 'other';
+                    
+                    // 抓取備註
+                    const noteMatch = content.match(/-\s*(?:想做什麼|備註|Description)[：:]\s*(.*)/);
+                    if (noteMatch) note = noteMatch[1].trim();
+
+                    // 抓取連結
+                    const linkMatch = content.match(/-\s*(?:連結|Link)[：:]\s*(http[^\s]+)/);
+                    if (linkMatch) link = linkMatch[1];
+
+                    // 自動分類
+                    const fullText = (name + content).toLowerCase();
+                    if (fullText.match(/吃|餐|麵|飯|茶|咖啡|甜點|布丁|酒|肉|鍋|鮨|壽司/)) category = 'food';
+                    else if (fullText.match(/社|寺|宮|景|山|海|園|館|城|島|展/)) category = 'spot';
+                    else if (fullText.match(/住|宿|飯店|hotel|inn/)) category = 'hotel';
+
+                    locations.push({ name, lat: parseFloat(coordMatch[1]), lng: parseFloat(coordMatch[2]), category, note, link });
+                }
+            });
+            return locations;
+        }
+
+        // 讀取 GitHub 上的 notes.md
+        async function loadData() {
+            try {
+                // Fetch 同目錄下的 notes.md
+                const response = await fetch('notes.md');
+                if (!response.ok) throw new Error("無法讀取 notes.md");
+                const text = await response.text();
+                
+                const locations = parseMarkdown(text);
+                renderMap(locations);
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('list-container').innerHTML = `<div style="padding:20px; color:red;">讀取錯誤，請確認 notes.md 檔案存在。</div>`;
+            }
+        }
+
+        function renderMap(locations) {
+            const listContainer = document.getElementById('list-container');
+            listContainer.innerHTML = ''; 
+            const markers = [];
+
+            locations.forEach(loc => {
+                const color = colors[loc.category] || colors.other;
+                const catName = catNames[loc.category] || '其他';
+
+                const customIcon = L.divIcon({
+                    className: 'custom-div-icon',
+                    html: `<div style="background-color:${color}; width:14px; height:14px; border-radius:50%; border:2px solid white; box-shadow: 1px 1px 3px rgba(0,0,0,0.3);"></div>`,
+                    iconSize: [18, 18],
+                    iconAnchor: [9, 9],
+                    popupAnchor: [0, -10]
+                });
+
+                const marker = L.marker([loc.lat, loc.lng], {icon: customIcon}).addTo(map);
+                
+                const popupHtml = `
+                    <div class="popup-content">
+                        <b>${loc.name}</b>
+                        <span class="badge cat-${loc.category}">${catName}</span>
+                        <p>${loc.note || '無備註'}</p>
+                        ${loc.link ? `<a href="${loc.link}" target="_blank" class="popup-link"><i class="fa-solid fa-map-location-dot"></i> Google Maps / 連結</a>` : ''}
+                    </div>
+                `;
+                marker.bindPopup(popupHtml);
+                markers.push(marker);
+
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'list-item';
+                itemDiv.innerHTML = `
+                    <h3><span class="badge cat-${loc.category}">${catName}</span>${loc.name}</h3>
+                    <p>${loc.note || ''}</p>
+                `;
+                itemDiv.onclick = () => {
+                    map.flyTo([loc.lat, loc.lng], 14);
+                    marker.openPopup();
+                };
+                listContainer.appendChild(itemDiv);
+            });
+
+            if (markers.length > 0) {
+                const group = L.featureGroup(markers);
+                map.fitBounds(group.getBounds().pad(0.1));
+            }
+        }
+
+        loadData();
+    </script>
+</body>
+</html>
