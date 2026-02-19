@@ -392,11 +392,12 @@
 ---
 
 ## 日輪寺（Nichirin-ji / 日輪寺）
-- 行政區：（待補）
-- 座標：35.714861, 139.791559
+- 行政區：日本・熊本縣（推定：山鹿/菊池周邊；以 Google Maps 連結為準）
+- 座標：33.039782, 130.685517
 - 想做什麼：
   - （待補）
 - 連結：
+  - Google Maps（你提供）：https://maps.app.goo.gl/Cvw8CNVG7wBZrUJj7
   - IG（你提供）：https://www.instagram.com/reel/DTuZIz_kipy/?igsh=Z2d2OHVuNjVob2E4
 - 備註：
   - 目前我這邊 IG 在未登入狀態看不到 Reel 內容，無法確認是「哪個縣市/哪一座日輪寺」（同名寺院不少）。
