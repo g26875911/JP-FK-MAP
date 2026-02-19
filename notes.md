@@ -11,6 +11,9 @@
 
 ---
 # [整理] 熊本 3 日精選（IG Reel 整理）
+> 座標: N/A
+> 地址: N/A
+> 連結: N/A
 
 ### 備註
 
@@ -26,7 +29,9 @@
 
 ---
 # [景點] 櫻の馬場 城彩苑（桜の馬場 城彩苑 / Sakura-no-baba Josaien）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E6%A1%9C%E3%81%AE%E9%A6%AC%E5%A0%B4%20%E5%9F%8E%E5%BD%A9%E8%8B%91
+> 座標: 32.803671, 130.703756
+> 地址: 〒860-0008 熊本県熊本市中央区二の丸１−１−２
+> 連結: Google Maps：https://www.google.com/maps/place/%E6%A1%9C%E3%81%AE%E9%A6%AC%E5%A0%B4+%E5%9F%8E%E5%BD%A9%E8%8B%91/@32.8036711,130.7037558,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f412e6855555:0x3c2a243312aea32b!8m2!3d32.8036711!4d130.7037558!16s%2Fg%2F11bxc649vp?hl=ja
 
 ### 想做什麼
 - 逛「城下町風」美食/伴手禮聚落
@@ -44,7 +49,9 @@
 
 ---
 # [景點] 熊本城（Kumamoto Castle / 熊本城）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E7%86%8A%E6%9C%AC%E5%9F%8E
+> 座標: 32.806186, 130.705834
+> 地址: 〒860-0002 熊本県熊本市中央区本丸１−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E7%86%8A%E6%9C%AC%E5%9F%8E/@32.8061859,130.7058335,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f40e023aca59:0x5e8b66c876cde430!8m2!3d32.8061859!4d130.7058335!16zL20vMDF4MWc1?hl=ja
 
 ### 想做什麼
 - 參觀日本三大名城之一、看四百多年城史
@@ -62,7 +69,9 @@
 
 ---
 # [景點] 阿蘇火口（阿蘇中岳火口 / Aso Nakadake Crater）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E9%98%BF%E8%98%87%20%E4%B8%AD%E5%B2%B3%20%E7%81%AB%E5%8F%A3
+> 座標: 32.884907, 131.084934
+> 地址: 〒869-2225 熊本県阿蘇市黒川
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%98%BF%E8%98%87%E4%B8%AD%E5%B2%B3+%E7%AC%AC1%E7%81%AB%E5%8F%A3/@32.884907,131.0801708,17z/data=!4m10!1m2!2m1!1z6Zi_6JiH5Lit5bKz54Gr5Y-j!3m6!1s0x3540d86157b2ad15:0x8e6c816a9f4528e8!8m2!3d32.884907!4d131.0849344!15sChLpmL_omIfkuK3lsrPngavlj6NaFiIU6Zi_6JiHIOS4reWysyDngavlj6OSARJ0b3VyaXN0X2F0dHJhY3Rpb27gAQA!16s%2Fg%2F1tgj6lt3?hl=ja
 
 ### 想做什麼
 - 看世界級火山口地形（震撼、壯觀）
@@ -82,7 +91,8 @@
 ---
 # [景點] 草千里（Kusasenri-ga-hama / 草千里ヶ浜）
 > 座標: 32.881825, 131.053328
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E8%8D%89%E5%8D%83%E9%87%8C%E3%83%B6%E6%B5%9C
+> 地址: 〒869-1505 熊本県阿蘇市草千里ヶ浜
+> 連結: Google Maps：https://www.google.com/maps/place/%E8%8D%89%E5%8D%83%E9%87%8C%E3%83%B6%E6%B5%9C/@32.8818249,131.0533279,17z/data=!3m1!4b1!4m6!3m5!1s0x354128aa1961ab5d:0xf8f3dcd6bdc48e4e!8m2!3d32.8818249!4d131.0533279!16s%2Fg%2F113k1jgcg?hl=ja
 
 ### 想做什麼
 - 看遼闊草原景、拍明信片感風景
@@ -100,7 +110,9 @@
 
 ---
 # [景點] 米塚（Komezuka / 米塚）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E7%B1%B3%E5%A1%9A%20%E9%98%BF%E8%98%87
+> 座標: 32.905536, 131.044509
+> 地址: 〒869-2226 熊本県阿蘇市乙姫
+> 連結: Google Maps：https://www.google.com/maps/place/%E7%B1%B3%E5%A1%9A/@32.9055356,131.0445091,15z/data=!3m1!4b1!4m6!3m5!1s0x3540d8ae9fcaa2c9:0xd5dddfaf8128da43!8m2!3d32.9055361!4d131.0445091!16s%2Fg%2F1tc_tc2q?hl=ja
 
 ### 想做什麼
 - 看「像飯糰一樣」的火山丘地形（拍照點）
@@ -118,7 +130,9 @@
 
 ---
 # [景點] 白川水源（Shirakawa Suigen / 白川水源）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E5%B7%9D%E6%B0%B4%E6%BA%90
+> 座標: 32.825372, 131.095310
+> 地址: 〒869-1502 熊本県阿蘇郡南阿蘇村白川２０４０
+> 連結: Google Maps：https://www.google.com/maps/place/%E7%99%BD%E5%B7%9D%E6%B0%B4%E6%BA%90/@32.8253719,131.0953099,17z/data=!3m1!4b1!4m6!3m5!1s0x3540d966523871cd:0x113c62ca21333c9a!8m2!3d32.8253719!4d131.0953099!16s%2Fg%2F11fwgrlfjd?hl=ja
 
 ### 想做什麼
 - 看湧水池、拍清澈水景
@@ -140,6 +154,9 @@
 
 ---
 # [景點] 上色見熊野座神社（Kamishikimi Kumanoimasu Shrine）
+> 座標: 32.853794, 131.158520
+> 地址: 〒869-1601 熊本県阿蘇郡高森町上色見２６１９
+> 連結: Google Maps：https://www.google.com/maps/place/%E4%B8%8A%E8%89%B2%E8%A6%8B%E7%86%8A%E9%87%8E%E5%BA%A7%E7%A5%9E%E7%A4%BE/@32.8537942,131.1497658,15z/data=!4m10!1m2!2m1!1z5LiK6Imy6KaL54aK6YeO5bqn56We56S-!3m6!1s0x3540d7ccee5ea361:0x75772fd6f78ac77e!8m2!3d32.8537942!4d131.1585205!15sChjkuIroibLopovnhorph47luqfnpZ7npL5aHyId5LiKIOiJsiDoposg54aK6YeOIOW6pyDnpZ7npL6SAQ1zaGludG9fc2hyaW5l4AEA!16s%2Fg%2F11gzqgzhl?hl=ja
 
 ### 想做什麼
 - 參道拍照（石燈籠＋鳥居一路延伸的「異世界入口」感）
@@ -166,7 +183,9 @@
 
 ---
 # [景點] 堀越耕平《僕のヒーローアカデミア／我的英雄學院》原畫展（福岡會場）
-> 地址: 〒810-8544 福岡市中央区天神2-1-1
+> 座標: 33.588698, 130.399963
+> 地址: 〒810-8544 福岡県福岡市中央区天神２丁目１−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E7%A6%8F%E5%B2%A1%E4%B8%89%E8%B6%8A/@33.588698,130.3999632,17z/data=!3m1!4b1!4m6!3m5!1s0x3541918feaf49173:0xbdd1ef5242007a7c!8m2!3d33.588698!4d130.3999632!16s%2Fg%2F120p9zpp?hl=ja
 
 ### 想做什麼
 看原畫展／買周邊／拍展場佈置
@@ -191,8 +210,9 @@
 
 ---
 # [美食] 手工花鹽布丁（またいちの塩 製塩所 工房とったん / Mataichi no Shio Tottan）
-> 地址: 〒819-1335 福岡県糸島市志摩芥屋3757
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/uDYANtUcooZ2VEyv6?g_st=il
+> 座標: 33.577182, 130.089740
+> 地址: 〒819-1335 福岡県糸島市志摩芥屋３７５７
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%81%BE%E3%81%9F%E3%81%84%E3%81%A1%E3%81%AE%E5%A1%A9+%E8%A3%BD%E5%A1%A9%E6%89%80+%E5%B7%A5%E6%88%BF%E3%81%A8%E3%81%A3%E3%81%9F%E3%82%93/@33.5771816,130.0897402,17z/data=!3m1!4b1!4m6!3m5!1s0x3541dd91e47fc8a5:0xee0b3d7e6c9f021e!8m2!3d33.5771816!4d130.0897402!16s%2Fg%2F1tk60x3_?hl=ja
 
 ### 想做什麼
 - 吃「塩をかけてたべるプリン」（鹽布丁/花鹽布丁）
@@ -217,8 +237,9 @@
 
 ---
 # [景點] 太良嶽温泉 蟹御殿（Taradakeonsen Kanigoten）
-> 地址: 〒849-1615 佐賀県藤津郡太良町大字大浦乙316-3
-> 連結: Google Maps（你提供）：https://www.google.com/maps?q=Taradakeonsen+Kanigoten,+Otsu-316-3+Oura,+Tara,+Fujitsu+District,+Saga+849-1615%E6%97%A5%E6%9C%AC&ftid=0x35403d9560c4afed:0x73b78032dd39a584&entry=gps&g_st=il
+> 座標: 32.957887, 130.205616
+> 地址: 〒849-1615 佐賀県藤津郡太良町大浦乙３１６−３
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%A4%AA%E8%89%AF%E5%B6%BD%E6%B8%A9%E6%B3%89+%E8%9F%B9%E5%BE%A1%E6%AE%BF/@32.9578872,130.2056164,17z/data=!4m9!3m8!1s0x35403d9560c4afed:0x73b78032dd39a584!5m2!4m1!1i2!8m2!3d32.9578872!4d130.2056164!16s%2Fg%2F1thvdpy6?hl=ja
 
 ### 想做什麼
 - 住海景溫泉旅館（你說房間可看海）
@@ -245,7 +266,9 @@
 
 ---
 # [景點] 祐德稻荷神社（祐徳稲荷神社 / Yūtoku Inari Shrine）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E7%A5%90%E5%BE%B3%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE
+> 座標: 33.073778, 130.107932
+> 地址: 〒849-1321 佐賀県鹿島市古枝乙1855
+> 連結: Google Maps：https://www.google.com/maps/place/%E7%A5%90%E5%BE%B3%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE/@33.073778,130.1079317,17z/data=!3m1!4b1!4m6!3m5!1s0x354024f4600d2901:0x7e95f782245107b!8m2!3d33.073778!4d130.1079317!16s%2Fm%2F02q3vt5?hl=ja
 
 ### 想做什麼
 - 參拜稻荷神（祈求商業繁盛、五穀豐收等）
@@ -273,7 +296,9 @@
 
 ---
 # [景點] 志賀海神社（Shikaumi Shrine）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E5%BF%97%E8%B3%80%E6%B5%B7%E7%A5%9E%E7%A4%BE
+> 座標: 33.667900, 130.313227
+> 地址: 〒811-0323 福岡県福岡市東区志賀島８７７
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%BF%97%E8%B3%80%E6%B5%B7%E7%A5%9E%E7%A4%BE/@33.6780264,130.3020623,15z/data=!4m10!1m2!2m1!1z5b-X6LOA5rW356We56S-!3m6!1s0x35418d4a11392f79:0x914952ecec0ae85!8m2!3d33.6679005!4d130.3132267!15sCg_lv5fos4DmtbfnpZ7npL5aEyIR5b-X6LOAIOa1tyDnpZ7npL6SAQ1zaGludG9fc2hyaW5l4AEA!16s%2Fg%2F121y4_5b?hl=ja
 
 ### 想做什麼
 - 神社參拜＋拍照（海神/海上守護的氛圍）
@@ -295,7 +320,9 @@
 
 ---
 # [景點] 太宰府天滿宮（Dazaifu Tenmangu / 太宰府天満宮）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE
+> 座標: 33.521370, 130.534824
+> 地址: 〒818-0117 福岡県太宰府市宰府４丁目７−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE/@33.5213697,130.5348239,17z/data=!3m1!4b1!4m6!3m5!1s0x35419b9f2aebfbcd:0xb824d1aba75fae97!8m2!3d33.5213697!4d130.5348239!16zL20vMDd2XzAz?hl=ja
 
 ### 想做什麼
 - 參拜「學問之神」菅原道真（考試/學業/文化藝術）
@@ -321,7 +348,9 @@
 
 ---
 # [景點] 寶滿宮 竃門神社（Hōmangū Kamado Shrine / 宝満宮竈門神社）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E5%AE%9D%E6%BA%80%E5%AE%AE%E7%AB%83%E9%96%80%E7%A5%9E%E7%A4%BE
+> 座標: 33.528838, 130.552531
+> 地址: 〒818-0115 福岡県太宰府市内山８８３
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%AE%9D%E6%BA%80%E5%AE%AE+%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE/@33.5288381,130.5525313,17z/data=!3m1!4b1!4m6!3m5!1s0x35419b62bebd8eff:0x1680bb62fa4ab75b!8m2!3d33.5288381!4d130.5525313!16s%2Fm%2F010xdvyv?hl=ja
 
 ### 想做什麼
 - 神社參拜＋拍照（山上/森林氛圍）
@@ -345,7 +374,9 @@
 
 ---
 # [景點] 宮地嶽神社（Miyajidake Shrine / 宮地嶽神社）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E5%9C%B0%E5%B6%BD%E7%A5%9E%E7%A4%BE
+> 座標: 33.779914, 130.486233
+> 地址: 〒811-3309 福岡県福津市宮司元町７−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%AE%AE%E5%9C%B0%E5%B6%BD%E7%A5%9E%E7%A4%BE/@33.7795657,130.4852639,18z/data=!4m10!1m2!2m1!1z5a6u5Zyw5ba956We56S-!3m6!1s0x35419922725ab3e9:0xed12b5521ed2943c!8m2!3d33.7799141!4d130.4862328!15sCg_lrq7lnLDltr3npZ7npL5aEyIR5a6u5ZywIOW2vSDnpZ7npL6SAQ1zaGludG9fc2hyaW5l4AEA!16s%2Fm%2F0fpj0bb?hl=ja
 
 ### 想做什麼
 - 神社參拜＋拍照（大型注連繩/拝殿）
@@ -370,7 +401,8 @@
 ---
 # [景點] 櫻井神社（桜井神社 / Sakurai Shrine）
 > 座標: 33.628159, 130.191943
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E6%AB%BB%E4%BA%95%E7%A5%9E%E7%A4%BE%20%E7%B3%B8%E5%B3%B6
+> 地址: 〒819-1304 福岡県糸島市志摩桜井４２２７
+> 連結: Google Maps：https://www.google.com/maps/place/%E6%AB%BB%E4%BA%95%E7%A5%9E%E7%A4%BE/@33.6281591,130.1919425,17z/data=!3m1!4b1!4m6!3m5!1s0x3541eed139c6ec77:0x6900db79724be0dc!8m2!3d33.6281591!4d130.1919425!16s%2Fg%2F11bxff39tf?hl=ja
 
 ### 想做什麼
 - 神社參拜＋拍照（拝殿/楼門/本殿，歷史建築）
@@ -396,7 +428,9 @@
 
 ---
 # [景點] 雷山千如寺 大悲王院（雷山千如寺 / Raizan Sennyoji Taihioin）
-> 連結: Google Maps：https://www.google.com/maps/place/%E9%9B%B7%E5%B1%B1%E5%8D%83%E5%A6%82%E5%AF%BA%E5%A4%A7%E6%82%B2%E7%8E%8B%E9%99%A2+Raizansennyoji+Taihioin/@33.4944456,130.2287178,17z/
+> 座標: 33.494446, 130.228718
+> 地址: 〒819-1145 福岡県糸島市雷山６２６
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%9B%B7%E5%B1%B1%E5%8D%83%E5%A6%82%E5%AF%BA+%E5%A4%A7%E6%82%B2%E7%8E%8B%E9%99%A2/@33.4944456,130.2239542,17z/data=!4m10!1m2!2m1!1z6Zu35bGx5Y2D5aaC5a-65aSn5oKy546L6Zmi!3m6!1s0x3541c17f924b8755:0xc82a41f9b4e4b785!8m2!3d33.4944456!4d130.2287178!15sChvpm7flsbHljYPlpoLlr7rlpKfmgrLnjovpmaJaIyIh6Zu35bGxIOWNgyDlpoIg5a-6IOWkp-aCsiDnjosg6ZmikgEPYnVkZGhpc3RfdGVtcGxl4AEA!16s%2Fg%2F11cnddg15p?hl=ja
 
 ### 想做什麼
 - 寺院參拜＋拍照（山寺氛圍）
@@ -421,7 +455,9 @@
 
 ---
 # [景點] 高良大社（Kōra Taisha / 高良大社）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E8%89%AF%E5%A4%A7%E7%A4%BE
+> 座標: 33.301648, 130.565855
+> 地址: 〒839-0851 福岡県久留米市御井町１
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%AB%98%E8%89%AF%E5%A4%A7%E7%A4%BE/@33.3016484,130.5658549,17z/data=!3m1!4b1!4m6!3m5!1s0x3541a690cf819569:0xc6744d1177c7e41c!8m2!3d33.3016484!4d130.5658549!16s%2Fm%2F0gmh2c1?hl=ja
 
 ### 想做什麼
 - 神社參拜＋拍照（九州等級很高的一宮/國幣大社系統）
@@ -449,7 +485,8 @@
 ---
 # [景點] 日輪寺（Nichirin-ji / 日輪寺）
 > 座標: 33.039782, 130.685517
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/Cvw8CNVG7wBZrUJj7
+> 地址: 〒861-0552 熊本県山鹿市杉１６０７
+> 連結: Google Maps：https://www.google.com/maps/place/%E6%97%A5%E8%BC%AA%E5%AF%BA/@33.0397816,130.6855172,17z/data=!3m2!4b1!5s0x3540fe30aa3e4467:0x4db306f1df525235!4m6!3m5!1s0x3540fe3a0712dff3:0x554daca29a777d7c!8m2!3d33.0397816!4d130.6855172!16s%2Fg%2F1w8w7slf?authuser=0
 
 ### 想做什麼
 - （待補）
@@ -468,7 +505,9 @@
 
 ---
 # [景點] 高住神社（Takasumi Jinja / 高住神社）
-> 連結: Google Maps（你確認的正確地點）：https://maps.app.goo.gl/78WFnNWoxavj6CGp6?g_st=ic
+> 座標: 33.484136, 130.932932
+> 地址: 〒824-0721 福岡県田川郡添田町英彦山２７
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%AB%98%E4%BD%8F%E7%A5%9E%E7%A4%BE/@33.4841355,130.9329323,17z/data=!3m1!4b1!4m6!3m5!1s0x354160cc1b571701:0x680e424a1dc6aa79!8m2!3d33.4841355!4d130.9329323!16s%2Fg%2F1tdn1vyh?authuser=0&hl=ja
 
 ### 想做什麼
 - 神社參拜＋拍照（英彦山周邊山林神社氛圍）
@@ -492,7 +531,9 @@
 
 ---
 # [美食] 博多水炊き専門 橙
-> 連結: Google Maps：https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E6%B0%B4%E7%82%8A%E9%8D%8B%E5%B0%82%E9%96%80+%E6%A9%99/@33.5896279,130.3814835,17z/data=!3m1!4b1!4m6!3m5!1s0x3541922de9fb3c6f:0xd6b65ac17fda1202!8m2!3d33.5896279!4d130.3814835!16s%2Fg%2F11cmnl6yyp
+> 座標: 33.589628, 130.381484
+> 地址: 〒810-0074 福岡県福岡市中央区大手門１丁目８−１４
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E6%B0%B4%E7%82%8A%E9%8D%8B%E5%B0%82%E9%96%80+%E6%A9%99/@33.5896279,130.3814835,17z/data=!3m1!4b1!4m6!3m5!1s0x3541922de9fb3c6f:0xd6b65ac17fda1202!8m2!3d33.5896279!4d130.3814835!16s%2Fg%2F11cmnl6yyp?hl=ja
 
 ### 想做什麼
 - 吃水炊き（雞肉鍋）
@@ -514,8 +555,10 @@
   - 其他參考（Navitime）：https://www.navitime.co.jp/poi?spot=01125-fbm8001
 
 ---
-# [景點] めんたい料理 博多 椒房庵（Shobōan / 椒房庵）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/NdonMqyoanvzCRLJ6
+# [美食] めんたい料理 博多 椒房庵（Shobōan / 椒房庵）
+> 座標: 33.589968, 130.420050
+> 地址: 〒812-0012 福岡県福岡市博多区博多駅中央街１−１ AMU PLAZA博多 9F
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%82%81%E3%82%93%E3%81%9F%E3%81%84%E6%96%99%E7%90%86+%E5%8D%9A%E5%A4%9A+%E6%A4%92%E6%88%BF%E5%BA%B5/@33.5899682,130.4200497,17z/data=!3m1!4b1!4m6!3m5!1s0x3541918b58a1d6a7:0x9804f03a3d2cf9a1!8m2!3d33.5899682!4d130.4200497!16s%2Fg%2F11b6d1h9cb?hl=ja
 
 ### 想做什麼
 - 吃明太子料理（招牌「博多 めん鯛まぶし」：明太子＋鯛茶漬け概念）
@@ -541,7 +584,9 @@
 
 ---
 # [美食] 水炊名店 鳥田 博多本店（とり田 / Toriden Hakata Honten）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/dikzBDkAu156GQ7T8?g_st=ic
+> 座標: 33.596036, 130.405893
+> 地址: 〒812-0027 福岡県福岡市博多区下川端町１０−５ 1F
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%81%A8%E3%82%8A%E7%94%B0+%E5%8D%9A%E5%A4%9A%E6%9C%AC%E5%BA%97/@33.5960356,130.4058933,17z/data=!3m1!4b1!4m6!3m5!1s0x354191eb5f944fb3:0x2ddd57f80ebe8891!8m2!3d33.5960356!4d130.4058933!16s%2Fg%2F11b700sk7g?hl=ja
 
 ### 想做什麼
 - 吃博多名物水炊き（雞湯火鍋）
@@ -568,7 +613,9 @@
 
 ---
 # [美食] PRESS BUTTER SAND 博多站店
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/r4NXsH5dMXZDDcYr7?g_st=il
+> 座標: 33.590427, 130.420820
+> 地址: 〒812-0012 福岡県福岡市博多区博多駅中央街１−１ JR九州博多駅構内
+> 連結: Google Maps：https://www.google.com/maps/place/PRESS+BUTTER+SAND+%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%BA%97/@33.5904268,130.4208199,17z/data=!3m1!4b1!4m6!3m5!1s0x3541916094556369:0x8b7c1fad56f6c6c2!8m2!3d33.5904268!4d130.4208199!16s%2Fg%2F11h7zbrz3t?hl=ja
 
 ### 想做什麼
 - 買伴手禮甜點（奶油夾心餅乾/バターサンド）
@@ -593,8 +640,10 @@
 - 電話（Google Maps）：+81 120-319-235
 
 ---
-# [景點] Dacomecca（ダコメッカ）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/3C8pmk8ntTcEDUg1A?g_st=ic
+# [美食] Dacomecca（ダコメッカ）
+> 座標: 33.587440, 130.419344
+> 地址: 〒812-0011 福岡県福岡市博多区博多駅前４丁目１４−１ 博多深見パークビルディング
+> 連結: Google Maps：https://www.google.com/maps/place/Dacomecca/@33.5874397,130.4193439,17z/data=!3m1!4b1!4m6!3m5!1s0x3541911ec138f4e3:0x2a5394b017eed42c!8m2!3d33.5874397!4d130.4193439!16s%2Fg%2F11r9w9k1x8?hl=ja
 
 ### 想做什麼
 - 買麵包/甜點、看「麵包像馬戲團一樣」的陳列（店家品牌文案）
@@ -620,7 +669,9 @@
 
 ---
 # [美食] Full full（フルフル パンとワイン / Full full）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/z16CAcnAcpAzDwAT7
+> 座標: 33.592237, 130.397264
+> 地址: 〒810-0001 福岡県福岡市中央区天神３丁目３−５ FULL FULL BLD1階
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%83%95%E3%83%AB%E3%83%95%E3%83%AB+%E3%83%91%E3%83%B3%E3%81%A8%E3%83%AF%E3%82%A4%E3%83%B3/@33.5922368,130.3972642,17z/data=!4m6!3m5!1s0x3541910037dbac71:0x38c86f451bb59218!8m2!3d33.5922368!4d130.3972642!16s%2Fg%2F11w4cj7flb?hl=ja
 
 ### 想做什麼
 - 買麵包/伴手禮（Google Maps 顯示「明太子フランス」等）
@@ -646,7 +697,9 @@
 
 ---
 # [景點] 雞肉料理 地雞屋大和（ぢどり屋 大和 本館 / Jidoriya Yamato Honten）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/hfQPFaBsDiGgsMdk8
+> 座標: 33.592867, 130.411733
+> 地址: 〒812-0039 福岡県福岡市博多区冷泉町２−１２
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%9B%9E%E8%82%89%E6%96%99%E7%90%86+%E5%9C%B0%E9%B6%8F%E5%B1%8B%E5%A4%A7%E5%92%8C/@33.5928671,130.4117328,18z/data=!3m1!5s0x354191c0096b68f5:0x1e387a31f66b320c!4m7!3m6!1s0x354191c009318f8d:0x9311a080715d1bde!8m2!3d33.5928671!4d130.4117328!15sChblnLDpm57lsYvlpKflkowg56aP5bKhWhsiGeWcsCDpm54g5bGLIOWkp-WSjCDnpo_lsqGSARtqYXBhbmVzZV9pemFrYXlhX3Jlc3RhdXJhbnTgAQA!16s%2Fg%2F1td5p13j?hl=zh-TW
 
 ### 想做什麼
 - 吃博多水炊き（雞湯火鍋）
@@ -674,7 +727,9 @@
 
 ---
 # [美食] 屋台炒拉麵 小金ちゃん（小金ちゃん / Kokinchan）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/TdjUARwPVPcYTQP67
+> 座標: 33.591158, 130.395662
+> 地址: 〒810-0001 福岡県福岡市中央区天神２丁目１４−１３
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%B1%8B%E5%8F%B0%E7%82%92%E6%8B%89%E9%BA%BA+%E5%B0%8F%E9%87%91%E3%81%A1%E3%82%83%E3%82%93/@33.5911582,130.3956623,17z/data=!3m1!4b1!4m6!3m5!1s0x3541918fcd92ee73:0xc20c4e655f3ec3f8!8m2!3d33.5911582!4d130.3956623!16s%2Fg%2F1td3p80b?hl=zh-TW
 
 ### 想做什麼
 - 吃福岡屋台名物：**焼きラーメン（炒拉麵）**
@@ -698,7 +753,9 @@
 
 ---
 # [美食] 蜂樂饅頭 熊本上通店（蜂楽饅頭 / Houraku Manju）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/unxjiiHMDpKJKWn99
+> 座標: 32.804206, 130.711021
+> 地址: 〒860-0845 熊本県熊本市中央区上通町５−４
+> 連結: Google Maps：https://www.google.com/maps/place/%E8%BB%8A%E8%BC%AA%E9%A4%85+%E8%9C%82%E6%A8%82%E9%A5%85%E9%A0%AD/@32.8042059,130.7110214,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f40953bf4c43:0x30e61b1c9d49e395!8m2!3d32.8042059!4d130.7110214!16s%2Fg%2F1tc_nslm?hl=zh-TW
 
 ### 想做什麼
 - 吃熊本名物點心：蜂樂饅頭（口感很像車輪餅/紅豆餅）
@@ -723,7 +780,9 @@
 
 ---
 # [美食] 勝烈亭 新市街本店（Katsuretsutei Shinshigai Honten / 勝烈亭）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=%E5%8B%9D%E7%83%88%E4%BA%AD%20%E6%96%B0%E5%B8%82%E8%A1%97%20%E6%9C%AC%E5%BA%97
+> 座標: 32.798616, 130.705876
+> 地址: 〒860-0803 熊本県熊本市中央区新市街８−１８
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%8B%9D%E7%83%88%E4%BA%AD+%E6%96%B0%E5%B8%82%E8%A1%97%E6%9C%AC%E5%BA%97/@32.798616,130.705876,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f4727e56aaab:0x796faaff309ab40c!8m2!3d32.798616!4d130.705876!16s%2Fg%2F1tfpmgmf?hl=ja
 
 ### 想做什麼
 - 吃日式炸豬排（とんかつ）
@@ -745,7 +804,9 @@
 
 ---
 # [景點] Sabataro（さばたろう）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/CFZY5js4UCeiKvhk6?g_st=ic
+> 座標: 33.586439, 130.390627
+> 地址: 〒810-0042 福岡県福岡市中央区赤坂１丁目５−１１
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%81%95%E3%81%B0%E3%81%9F%E3%82%8D%E3%81%86/@33.5864386,130.3906274,17z/data=!3m1!4b1!4m6!3m5!1s0x354191997d90a329:0x9054243a8717670b!8m2!3d33.5864386!4d130.3906274!16s%2Fg%2F11tsjrd2_x?hl=ja
 
 ### 想做什麼
 - 吃早餐/早午餐（偏定食：鯖魚、茶泡飯等；看評論關鍵字）
@@ -772,7 +833,9 @@
 
 ---
 # [美食] Pain Stock Tenjin（パンストック天神店）
-> 連結: Google Maps：https://www.google.com/maps/place/Pain+Stock+Tenjin/@33.5916517,130.4040419,17z/data=!3m1!4b1!4m6!3m5!1s0x35419172d76cdbcf:0x30a9b694e5ca2b43!8m2!3d33.5916517!4d130.4040419!16s%2Fg%2F11hdsbj3xk
+> 座標: 33.591652, 130.404042
+> 地址: 〒810-0002 福岡県福岡市中央区西中洲６−１７
+> 連結: Google Maps：https://www.google.com/maps/place/Pain+Stock+Tenjin/@33.5916517,130.4040419,17z/data=!3m1!4b1!4m6!3m5!1s0x35419172d76cdbcf:0x30a9b694e5ca2b43!8m2!3d33.5916517!4d130.4040419!16s%2Fg%2F11hdsbj3xk?hl=ja
 
 ### 想做什麼
 - 買麵包/咖啡、拍麵包店日常街景
@@ -795,7 +858,9 @@
 
 ---
 # [美食] 博多もつ鍋前田屋 博多店
-> 連結: Google Maps：https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E7%89%9B%E9%9B%9C%E9%8D%8B%E5%89%8D%E7%94%B0%E5%B1%8B+%E5%8D%9A%E5%A4%9A%E5%BA%97/data=!4m7!3m6!1s0x354191b8cf465de3:0xba51a47ac9a69d30!8m2!3d33.5891902!4d130.4164739!16s%2Fg%2F11c3v6c8q7!19sChIJ411Gz7iRQTURMJ2myXqkUbo
+> 座標: 33.589190, 130.416474
+> 地址: 〒812-0011 福岡県福岡市博多区博多駅前３丁目２６−５
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E7%89%9B%E9%9B%9C%E9%8D%8B%E5%89%8D%E7%94%B0%E5%B1%8B+%E5%8D%9A%E5%A4%9A%E5%BA%97/@33.5891902,130.4164739,17z/data=!3m1!4b1!4m6!3m5!1s0x354191b8cf465de3:0xba51a47ac9a69d30!8m2!3d33.5891902!4d130.4164739!16s%2Fg%2F11c3v6c8q7?hl=ja
 
 ### 想做什麼
 - 吃もつ鍋（牛腸鍋）
@@ -818,7 +883,9 @@
 
 ---
 # [美食] 牛腸鍋 六花舍（もつ鍋 六花舎 / Motsunabe Rokkasha）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/8tRkYVvnTPqpe3zJ6?g_st=ic
+> 座標: 33.586939, 130.419149
+> 地址: 〒812-0011 福岡県福岡市博多区博多駅前４丁目１３−２７ グランドハイツ博多 1F
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%82%82%E3%81%A4%E9%8D%8B+%E5%85%AD%E8%8A%B1%E8%88%8E/@33.5869388,130.4191486,17z/data=!3m1!4b1!4m6!3m5!1s0x354191b9ae353521:0x12bbd111990ae152!8m2!3d33.5869388!4d130.4191486!16s%2Fg%2F11f2wd89m8?hl=ja
 
 ### 想做什麼
 - 吃もつ鍋（牛腸鍋）
@@ -840,7 +907,9 @@
 
 ---
 # [美食] 博多らーめん ShinShin 天神本店（博多ラーメン ShinShin 天神本店）
-> 連結: Google Maps：https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E6%8B%89%E9%BA%B5+ShinShin+%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97/@33.5927497,130.3968446,17z/data=!3m1!4b1!4m6!3m5!1s0x3541918ebfe75069:0x6950635bd344e25a!8m2!3d33.5927497!4d130.3968446!16s%2Fg%2F11c3k6mgc2
+> 座標: 33.592750, 130.396845
+> 地址: 〒810-0001 福岡県福岡市中央区天神３丁目２−１９
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E6%8B%89%E9%BA%B5+ShinShin+%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97/@33.5927497,130.3968446,17z/data=!3m1!4b1!4m6!3m5!1s0x3541918ebfe75069:0x6950635bd344e25a!8m2!3d33.5927497!4d130.3968446!16s%2Fg%2F11c3k6mgc2?hl=ja
 
 ### 想做什麼
 - 吃博多豚骨拉麵
@@ -861,7 +930,9 @@
 
 ---
 # [住宿] 多美迎 PREMIUM 博多運河城前飯店（Dormy Inn Premium Hakata Canal City Mae）
-> 連結: Google Maps：https://www.google.com/maps/search/?api=1&query=Dormy%20Inn%20Premium%20Hakata%20Canal%20City%20Mae
+> 座標: 33.590619, 130.412306
+> 地址: 〒812-0038 福岡県福岡市博多区祇園町９−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3PREMIUM%E5%8D%9A%E5%A4%9A%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%8A%E3%83%AB%E3%82%B7%E3%83%86%E3%82%A3%E5%89%8D/@33.5906185,130.4123063,17z/data=!4m9!3m8!1s0x354191bfcbf85827:0x689f429ce43d2dd!5m2!4m1!1i2!8m2!3d33.5906185!4d130.4123063!16s%2Fg%2F1w66359d?hl=ja
 
 ### 想做什麼
 - 作為福岡市區據點（走路/地鐵方便）
@@ -884,8 +955,9 @@
 
 ---
 # [住宿] Hotel IL PALAZZO（Il Palazzo飯店）
-> 座標: 33.5899318, 130.4074334
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/5gEbp7otHRrUyvLL7?g_st=il
+> 座標: 33.589932, 130.407433
+> 地址: 〒810-0003 福岡県福岡市中央区春吉３丁目１３−１
+> 連結: Google Maps：https://www.google.com/maps/place/Il+Palazzo%E9%A3%AF%E5%BA%97/@33.5899318,130.4074334,17z/data=!3m1!4b1!4m9!3m8!1s0x3541919420618f05:0x47941a11f2a411c4!5m2!4m1!1i2!8m2!3d33.5899318!4d130.4074334!16s%2Fg%2F122xkybq?entry=ttu
 
 ### 想做什麼
 - 作為福岡市區住宿據點（偏天神/中洲之間的生活圈）
@@ -906,7 +978,9 @@
 
 ---
 # [美食] 麵屋兼虎 天神本店（Menya Kanetora）
-> 連結: Google Maps：https://www.google.com/maps/place/%E9%BA%B5%E5%B1%8B%E5%85%BC%E8%99%8E+%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97/@33.5872002,130.401203,17z/data=!3m1!4b1!4m6!3m5!1s0x35419180a445b00f:0x166bb995858617e4!8m2!3d33.5872002!4d130.401203!16s%2Fg%2F11b5pj842n
+> 座標: 33.587200, 130.401203
+> 地址: 〒810-0004 福岡県福岡市中央区渡辺通４丁目９−１８ 福酒ビル 1F
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%BA%B5%E5%B1%8B%E5%85%BC%E8%99%8E+%E5%A4%A9%E7%A5%9E%E6%9C%AC%E5%BA%97/@33.5872002,130.401203,17z/data=!3m1!4b1!4m6!3m5!1s0x35419180a445b00f:0x166bb995858617e4!8m2!3d33.5872002!4d130.401203!16s%2Fg%2F11b5pj842n?hl=ja
 
 ### 想做什麼
 - 吃「濃厚魚介豚骨」系的沾麵/拉麵（招牌走重口味路線）
@@ -928,7 +1002,9 @@
 
 ---
 # [美食] かわ屋 祇園店（Kawaya Gion）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/xTXx4PYUoskLaanh9?g_st=ic
+> 座標: 33.592653, 130.414766
+> 地址: 〒812-0038 福岡県福岡市博多区祇園町２−８ Liens 祇園ビルディング
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%81%8B%E3%82%8F%E5%B1%8B+%E7%A5%87%E5%9C%92%E5%BA%97/@33.5926528,130.4147656,17z/data=!3m1!4b1!4m6!3m5!1s0x3541916cec893a6b:0x724a47c8c99660e3!8m2!3d33.5926528!4d130.4147656!16s%2Fg%2F11rhwjrmzq?hl=ja
 
 ### 想做什麼
 - 吃博多名物「かわ焼き」（烤雞皮串）＋串燒居酒屋氣氛
@@ -951,7 +1027,9 @@
 
 ---
 # [美食] 中津からあげ専門店 吉吾 湯布院店（Nakathu fried chicken / Kichigo）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/NrsCRcBwqzxZhEsh6
+> 座標: 33.266951, 131.363412
+> 地址: 〒879-5102 大分県由布市湯布院町川上１１００−８
+> 連結: Google Maps：https://www.google.com/maps/place/Nakathu+fried+chicken/@33.2669511,131.3634117,17z/data=!3m1!4b1!4m6!3m5!1s0x3546af0b5f814f8b:0x91a2d77846736832!8m2!3d33.2669511!4d131.3634117!16s%2Fg%2F11n034fcdw?entry=ttu
 
 ### 想做什麼
 - 吃唐揚炸雞（中津からあげ系）當湯布院逛街小吃
@@ -978,7 +1056,9 @@
 
 ---
 # [美食] 由布まぶし 心 金鱗湖本店（由布釜飯「心」/ Yufu Mabushi Shin）
-> 連結: Google Maps（你提供）：https://maps.app.goo.gl/Fxihek5yXGXYojn86
+> 座標: 33.267185, 131.367853
+> 地址: 〒879-5102 大分県由布市湯布院町川上１４９２−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E7%94%B1%E5%B8%83%E9%87%9C%E9%A3%AF+%E3%80%8C%E5%BF%83%E3%80%8D%E9%87%91%E9%B1%97%E6%B9%96%E6%9C%AC%E5%BA%97/@33.2671853,131.3678529,17z/data=!3m1!4b1!4m6!3m5!1s0x3546ae7d915bb8ad:0x348a50a9acb2baad!8m2!3d33.2671853!4d131.3678529!16s%2Fg%2F11bwfkxw_c?entry=ttu
 
 ### 想做什麼
 - 吃釜飯/まぶし（主打「三吃」：先原味、再加配料、最後做成茶泡飯風格）
