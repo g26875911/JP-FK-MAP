@@ -4,38 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的旅遊地圖</title>
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        /* 樣式保持不變 */
-        body { margin: 0; padding: 0; font-family: "Microsoft JhengHei", sans-serif; display: flex; height: 100vh; }
-        #sidebar { width: 320px; background: #f8f9fa; display: flex; flex-direction: column; border-right: 1px solid #ddd; }
-        .header { padding: 20px; background: #2c3e50; color: white; }
-        .list-container { flex: 1; overflow-y: auto; }
-        .list-item { padding: 15px; border-bottom: 1px solid #eee; cursor: pointer; transition: 0.2s; }
-        .list-item:hover { background: #e9ecef; }
-        .list-item h3 { margin: 0 0 5px 0; font-size: 16px; color: #333; }
-        .list-item p { margin: 0; font-size: 13px; color: #666; line-height: 1.4; }
-        .badge { display: inline-block; padding: 3px 6px; font-size: 11px; border-radius: 4px; color: white; margin-right: 5px; vertical-align: middle; }
+        /* 基礎設定 */
+        body { margin: 0; padding: 0; font-family: "Microsoft JhengHei", sans-serif; display: flex; height: 100vh; overflow: hidden; }
+        
+        /* 側邊欄結構 */
+        #sidebar { 
+            width: 360px; 
+            background: #f8f9fa; 
+            display: flex; 
+            flex-direction: column; 
+            border-right: 1px solid #ddd; 
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        /* 頂部控制區 (標題+搜尋+篩選) */
+        .controls { padding: 15px; background: #2c3e50; color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .controls h2 { margin: 0 0 10px 0; font-size: 20px; font-weight: bold; display: flex; align-items: center; gap: 8px; }
+        
+        /* 搜尋框 */
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            margin-bottom: 10px;
+            box-sizing: border-box; /* 確保 padding 不會撐破寬度 */
+            font-size: 14px;
+        }
+
+        /* 篩選按鈕區 */
+        .filters { display: flex; gap: 5px; flex-wrap: wrap; }
+        .filter-btn {
+            flex: 1;
+            border: none;
+            padding: 6px 4px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            transition: 0.2s;
+            white-space: nowrap;
+        }
+        .filter-btn:hover { background: rgba(255,255,255,0.4); }
+        .filter-btn.active { background: #3498db; font-weight: bold; box-shadow: 0 0 5px rgba(0,0,0,0.3); }
+
+        /* 列表區 */
+        .list-container { flex: 1; overflow-y: auto; padding-top: 5px; }
+        .list-item { 
+            padding: 15px; 
+            border-bottom: 1px solid #eee; 
+            cursor: pointer; 
+            transition: 0.2s; 
+            background: white;
+            margin: 5px 10px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+        }
+        .list-item:hover { background: #f0f8ff; border-color: #3498db; transform: translateY(-1px); }
+        .list-item h3 { margin: 0 0 8px 0; font-size: 16px; color: #333; display: flex; align-items: center; justify-content: space-between; }
+        
+        /* 備註樣式優化 */
+        .note-block { font-size: 13px; color: #555; line-height: 1.5; background: #f9f9f9; padding: 8px; border-radius: 4px; margin-top: 5px; }
+        .note-row { display: block; margin-bottom: 3px; }
+        .note-label { font-weight: bold; color: #7f8c8d; margin-right: 4px; }
+
+        /* 標籤 Badge */
+        .badge { display: inline-block; padding: 3px 8px; font-size: 11px; border-radius: 12px; color: white; font-weight: normal; }
         .cat-food { background-color: #e74c3c; }
         .cat-spot { background-color: #3498db; }
         .cat-hotel { background-color: #2ecc71; }
         .cat-other { background-color: #9b59b6; }
+
+        /* 地圖區 */
         #map { flex: 1; height: 100%; }
-        .popup-content b { font-size: 15px; display: block; margin-bottom: 5px; }
-        .popup-link { display: inline-block; margin-top: 8px; color: #3498db; text-decoration: none; font-size: 13px; }
-        @media (max-width: 768px) { #sidebar { display: none; } }
+        
+        /* Popup 樣式 */
+        .popup-content { min-width: 200px; }
+        .popup-content h4 { margin: 0 0 5px 0; font-size: 16px; color: #333; }
+        .popup-link { display: inline-block; margin-top: 8px; color: #3498db; text-decoration: none; font-size: 13px; font-weight: bold; }
+        
+        /* RWD: 手機版調整 */
+        @media (max-width: 768px) { 
+            body { flex-direction: column; }
+            #sidebar { width: 100%; height: 40%; border-right: none; border-bottom: 1px solid #ddd; }
+            #map { height: 60%; }
+            .controls { padding: 10px; }
+        }
     </style>
 </head>
 <body>
 
     <div id="sidebar">
-        <div class="header">
-            <h2 style="margin:0">旅遊筆記地圖</h2>
-            <p style="margin:5px 0 0; font-size:12px; opacity:0.8">來源：GitHub notes.md</p>
+        <div class="controls">
+            <h2><i class="fa-solid fa-map-location-dot"></i> 旅遊地圖</h2>
+            
+            <input type="text" id="searchInput" class="search-box" placeholder="搜尋地點、備註...">
+            
+            <div class="filters" id="filterContainer">
+                <button class="filter-btn active" onclick="filterData('all')">全部</button>
+                <button class="filter-btn" onclick="filterData('food')">美食</button>
+                <button class="filter-btn" onclick="filterData('spot')">景點</button>
+                <button class="filter-btn" onclick="filterData('hotel')">住宿</button>
+            </div>
         </div>
+        
         <div id="list-container" class="list-container">
-            <div style="padding:20px; text-align:center; color:#666;">載入中...</div>
+            <div style="padding:20px; text-align:center; color:#666;">
+                <i class="fa-solid fa-spinner fa-spin"></i> 讀取中...
+            </div>
         </div>
     </div>
 
@@ -44,120 +127,219 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script>
-        // 初始化地圖
-        var map = L.map('map').setView([33.1, 130.8], 8);
+        // 初始化全域變數
+        let map = L.map('map').setView([33.1, 130.8], 8);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap'
         }).addTo(map);
 
+        let allLocations = []; // 儲存原始資料
+        let markers = [];      // 儲存地圖上的標記
+        let currentFilter = 'all';
+
+        // 顏色與分類定義
         const colors = { food: '#e74c3c', spot: '#3498db', hotel: '#2ecc71', other: '#9b59b6' };
         const catNames = { food: '美食', spot: '景點', hotel: '住宿', other: '其他' };
 
-        // 解析 Markdown 的函數 (取代原本的 Python)
+        // --- 核心解析邏輯 (大幅改良) ---
         function parseMarkdown(text) {
-            const locations = [];
-            // 用 ## 切割區塊
+            const results = [];
+            // 使用二級標題切割區塊
             const items = text.split(/^##\s+/gm);
             
             items.forEach((item, index) => {
-                if (!item.trim() || index === 0) return; // 跳過第一個空白或標頭
+                if (!item.trim() || index === 0) return;
                 
                 const lines = item.trim().split('\n');
                 const name = lines[0].trim();
-                const content = lines.slice(1).join('\n');
                 
-                // 抓取座標
-                const coordMatch = content.match(/-\s*(?:座標|Coord|Location)[：:]\s*([0-9.]+)\s*,\s*([0-9.]+)/);
+                // 預設值
+                let lat = null, lng = null, link = '';
+                let notesArray = []; // 用陣列儲存多行備註
                 
-                if (coordMatch) {
-                    let note = '', link = '', category = 'other';
-                    
-                    // 抓取備註
-                    const noteMatch = content.match(/-\s*(?:想做什麼|備註|Description)[：:]\s*(.*)/);
-                    if (noteMatch) note = noteMatch[1].trim();
+                // 逐行分析，解決多行備註被忽略的問題
+                lines.slice(1).forEach(line => {
+                    line = line.trim();
+                    if(!line) return;
 
-                    // 抓取連結
-                    const linkMatch = content.match(/-\s*(?:連結|Link)[：:]\s*(http[^\s]+)/);
-                    if (linkMatch) link = linkMatch[1];
+                    // 1. 抓座標
+                    const coordMatch = line.match(/-\s*(?:座標|Coord|Location)[：:]\s*([0-9.]+)\s*,\s*([0-9.]+)/i);
+                    if (coordMatch) {
+                        lat = parseFloat(coordMatch[1]);
+                        lng = parseFloat(coordMatch[2]);
+                        return;
+                    }
 
-                    // 自動分類
-                    const fullText = (name + content).toLowerCase();
-                    if (fullText.match(/吃|餐|麵|飯|茶|咖啡|甜點|布丁|酒|肉|鍋|鮨|壽司/)) category = 'food';
-                    else if (fullText.match(/社|寺|宮|景|山|海|園|館|城|島|展/)) category = 'spot';
-                    else if (fullText.match(/住|宿|飯店|hotel|inn/)) category = 'hotel';
+                    // 2. 抓連結
+                    const linkMatch = line.match(/-\s*(?:連結|Link)[：:]\s*(http[^\s]+)/i);
+                    if (linkMatch) {
+                        link = linkMatch[1];
+                        return;
+                    }
 
-                    locations.push({ name, lat: parseFloat(coordMatch[1]), lng: parseFloat(coordMatch[2]), category, note, link });
+                    // 3. 抓其他備註資訊 (包括 想做什麼、備註、或任何 - 開頭的項目)
+                    // 這裡改用寬鬆匹配：只要是 - 開頭，且不是座標或連結，都算進備註
+                    if (line.startsWith('-')) {
+                        // 去掉開頭的 "- "
+                        let content = line.substring(1).trim();
+                        // 嘗試分離 "標籤：內容"
+                        let parts = content.split(/[：:]/);
+                        if(parts.length > 1) {
+                            let label = parts[0].trim();
+                            let text = parts.slice(1).join(':').trim();
+                            // 忽略 "行政區" (通常不需要顯示在列表)
+                            if(label === '行政區') return;
+                            
+                            notesArray.push(`<span class="note-row"><span class="note-label">${label}:</span> ${text}</span>`);
+                        } else {
+                            notesArray.push(`<span class="note-row">${content}</span>`);
+                        }
+                    }
+                });
+
+                // 自動分類
+                let category = 'other';
+                const fullText = (name + JSON.stringify(notesArray)).toLowerCase();
+                if (fullText.match(/吃|餐|麵|飯|茶|咖啡|甜點|布丁|酒|肉|鍋|鮨|壽司|燒/)) category = 'food';
+                else if (fullText.match(/社|寺|宮|景|山|海|園|館|城|島|展|觀光|遊/)) category = 'spot';
+                else if (fullText.match(/住|宿|飯店|hotel|inn|bnb/)) category = 'hotel';
+
+                if (lat && lng) {
+                    results.push({ 
+                        name, 
+                        lat, 
+                        lng, 
+                        category, 
+                        // 將備註陣列組合成 HTML 字串
+                        noteHtml: notesArray.length > 0 ? notesArray.join('') : '<span class="note-row">無詳細資訊</span>',
+                        // 純文字用於搜尋
+                        searchText: (name + notesArray.join(' ')).toLowerCase(),
+                        link 
+                    });
                 }
             });
-            return locations;
+            return results;
         }
 
-        // 讀取 GitHub 上的 notes.md
+        // --- 載入資料 ---
         async function loadData() {
             try {
-                // Fetch 同目錄下的 notes.md
+                // 如果是本機伺服器讀取 md
                 const response = await fetch('notes.md');
                 if (!response.ok) throw new Error("無法讀取 notes.md");
                 const text = await response.text();
                 
-                const locations = parseMarkdown(text);
-                renderMap(locations);
+                allLocations = parseMarkdown(text);
+                updateView(); // 初始渲染
             } catch (error) {
-                console.error('Error:', error);
-                document.getElementById('list-container').innerHTML = `<div style="padding:20px; color:red;">讀取錯誤，請確認 notes.md 檔案存在。</div>`;
+                console.error(error);
+                // 如果 fetch 失敗 (例如直接開 html)，顯示錯誤
+                document.getElementById('list-container').innerHTML = `
+                    <div style="padding:20px; color:#e74c3c;">
+                        <i class="fa-solid fa-circle-exclamation"></i> 讀取失敗<br>
+                        <small>請確認 notes.md 存在，且使用 GitHub Pages 或 Local Server 開啟。</small>
+                    </div>`;
             }
         }
 
-        function renderMap(locations) {
+        // --- 核心：更新畫面 (篩選 + 搜尋) ---
+        function updateView() {
             const listContainer = document.getElementById('list-container');
-            listContainer.innerHTML = ''; 
-            const markers = [];
+            const searchVal = document.getElementById('searchInput').value.toLowerCase();
+            
+            // 1. 清除舊資料
+            listContainer.innerHTML = '';
+            markers.forEach(m => map.removeLayer(m));
+            markers = [];
 
-            locations.forEach(loc => {
+            // 2. 篩選資料
+            const filteredData = allLocations.filter(loc => {
+                // 類別篩選
+                const catMatch = currentFilter === 'all' || loc.category === currentFilter;
+                // 關鍵字搜尋
+                const searchMatch = loc.searchText.includes(searchVal);
+                return catMatch && searchMatch;
+            });
+
+            // 3. 重新渲染
+            if (filteredData.length === 0) {
+                listContainer.innerHTML = '<div style="padding:20px; text-align:center; color:#999;">沒有找到相關地點</div>';
+                return;
+            }
+
+            filteredData.forEach(loc => {
                 const color = colors[loc.category] || colors.other;
                 const catName = catNames[loc.category] || '其他';
 
+                // --- 建立地圖 Marker ---
                 const customIcon = L.divIcon({
                     className: 'custom-div-icon',
-                    html: `<div style="background-color:${color}; width:14px; height:14px; border-radius:50%; border:2px solid white; box-shadow: 1px 1px 3px rgba(0,0,0,0.3);"></div>`,
-                    iconSize: [18, 18],
-                    iconAnchor: [9, 9],
+                    html: `<div style="background-color:${color}; width:16px; height:16px; border-radius:50%; border:2px solid white; box-shadow: 1px 1px 4px rgba(0,0,0,0.4);"></div>`,
+                    iconSize: [20, 20],
+                    iconAnchor: [10, 10],
                     popupAnchor: [0, -10]
                 });
 
                 const marker = L.marker([loc.lat, loc.lng], {icon: customIcon}).addTo(map);
-                
                 const popupHtml = `
                     <div class="popup-content">
-                        <b>${loc.name}</b>
-                        <span class="badge cat-${loc.category}">${catName}</span>
-                        <p>${loc.note || '無備註'}</p>
-                        ${loc.link ? `<a href="${loc.link}" target="_blank" class="popup-link"><i class="fa-solid fa-map-location-dot"></i> Google Maps / 連結</a>` : ''}
+                        <h4>${loc.name} <span class="badge cat-${loc.category}" style="font-size:10px; vertical-align:middle;">${catName}</span></h4>
+                        <div style="font-size:13px; margin-top:5px; max-height:150px; overflow-y:auto;">
+                            ${loc.noteHtml}
+                        </div>
+                        ${loc.link ? `<a href="${loc.link}" target="_blank" class="popup-link"><i class="fa-solid fa-location-arrow"></i> 導航 / 詳細資訊</a>` : ''}
                     </div>
                 `;
                 marker.bindPopup(popupHtml);
                 markers.push(marker);
 
+                // --- 建立側邊欄列表項目 ---
                 const itemDiv = document.createElement('div');
                 itemDiv.className = 'list-item';
                 itemDiv.innerHTML = `
-                    <h3><span class="badge cat-${loc.category}">${catName}</span>${loc.name}</h3>
-                    <p>${loc.note || ''}</p>
+                    <h3>${loc.name} <span class="badge cat-${loc.category}">${catName}</span></h3>
+                    <div class="note-block">
+                        ${loc.noteHtml}
+                    </div>
                 `;
                 itemDiv.onclick = () => {
-                    map.flyTo([loc.lat, loc.lng], 14);
+                    // 點擊移動地圖
+                    map.flyTo([loc.lat, loc.lng], 15, { duration: 1.5 });
                     marker.openPopup();
+                    // 在手機版時，自動捲動到地圖 (簡單 UX 優化)
+                    if(window.innerWidth < 768) {
+                        document.getElementById('map').scrollIntoView({behavior: 'smooth'});
+                    }
                 };
                 listContainer.appendChild(itemDiv);
             });
 
+            // 自動縮放視野以包含所有搜尋結果
             if (markers.length > 0) {
                 const group = L.featureGroup(markers);
                 map.fitBounds(group.getBounds().pad(0.1));
             }
         }
 
+        // --- 事件監聽 ---
+        
+        // 1. 篩選按鈕點擊
+        window.filterData = function(cat) {
+            currentFilter = cat;
+            // 更新按鈕樣式
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active'); // event 會抓到當前點擊的按鈕
+            updateView();
+        }
+
+        // 2. 搜尋框輸入 (即時搜尋)
+        document.getElementById('searchInput').addEventListener('input', () => {
+            updateView();
+        });
+
+        // 啟動
         loadData();
+
     </script>
 </body>
 </html>
