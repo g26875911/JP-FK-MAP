@@ -1630,6 +1630,7 @@
 > 座標: 33.640495, 130.1964802
 > 地址: 日本、〒819-1304 福岡県糸島市志摩桜井
 > 連結: https://www.google.com/maps/place/Sakurai+Futamigaura's+Couple+Stones/@33.640495,130.1917166,17z/data=!4m6!3m5!1s0x3541eedd30a39875:0x47f9acaa88434d66!8m2!3d33.640495!4d130.1964802!16s%2Fg%2F11bx56kb4k?entry=ttu
+> Day: 2
 
 ### 想做什麼
 - 拍海中白鳥居＋夫婦岩
