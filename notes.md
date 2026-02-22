@@ -3,7 +3,7 @@
 > 地址: N/A
 > 開始日期: 2026-04-18
 > 總天數: 9
-> day1_Order: 肉の山翔（Niku no Yamasho）, 福岡城跡（福岡城 / Fukuoka Castle Ruins）, 宮地嶽神社（Miyajidake Shrine / 宮地嶽神社）, 博多水炊き専門 橙
+> day1_Order: 福岡城跡（福岡城 / Fukuoka Castle Ruins）, 肉の山翔（Niku no Yamasho）, 宮地嶽神社（Miyajidake Shrine / 宮地嶽神社）, 博多水炊き専門 橙
 > day2_Order: 生ノ松原緑地（Ikinomatsubara Green Space / 生の松原）, 桜井二見ヶ浦 夫婦岩（Sakurai Futamigaura / 夫婦岩）, 櫻井神社（桜井神社 / Sakurai Shrine）, 手工花鹽布丁（またいちの塩 製塩所 工房とったん / Mataichi no Shio Tottan）, かわ屋 祇園店（Kawaya Gion）
 > day3_Order: 堀越耕平《僕のヒーローアカデミア／我的英雄學院》原畫展（福岡會場）, 太宰府天滿宮（Dazaifu Tenmangu / 太宰府天満宮）, 太宰府表参道（太宰府天満宮 参道 / Dazaifu Omotesando）, 櫛田神社（Kushida Shrine）, 博多もつ鍋前田屋 博多店
 > day4_Order: 海神神社, 祐德稻荷神社（祐徳稲荷神社 / Yūtoku Inari Shrine）, 高良大社（Kōra Taisha / 高良大社）
