@@ -1798,6 +1798,7 @@
 > 座標: 33.5860926, 130.3914958
 > 地址: １Ｆ, 1 Chome-7-10 Daimyo, Chuo Ward, Fukuoka, 810-0041 日本
 > 連結: https://www.google.com/maps/place/Akasaka+Komikan/@33.5860926,130.3914958,17z/data=!3m1!4b1!4m6!3m5!1s0x35419f584eb71979:0x6da965275afde268!8m2!3d33.5860926!4d130.3914958!16s%2Fg%2F11f62w6gk2?hl=ja&entry=ttu
+> Day: 4
 
 ### 想做什麼
 - 可能需要預約（先記下：到現場/官網/電話確認）
