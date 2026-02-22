@@ -1770,3 +1770,20 @@
 - ![櫛田神社](assets/kushida-shrine-01.jpg)
 
 #### 其他
+---
+# [購物] Pokémon Center FUKUOKA（ポケモンセンター福岡）
+> 座標: 33.5890033, 130.4192564
+> 地址: 日本〒812-0012 福岡県福岡市博多区博多駅中央街９−１ 博多マルイ 2F
+> 連結: Google Maps：https://www.google.com/maps/place/Pok%C3%A9mon+Center+FUKUOKA/@33.5890033,130.4192564,17z/data=!3m2!4b1!5s0x354191b86e62e40b:0xc0f0ae3f44ec30b1!4m6!3m5!1s0x354191c78cd082ef:0x5f80c33c1baae5a2!8m2!3d33.5890033!4d130.4192564!16s%2Fg%2F12ml2ytj5?hl=ja&entry=ttu
+
+### 想做什麼
+- 買限定周邊、扭蛋/小物
+- 如果要排博多站逛街：可跟運河城/地下街/博多站周邊一起串
+
+### 備註
+- Google Maps 短連結：https://maps.app.goo.gl/ZGF2Vun4FhsLpuUU6
+- 指定照片來源：https://www.google.com/maps/place/Pok%C3%A9mon+Center+FUKUOKA/@33.589008,130.4192568,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipObbPtD-KUJn6WKbH9dBTDiO0bm9eNGBOGcmRU!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fp%2FAF1QipObbPtD-KUJn6WKbH9dBTDiO0bm9eNGBOGcmRU%3Dw203-h135-k-no!7i2500!8i1667!4m9!3m8!1s0x354191c78cd082ef:0x5f80c33c1baae5a2!8m2!3d33.5890033!4d130.4192564!10e5!14m1!1BCgIgARICEAE!16s%2Fg%2F12ml2ytj5!18m1!1e1?entry=ttu
+- ![Pokémon Center FUKUOKA](assets/pokemon-center-fukuoka-01.jpg)
+
+#### 其他
+- 樓層：博多マルイ 2F
