@@ -261,6 +261,10 @@ head -n 1 /Users/zi-jianchen/.openclaw/workspace/projects/japan/current_url.txt
 | 設定 Modal | `#settingsModal` | 兩版本 |
 | 閱讀 Modal | `#readingModal` | 電腦版 |
 | 圖片畫廊 | `.image-gallery` | 兩版本 |
+| 住宿多天 checkbox 容器（手機詳細頁）| `#detail-day-checkboxes` | 手機版 |
+| 住宿多天 checkbox 容器（桌面 Popup）| `#day-checkboxes-${loc.id}` | 電腦版 |
+| checkbox 群組 | `.day-checkboxes` | 兩版本 |
+| checkbox 單項標籤 | `.day-checkbox-label` | 兩版本 |
 
 ---
 
@@ -293,6 +297,17 @@ head -n 1 /Users/zi-jianchen/.openclaw/workspace/projects/japan/current_url.txt
 ### 備註
 - 24 小時營業，建議避開用餐尖峰時段
 ```
+
+### Day 欄位格式
+
+`> Day:` 支援單天或**逗號分隔多天**（住宿景點跨多日入住時使用）：
+
+```markdown
+> Day: 2          ← 單天（所有分類適用）
+> Day: 1, 3, 5    ← 多天（住宿 hotel 跨日入住）
+```
+
+多天指派後，篩選 Day 1、Day 3 或 Day 5 時都能看到該住宿；卡片會顯示 `D1 D3 D5` 多個 badge；地圖標記只顯示第一天數字。
 
 ## 新增或修改景點
 
@@ -386,6 +401,20 @@ cd /Users/zi-jianchen/.openclaw/workspace/projects/japan && ./start.sh
 - **修復 start.sh 路徑問題**
   - 原本 `cd "$(dirname "$0")"` 在相對路徑呼叫時無效，導致 `python3 server.py` 靜默失敗
   - 改為硬寫絕對路徑 `SCRIPT_DIR`，確保從任何目錄執行都能正確啟動
+
+### 2026-02-22（第二批）
+- **住宿（hotel）多日指派功能**（`js/ui.js` + `js/main.js` + `index.html` + `styles.css`）
+  - `notes.md` 的 `> Day:` 欄位支援逗號分隔多天（如 `> Day: 1, 3, 5`），向下相容單天格式
+  - **篩選邏輯**（`js/ui.js` `updateView`）：Day 篩選改用 `split(',').includes()` 比對，住宿可同時出現在多個 Day 篩選結果中
+  - **卡片 Day badge**：多天分別渲染多個 `<span class="day-badge">`（如 `D1 D3`）
+  - **地圖標記 Day badge**：圓形空間有限，只顯示第一天數字（`split(',')[0].trim()`）
+  - **詳細頁 Day badge**（`.detail-header-bar`）：多天顯示 `D1 D3` 格式
+  - **詳細頁 Day 選擇器**：住宿類別改為 checkbox 群組（`#detail-day-checkboxes`），其他類別維持 `<select>` dropdown
+  - **桌面 Popup Day 選擇器**：住宿改為 `.day-checkboxes` 群組（`id="day-checkboxes-${loc.id}"`），其他維持 `.day-select`
+  - **新增兩個 `window.*` 函式**（`js/main.js`）：
+    - `updateDayFromCheckboxes(name, locId)`：桌面 popup checkbox onChange 用，收集勾選值 → 呼叫 `updateDay`
+    - `updateDayCheckboxFromDetail()`：手機詳細頁 checkbox onChange 用，收集勾選值 → 呼叫 `updateDayFromDetail`
+  - **`styles.css`**：新增 `.day-checkboxes`、`.day-checkbox-label`、`.day-checkbox-label input[type=checkbox]` 樣式
 
 ### 2026-02-22
 - **index.html 模組化拆分**（詳見下方《前端模組架構》章節）
