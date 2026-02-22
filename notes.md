@@ -198,7 +198,7 @@
 - 其他連結：
   - 官網（工房とったん）：https://mataichi.info/tottan/
 ---
-# [景點] 太良嶽温泉 蟹御殿（Taradakeonsen Kanigoten）
+# [住宿] 太良嶽温泉 蟹御殿（Taradakeonsen Kanigoten）
 > 座標: 32.957887, 130.205616
 > 地址: 〒849-1615 佐賀県藤津郡太良町大浦乙３１６−３
 > 連結: https://www.google.com/maps/place/%E5%A4%AA%E8%89%AF%E5%B6%BD%E6%B8%A9%E6%B3%89+%E8%9F%B9%E5%BE%A1%E6%AE%BF/@32.9578872,130.2056164,17z/data=!4m9!3m8!1s0x35403d9560c4afed:0x73b78032dd39a584!5m2!4m1!1i2!8m2!3d32.9578872!4d130.2056164!16s%2Fg%2F1thvdpy6?hl=ja
