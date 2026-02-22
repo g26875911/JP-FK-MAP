@@ -217,6 +217,20 @@ export function openDetailView(loc) {
         } else { otherContainer.style.display = 'none'; }
     }
 
+    const timeBadge = document.getElementById('detail-time-badge');
+    if (timeBadge) {
+        if (loc.time) { timeBadge.innerHTML = `<i class="fa-solid fa-clock"></i> ${loc.time}`; timeBadge.style.display = 'inline-flex'; }
+        else { timeBadge.style.display = 'none'; }
+    }
+
+    const dvBtn = document.getElementById('detail-visited-btn');
+    if (dvBtn) {
+        dvBtn.classList.toggle('done', state.visitedNames.has(loc.name));
+        dvBtn.onclick = (e) => window.toggleVisited(loc.name, e);
+    }
+
+    state.currentDetailLoc = loc;
+
     toggleDetailEditMode(false);
     setTimeout(() => { highlightMarker(loc.id); }, 100);
 }
@@ -296,6 +310,18 @@ export function openReadingModal(loc) {
         html += `<div style="margin-top:20px; border-top:1px dashed var(--border); padding-top:15px;">${imgs}</div>`;
     }
     if (!html) html = '<p style="text-align:center; color:var(--text-sub); margin-top:20px;">無詳細內容</p>';
+    if (!loc.lat || !loc.lng) {
+        html += `
+            <div id="geocode-section" style="margin-top:16px; border-top:1px dashed var(--border); padding-top:12px;">
+                <p style="font-size:13px; color:var(--text-sub); margin-bottom:8px;">
+                    <i class="fa-solid fa-map-pin"></i> 此景點缺少座標
+                </p>
+                <button class="save-btn" onclick="geocodeAndSave('${loc.name.replace(/'/g, "\\'")}')">
+                    <i class="fa-solid fa-magnifying-glass-location"></i> 自動搜尋並儲存座標
+                </button>
+                <div id="geocode-result" style="margin-top:10px; font-size:12px; color:var(--text-sub);"></div>
+            </div>`;
+    }
     const body = document.getElementById('readingBody');
     if (body) { body.innerHTML = html; }
     const modal = document.getElementById('readingModal');
@@ -385,7 +411,7 @@ export function updateView(fitMap = true) {
         if (loc.lat && loc.lng) {
             const customIcon = L.divIcon({
                 className: 'custom-icon',
-                html: `<div class="marker-inner" data-id="${loc.id}" style="background-color:${color}; width:28px; height:28px; border-radius:50%; border:3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
+                html: `<div class="marker-inner ${state.visitedNames.has(loc.name) ? 'visited' : ''}" data-id="${loc.id}" style="background-color:${color}; width:28px; height:28px; border-radius:50%; border:3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                         <i class="fa-solid ${iconClass}" style="color:white; font-size:13px;"></i>
                        ${loc.day ? `<div style="position:absolute;top:-6px;right:-6px;background:var(--primary);color:white;font-size:10px;font-weight:bold;width:16px;height:16px;border-radius:50%;text-align:center;line-height:16px;border:2px solid white;">${String(loc.day).split(',')[0].trim()}</div>` : ''}
                        </div>`,
@@ -425,7 +451,7 @@ export function updateView(fitMap = true) {
                 }
                 const popupHtml = `
                     <div class="popup-header">
-                        <div class="popup-top-row"><div class="popup-title-group"><span class="badge cat-${loc.category}">${getCatName(loc.category)}</span><div class="popup-title">${loc.name}</div></div><div class="popup-actions"><button class="popup-icon-btn edit-btn" onclick="toggleEditMode('${loc.id}', true)"><i class="fa-solid fa-pen"></i></button><button class="popup-icon-btn close-btn" onclick="map.closePopup()"><i class="fa-solid fa-xmark"></i></button></div></div>
+                        <div class="popup-top-row"><div class="popup-title-group"><span class="badge cat-${loc.category}">${getCatName(loc.category)}</span><div class="popup-title">${loc.name}</div></div><div class="popup-actions"><button class="popup-icon-btn visited-popup-btn ${state.visitedNames.has(loc.name) ? 'done' : ''}" onclick="toggleVisited('${loc.name.replace(/'/g, "\\'")}', event)" title="標記已造訪"><i class="fa-solid fa-circle-check"></i></button><button class="popup-icon-btn edit-btn" onclick="toggleEditMode('${loc.id}', true)"><i class="fa-solid fa-pen"></i></button><button class="popup-icon-btn close-btn" onclick="map.closePopup()"><i class="fa-solid fa-xmark"></i></button></div></div>
                     </div>
                     <div class="popup-body">
                         <div id="view-mode-${loc.id}" class="popup-view-two-col">
@@ -496,17 +522,20 @@ export function updateView(fitMap = true) {
         }
 
         const card = document.createElement('div');
-        card.className = `card ${(!loc.lat || !loc.lng) ? 'missing-coords' : ''}`;
+        card.className = `card ${(!loc.lat || !loc.lng) ? 'missing-coords' : ''} ${state.visitedNames.has(loc.name) ? 'visited' : ''}`;
         card.id = `card-el-${loc.id}`; card.setAttribute('data-lat', loc.lat); card.setAttribute('data-lng', loc.lng); card.setAttribute('data-name', loc.name);
 
         const dragHandleHtml = state.currentFilter.startsWith('day') ? `<i class="fa-solid fa-bars drag-handle"></i>` : '';
         const expandBtnHtml = (loc.notes || loc.other) ? `<button id="expand-btn-${loc.id}" class="expand-btn" onclick="toggleCardNotes(event, '${loc.id}')"><i class="fa-solid fa-chevron-down"></i></button>` : '';
         const cleanCardTodo = processMarkdownForDisplay(loc.todo).htmlText.replace(/<br>/g, ' ');
         const notesDataForCard = processMarkdownForDisplay(loc.notes);
+        const visitedBtnHtml = `<button class="visited-btn ${state.visitedNames.has(loc.name) ? 'done' : ''}" onclick="toggleVisited('${loc.name.replace(/'/g, "\\'")}', event)" title="標記已造訪"><i class="fa-solid fa-circle-check"></i></button>`;
+        const timeBadgeHtml = (isDayFilter && loc.time) ? `<div class="time-badge"><i class="fa-solid fa-clock"></i> ${loc.time}</div>` : '';
 
         card.innerHTML = `
             ${dragHandleHtml} ${expandBtnHtml}
-            <div class="card-header"><h3 class="card-title">${loc.day ? String(loc.day).split(',').map(d => `<span class="day-badge">D${d.trim()}</span>`).join('') : ''}${loc.name}</h3><span class="badge cat-${loc.category}">${getCatName(loc.category)}</span></div>
+            <div class="card-header"><h3 class="card-title">${loc.day ? String(loc.day).split(',').map(d => `<span class="day-badge">D${d.trim()}</span>`).join('') : ''}${loc.name}</h3>${visitedBtnHtml}<span class="badge cat-${loc.category}">${getCatName(loc.category)}</span></div>
+            ${timeBadgeHtml}
             <div class="card-todo" id="card-todo-${loc.id}">${cleanCardTodo}</div>
             <div class="card-notes" id="card-notes-content-${loc.id}">${notesDataForCard.htmlText}</div>
         `;

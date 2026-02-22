@@ -63,6 +63,35 @@
         </div>
     </div>
 
+    <div class="modal-overlay" id="addLocationModal">
+      <div class="modal-content" style="max-width:540px; max-height:85vh; overflow-y:auto;">
+        <div class="modal-title"><i class="fa-solid fa-plus"></i> 新增景點</div>
+        <label class="modal-label">景點名稱 *</label>
+        <input class="modal-input" id="addLoc-name" placeholder="例：一蘭拉麵 博多本店">
+        <label class="modal-label">分類 *</label>
+        <select class="modal-input" id="addLoc-cat">
+          <option value="spot">景點</option>
+          <option value="food">美食</option>
+          <option value="hotel">住宿</option>
+          <option value="shop">購物</option>
+        </select>
+        <label class="modal-label">座標（緯度, 經度）</label>
+        <input class="modal-input" id="addLoc-coords" placeholder="例：33.5897, 130.4207">
+        <label class="modal-label">行程天數（可留空）</label>
+        <input class="modal-input" id="addLoc-day" type="number" min="0" placeholder="例：2">
+        <label class="modal-label">預計時間（可留空）</label>
+        <input class="modal-input" id="addLoc-time" placeholder="例：14:00–16:00">
+        <label class="modal-label">想做什麼（可留空）</label>
+        <textarea class="modal-input edit-textarea" id="addLoc-todo" rows="2"></textarea>
+        <label class="modal-label">備註（可留空）</label>
+        <textarea class="modal-input edit-textarea" id="addLoc-notes" rows="2"></textarea>
+        <div class="modal-btn-group" style="margin-top:16px;">
+          <button class="cancel-btn" onclick="closeAddLocationModal()">取消</button>
+          <button class="save-btn" id="addLoc-saveBtn" onclick="saveNewLocation()">儲存</button>
+        </div>
+      </div>
+    </div>
+
     <div id="sidebar">
         <div class="mobile-toggle-bar" id="dragHandle">
             <div class="mobile-toggle-handle"></div>
@@ -72,6 +101,7 @@
             <div class="header-row">
                 <h1 class="app-title"><i class="fa-solid fa-plane-departure"></i> 九州自由行</h1>
                 <div class="header-actions">
+                    <button class="icon-btn" onclick="openAddLocationModal()" title="新增景點"><i class="fa-solid fa-plus"></i></button>
                     <button class="icon-btn" onclick="refreshData(this)" title="重新讀取筆記"><i class="fa-solid fa-rotate-right"></i></button>
                     <button class="icon-btn" onclick="toggleTheme()" title="深淺色模式"><i class="fa-solid fa-moon" id="desktopThemeIconBtn"></i></button>
                     <button class="icon-btn" id="desktopLabelToggleBtn" onclick="toggleMapLabels()" title="顯示地標名稱"><i class="fa-solid fa-tag"></i></button>
@@ -109,6 +139,7 @@
             <div class="detail-header-bar">
                 <button class="detail-back-btn" onclick="closeDetailView()"><i class="fa-solid fa-chevron-left"></i> 返回</button>
                 <div class="detail-header-actions">
+                    <button class="icon-btn" id="detail-visited-btn" title="標記已造訪"><i class="fa-solid fa-circle-check"></i></button>
                     <button class="popup-icon-btn" id="detail-edit-btn" onclick="toggleDetailEditMode(true)"><i class="fa-solid fa-pen"></i></button>
                     <span id="detail-day-badge" class="day-badge" style="display:none;"></span>
                     <span class="badge" id="detail-cat-badge"></span>
@@ -119,6 +150,7 @@
                 <div id="detail-view-mode">
                     <h2 class="detail-title" id="detail-title"></h2>
 
+                    <span id="detail-time-badge" class="time-badge" style="display:none;"></span>
                     <div class="detail-action-row">
                         <select class="detail-day-select" id="detail-day-select" onchange="updateDayFromDetail(this.value)"></select>
                         <div id="detail-day-checkboxes" class="day-checkboxes" style="display:none; flex-wrap:wrap; gap:6px;"></div>
@@ -170,6 +202,7 @@
     <div class="fab-container" id="fabContainer">
         <button class="fab-btn fab-toggle" onclick="toggleFab()"><i class="fa-solid fa-layer-group"></i></button>
         <div class="fab-actions">
+            <button class="fab-action-btn fab-btn" onclick="openAddLocationModal(); toggleFab();" title="新增景點"><i class="fa-solid fa-plus"></i></button>
             <button class="fab-btn" onclick="toggleSearch()" title="搜尋"><i class="fa-solid fa-magnifying-glass"></i></button>
             <button class="fab-btn" onclick="getLocation()" id="mobileLocateBtn" title="定位"><i class="fa-solid fa-crosshairs"></i></button>
             <button class="fab-btn" onclick="toggleMapLabels()" id="mobileLabelToggleBtn" title="顯示地標名稱"><i class="fa-solid fa-tag"></i></button>

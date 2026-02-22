@@ -9,6 +9,7 @@ export const state = {
     mapArrowLayer: null,
     currentFilter: 'all',
     currentDetailLocId: null,
+    currentDetailLoc: null,
     globalIdCounter: 0,
     tripStartDate: '',
     totalDays: 8,
@@ -18,6 +19,8 @@ export const state = {
     isLabelsEnabled: localStorage.getItem('mapLabels') === 'true',
     userMarker: null,
     userCircle: null,
+    visitedNames: new Set(JSON.parse(localStorage.getItem('visited_names') || '[]')),
+    hasSavedMapPosition: false,
 };
 
 export const categoryMap = {

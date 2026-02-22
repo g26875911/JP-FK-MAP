@@ -37,7 +37,7 @@
 
 html, body { margin: 0; padding: 0; font-family: 'Noto Sans TC', sans-serif; display: flex; width: 100vw; height: 100vh; overflow: hidden; background: var(--bg-main); color: var(--text-main); transition: background-color 0.3s; position: fixed; overscroll-behavior-y: none; }
 
-#sidebar { width: 420px; background: var(--bg-card); display: flex; flex-direction: column; box-shadow: 4px 0 24px var(--shadow); z-index: 1000; border-right: none; transition: background-color 0.3s; margin-bottom: 0; }
+#sidebar { width: 460px; background: var(--bg-card); display: flex; flex-direction: column; box-shadow: 4px 0 24px var(--shadow); z-index: 1000; border-right: none; transition: background-color 0.3s; margin-bottom: 0; }
 .sidebar-animating { transition: height 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
 .controls { padding: 20px 24px 10px; background: var(--bg-card); border-bottom: 1px solid var(--border); flex-shrink: 0; }
@@ -302,6 +302,43 @@ html, body { margin: 0; padding: 0; font-family: 'Noto Sans TC', sans-serif; dis
     accent-color: var(--primary);
     width: 14px;
     height: 14px;
+}
+
+/* =========================================
+   2c. 已造訪標記樣式（F1）
+   ========================================= */
+
+/* 已造訪 marker */
+.marker-inner.visited { opacity: 0.4; filter: grayscale(100%); }
+
+/* 已造訪卡片 */
+.card.visited { opacity: 0.7; }
+.card.visited .card-title { text-decoration: line-through; color: var(--text-sub); }
+
+/* 造訪按鈕（卡片內） */
+.visited-btn {
+    background: none; border: none; cursor: pointer;
+    color: var(--text-sub); font-size: 16px; padding: 0 2px;
+    transition: color 0.2s, transform 0.2s; flex-shrink: 0;
+}
+.visited-btn:hover { color: #27ae60; transform: scale(1.15); }
+.visited-btn.done { color: #27ae60; }
+
+/* popup 內的 visited 按鈕 */
+.popup-icon-btn.done { color: #27ae60; }
+
+/* detail bar visited 按鈕 done 狀態 */
+.icon-btn.done { color: #27ae60 !important; border-color: #27ae60; }
+
+/* =========================================
+   2d. 預計停留時間 badge（F2）
+   ========================================= */
+
+.time-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: #8e44ad; color: white;
+    font-size: 11px; font-weight: 600; padding: 3px 8px;
+    border-radius: 6px; margin-bottom: 6px;
 }
 
 /* =========================================

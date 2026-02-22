@@ -2,13 +2,25 @@
 import { state } from './state.js';
 
 export function initMap() {
-    state.map = L.map('map', { zoomControl: false }).setView([33.1, 130.8], 8);
+    const savedLat = parseFloat(localStorage.getItem('map_lat'));
+    const savedLng = parseFloat(localStorage.getItem('map_lng'));
+    const savedZoom = parseInt(localStorage.getItem('map_zoom'));
+    const hasPos = savedLat && savedLng && savedZoom;
+    if (hasPos) state.hasSavedMapPosition = true;
+    state.map = L.map('map', { zoomControl: false })
+        .setView(hasPos ? [savedLat, savedLng] : [33.1, 130.8], hasPos ? savedZoom : 8);
     L.control.zoom({ position: 'topright' }).addTo(state.map);
-    
+
     L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&hl=zh-TW', {
         attribution: '© Google Maps', maxZoom: 19
     }).addTo(state.map);
 
+    state.map.on('moveend', () => {
+        const c = state.map.getCenter();
+        localStorage.setItem('map_lat', c.lat);
+        localStorage.setItem('map_lng', c.lng);
+        localStorage.setItem('map_zoom', state.map.getZoom());
+    });
     state.map.on('zoomend', checkMapLabels);
     state.map.on('locationfound', (e) => {
         if (state.userMarker) state.map.removeLayer(state.userMarker);

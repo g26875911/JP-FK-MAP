@@ -37,7 +37,7 @@ export function parseMarkdown(text) {
         } else return;
 
         let lat = null, lng = null, address = '', link = '';
-        let todo = '', notes = '', other = '', day = null, currentSection = 'meta';
+        let todo = '', notes = '', other = '', day = null, time = '', currentSection = 'meta';
 
         lines.slice(1).forEach(line => {
             let trimmedLine = line.trim();
@@ -53,6 +53,8 @@ export function parseMarkdown(text) {
                     if (urlMatch) link = urlMatch[1];
                 } else if (content.match(/Day|行程/i)) {
                     day = content.split(/[:：]/)[1]?.trim();
+                } else if (content.match(/時間|Time/i)) {
+                    time = content.split(/[:：]/)[1]?.trim() || '';
                 }
             } else if (trimmedLine.startsWith('###') || trimmedLine.startsWith('####')) {
                 if (trimmedLine.includes('想做什麼')) currentSection = 'todo';
@@ -69,7 +71,7 @@ export function parseMarkdown(text) {
         results.push({
             id: 'loc_' + (++state.globalIdCounter),
             name, category, lat, lng, address, link,
-            todo: todo.trim(), notes: notes.trim(), other: other.trim(), day, searchText
+            todo: todo.trim(), notes: notes.trim(), other: other.trim(), day, time, searchText
         });
     });
     return results;
@@ -82,7 +84,8 @@ export async function loadData() {
         state.allLocations = parseMarkdown(text);
         initDayDropdown();
         updateTripInfoBar();
-        updateView(true);
+        updateView(!state.hasSavedMapPosition);
+        state.hasSavedMapPosition = false;
     } catch (error) {
         console.error(error);
     }

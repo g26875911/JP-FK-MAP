@@ -118,3 +118,28 @@ export function notesMd_setSettings(text, newDate, newDays) {
     if (newDays) text = text.replace(/^(> 總天數[：:]\s*).*$/m, `$1${newDays}`);
     return text;
 }
+
+export function notesMd_appendLocation(text, { name, category, lat, lng, day, time, todo, notes }) {
+    const catMap = { food: '美食', spot: '景點', hotel: '住宿', shop: '購物', other: '整理' };
+    let block = `\n# [${catMap[category] || '景點'}] ${name}\n`;
+    if (lat && lng) block += `> 座標: ${lat}, ${lng}\n`;
+    if (day) block += `> Day: ${day}\n`;
+    if (time) block += `> 時間: ${time}\n`;
+    if (todo) block += `\n### 想做什麼\n${todo.trim()}\n`;
+    if (notes) block += `\n### 備註\n${notes.trim()}\n`;
+    return text.trimEnd() + '\n' + block + '\n';
+}
+
+export function notesMd_setCoords(text, name, lat, lng) {
+    const parts = text.split(/(?=^#\s\[)/gm);
+    return parts.map(part => {
+        if (!part.trim()) return part;
+        const nameMatch = part.split('\n')[0].match(/^#\s\[.*?\]\s*(.*)/);
+        if (!nameMatch || nameMatch[1].trim().toLowerCase() !== name.trim().toLowerCase()) return part;
+        if (/>\s*座標/i.test(part)) {
+            return part.replace(/(>\s*座標[：:]\s*)[^\n]*/i, `$1${lat}, ${lng}`);
+        } else {
+            return part.replace('\n', `\n> 座標: ${lat}, ${lng}\n`);
+        }
+    }).join('');
+}
