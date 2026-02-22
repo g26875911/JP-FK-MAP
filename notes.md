@@ -1674,7 +1674,7 @@
 # [景點] 上色見熊野座神社（Kamishikimi Kumanoimasu Shrine）
 > 座標: 32.853794, 131.158520
 > 地址: 〒869-1601 熊本県阿蘇郡高森町上色見２６１９
-> 連結: Google Maps：https://www.google.com/maps/place/%E4%B8%8A%E8%89%B2%E8%A6%8B%E7%86%8A%E9%87%8E%E5%BA%A7%E7%A5%9E%E7%A4%BE/@32.8537942,131.1497658,15z/data=!4m10!1m2!2m1!1z5LiK6Imy6KaL54aK6YeO5bqn56We56S-!3m6!1s0x3540d7ccee5ea361:0x75772fd6f78ac77e!8m2!3d32.8537942!4d131.1585205!15sChjkuIroibLopovnhorph47luqfnpZ7npL5aHyId5LiKIOiJsiDoposg54aK6YeOIOW6pyDnpZ7npL6SAQ1zaGludG9fc2hyaW5l4AEA!16s%2Fg%2F11gzqgzhl?hl=ja
+> 連結: https://www.google.com/maps/place/%E4%B8%8A%E8%89%B2%E8%A6%8B%E7%86%8A%E9%87%8E%E5%BA%A7%E7%A5%9E%E7%A4%BE/@32.8537942,131.1497658,15z/data=!4m10!1m2!2m1!1z5LiK6Imy6KaL54aK6YeO5bqn56We56S-!3m6!1s0x3540d7ccee5ea361:0x75772fd6f78ac77e!8m2!3d32.8537942!4d131.1585205!15sChjkuIroibLopovnhorph47luqfnpZ7npL5aHyId5LiKIOiJsiDoposg54aK6YeOIOW6pyDnpZ7npL6SAQ1zaGludG9fc2hyaW5l4AEA!16s%2Fg%2F11gzqgzhl?hl=ja
 
 ### 想做什麼
 - 參道拍照（石燈籠＋鳥居一路延伸的「異世界入口」感）
@@ -1703,7 +1703,7 @@
 # [美食] 地獄蒸しプリン 岡本屋（岡本屋売店）
 > 座標: 33.3180542, 131.4526114
 > 地址: 日本、〒874-0840 大分県別府市明礬３組
-> 連結: Google Maps：https://www.google.com/maps/place/%E5%B2%A1%E6%9C%AC%E5%B1%8B%E5%A3%B2%E5%BA%97/@33.3180542,131.4500365,17z/data=!3m1!4b1!4m6!3m5!1s0x3546a7c568807701:0xcf09508c83842569!8m2!3d33.3180542!4d131.4526114!16s%2Fg%2F11b74680ww?hl=ja&entry=ttu
+> 連結: https://www.google.com/maps/place/%E5%B2%A1%E6%9C%AC%E5%B1%8B%E5%A3%B2%E5%BA%97/@33.3180542,131.4500365,17z/data=!3m1!4b1!4m6!3m5!1s0x3546a7c568807701:0xcf09508c83842569!8m2!3d33.3180542!4d131.4526114!16s%2Fg%2F11b74680ww?hl=ja&entry=ttu
 
 ### 想做什麼
 - 吃「地獄蒸しプリン」（地獄蒸布丁）
@@ -1722,7 +1722,7 @@
 # [美食] 菅乃屋（桜の馬場 城彩苑 / Suganoya）
 > 座標: 32.803558, 130.7037866
 > 地址: 日本、〒860-0008 熊本県熊本市中央区二の丸１−１−２
-> 連結: Google Maps：https://www.google.com/maps/place/%E8%8F%85%E4%B9%83%E5%B1%8B/@32.803558,130.7037866,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f414a420cce5:0x462635b6579359ee!8m2!3d32.803558!4d130.7037866!16s%2Fg%2F11bccmm62b?hl=ja&entry=ttu
+> 連結: https://www.google.com/maps/place/%E8%8F%85%E4%B9%83%E5%B1%8B/@32.803558,130.7037866,17z/data=!3m1!4b1!4m6!3m5!1s0x3540f414a420cce5:0x462635b6579359ee!8m2!3d32.803558!4d130.7037866!16s%2Fg%2F11bccmm62b?hl=ja&entry=ttu
 
 ### 想做什麼
 - 吃/買馬肉相關（你標記：馬肉可樂餅）
@@ -1741,9 +1741,24 @@
 # [美食] 麺屋我ガ 天神店（麵屋Gaga / Menya Gaga）
 > 座標: 33.5856391, 130.3966811
 > 地址: 日本〒810-0021 福岡県福岡市中央区今泉２丁目５−６ 1Ｆ-B
-> 連結: Google Maps：https://www.google.com/maps/place/%E9%BA%B5%E5%B1%8BGaga+%E5%A4%A9%E7%A5%9E%E5%BA%97/@33.5856391,130.3966811,17z/data=!4m6!3m5!1s0x3541913c39a2a60f:0x78e51c59155ca46d!8m2!3d33.5856391!4d130.3966811!16s%2Fg%2F11s658w3c9?hl=ja&entry=ttu
+> 連結: https://www.google.com/maps/place/%E9%BA%B5%E5%B1%8BGaga+%E5%A4%A9%E7%A5%9E%E5%BA%97/@33.5856391,130.3966811,17z/data=!4m6!3m5!1s0x3541913c39a2a60f:0x78e51c59155ca46d!8m2!3d33.5856391!4d130.3966811!16s%2Fg%2F11s658w3c9?hl=ja&entry=ttu
 
 ### 想做什麼
 - 吃拉麵（人均約 ¥1,000–2,000）
+
+#### 其他
+---
+# [景點] 櫛田神社（Kushida Shrine）
+> 座標: 33.5929546, 130.4104589
+> 地址: 1-41 Kamikawabatamachi, Hakata Ward, Fukuoka, 812-0026 日本
+> 連結: Google Maps：https://www.google.com/maps/place/%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE/@33.5929546,130.4104589,17z/data=!3m1!4b1!4m6!3m5!1s0x354191eaaa536a57:0xa1896c7e84458da4!8m2!3d33.5929546!4d130.4104589!16s%2Fm%2F0ds2_4l?hl=ja&entry=ttu
+
+### 想做什麼
+- 逛博多總鎮守（博多祇園山笠相關）
+
+### 備註
+- Google Maps 短連結：https://maps.app.goo.gl/qTE1cwKHYvM8YoHv7
+- 指定照片來源：https://www.google.com/maps/place/%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE/@33.5929546,130.4104589,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICZ_Jm3Ww!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAwepEMtqNfvyfeeUVM9ZJuzr0N5joJ-I9z3Idc2Uxm5s4Fm6yIr6TJk38zknBVO38bDOj09WZqEp93RUtzXkBwc_r8gAwJkt43Gr1iAWhntYH2KZVWuTSXgbEh0FyaRwrih9fQjg%3Dw203-h152-k-no!7i4032!8i3024!4m7!3m6!1s0x354191eaaa536a57:0xa1896c7e84458da4!8m2!3d33.5929546!4d130.4104589!10e5!16s%2Fm%2F0ds2_4l!18m1!1e1?entry=ttu
+- ![櫛田神社](assets/kushida-shrine-01.jpg)
 
 #### 其他
