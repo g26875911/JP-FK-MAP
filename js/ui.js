@@ -429,13 +429,18 @@ export function updateView(fitMap = true) {
                         <div class="popup-title">${loc.name}</div>
                     </div>
                     <div class="popup-body">
-                        <div id="view-mode-${loc.id}">
-                            <div id="view-todo-${loc.id}">${todoData.htmlText ? `<div class="scrollable-content"><p class="popup-text"><strong>想做什麼</strong><br>${todoData.htmlText}</p></div>` : ''}</div>
-                            <hr class="popup-divider" id="divider-${loc.id}" style="display: ${notesData.htmlText ? 'block' : 'none'};">
-                            <div id="view-notes-${loc.id}">${notesData.htmlText ? `<div class="scrollable-content"><p class="popup-text" style="color:var(--text-sub); font-size: 12px;"><strong>備註</strong><br>${notesData.htmlText}</p></div>` : ''}</div>
-                            ${formattedOtherDesktop} ${galleryHtml}
-                            ${daySelectorHtml}
-                            <a href="${navLink}" target="_blank" class="nav-btn"><i class="fa-solid fa-location-arrow"></i> 導航去這裡</a>
+                        <div id="view-mode-${loc.id}" class="popup-view-two-col">
+                            <div class="popup-col-text">
+                                <div id="view-todo-${loc.id}">${todoData.htmlText ? `<div class="scrollable-content"><p class="popup-text"><strong>想做什麼</strong><br>${todoData.htmlText}</p></div>` : ''}</div>
+                                <hr class="popup-divider" id="divider-${loc.id}" style="display: ${notesData.htmlText ? 'block' : 'none'};">
+                                <div id="view-notes-${loc.id}">${notesData.htmlText ? `<div class="scrollable-content"><p class="popup-text" style="color:var(--text-sub); font-size: 12px;"><strong>備註</strong><br>${notesData.htmlText}</p></div>` : ''}</div>
+                                ${formattedOtherDesktop}
+                                ${daySelectorHtml}
+                                <a href="${navLink}" target="_blank" class="nav-btn"><i class="fa-solid fa-location-arrow"></i> 導航去這裡</a>
+                            </div>
+                            <div class="popup-col-images" ${combinedImages.length === 0 ? 'style="display:none;"' : ''}>
+                                ${galleryHtml}
+                            </div>
                         </div>
                         <div id="edit-mode-${loc.id}" style="display:none;">
                             <div class="edit-actions"><button class="cancel-btn" onclick="toggleEditMode('${loc.id}', false)">取消</button><button class="save-btn" onclick="saveContent('${loc.id}')">儲存</button></div>
@@ -444,7 +449,7 @@ export function updateView(fitMap = true) {
                         </div>
                     </div>
                 `;
-                marker.bindPopup(popupHtml, { autoPan: true, autoPanPaddingTopLeft: [10, 20], autoPanPaddingBottomRight: [10, 10] });
+                marker.bindPopup(popupHtml, { autoPan: true, autoPanPaddingTopLeft: [10, 20], autoPanPaddingBottomRight: [10, 10], maxWidth: 580 });
             }
 
             marker.on('click', () => {

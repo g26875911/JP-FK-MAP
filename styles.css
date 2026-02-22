@@ -147,6 +147,19 @@ html, body { margin: 0; padding: 0; font-family: 'Noto Sans TC', sans-serif; dis
 .gallery-img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.5s ease; }
 .gallery-img.loaded { opacity: 1; }
 
+/* 雙欄 Popup 版面（電腦版） */
+.popup-view-two-col { display: flex; gap: 0; align-items: flex-start; }
+
+.popup-col-text { flex: 1; min-width: 0; padding-right: 16px; }
+
+.popup-col-images { width: 200px; flex-shrink: 0; border-left: 1px dashed var(--border); padding-left: 16px; }
+
+/* 右欄內的 image-gallery 改為垂直排列 */
+.popup-col-images .image-gallery { flex-direction: column; overflow-y: auto; overflow-x: hidden; max-height: 380px; scroll-snap-type: y mandatory; border-top: none; padding-top: 0; margin-top: 0; }
+
+/* 右欄內的圖片各自佔滿欄寬 */
+.popup-col-images .skeleton-wrapper { flex: 0 0 auto; width: 100%; height: 160px; }
+
 .edit-label { font-size: 12px; font-weight: bold; color: var(--primary); display: block; margin-bottom: 6px; }
 .edit-textarea { width: 100%; height: 70px; border: 1px solid var(--border); border-radius: 12px; padding: 10px; font-size: 13px; margin-bottom: 15px; background: var(--bg-main); color: var(--text-main); resize: vertical; box-sizing: border-box; font-family: inherit; outline: none; transition: 0.2s; }
 .edit-textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1); }
