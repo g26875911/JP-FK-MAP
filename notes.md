@@ -14,8 +14,6 @@
 #### 其他
 - 其他連結：
   - 來源連結：https://www.instagram.com/reel/DUK4Rk7El-V/
-
-
 ---
 # [景點] 櫻の馬場 城彩苑（桜の馬場 城彩苑 / Sakura-no-baba Josaien）
 > 座標: 32.803671, 130.703756
@@ -36,7 +34,6 @@
   - 市區可用路面電車＋步行到熊本城周邊；再步行過來很順。
 - 預估停留時間：45–90 分鐘（吃＋逛）
 - 優先度：想去
-
 ---
 # [景點] 熊本城（Kumamoto Castle / 熊本城）
 > 座標: 32.806186, 130.705834
@@ -57,7 +54,6 @@
   - 市區：步行可串連多數點；路面電車也方便。
 - 預估停留時間：90–150 分鐘（含園區散步＋拍照）
 - 優先度：必去
-
 ---
 # [景點] 阿蘇火口（阿蘇中岳火口 / Aso Nakadake Crater）
 > 座標: 32.884907, 131.084934
@@ -79,7 +75,6 @@
 - 優先度：想去
 - 其他連結：
   - 火口管制/公告（官方入口，待你確認日期我再補最正確頁）：https://www.aso-volcano.jp/
-
 ---
 # [景點] 草千里（Kusasenri-ga-hama / 草千里ヶ浜）
 > 座標: 32.881825, 131.053328
@@ -100,7 +95,6 @@
   - 自駕最順；大眾運輸需看班次（之後你定住宿點我再細化）。
 - 預估停留時間：45–90 分鐘
 - 優先度：想去
-
 ---
 # [景點] 米塚（Komezuka / 米塚）
 > 座標: 32.905536, 131.044509
@@ -121,7 +115,6 @@
   - 自駕。
 - 預估停留時間：15–30 分鐘
 - 優先度：可去
-
 ---
 # [景點] 白川水源（Shirakawa Suigen / 白川水源）
 > 座標: 32.825372, 131.095310
@@ -146,7 +139,6 @@
 - 優先度：想去
 - 其他連結：
   - 參考（Wiki 日文，含數據）：https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B7%9D_(%E7%86%8A%E6%9C%AC%E7%9C%8C)
-
 ---
 # [景點] 上色見熊野座神社（Kamishikimi Kumanoimasu Shrine）
 > 座標: 32.853794, 131.158520
@@ -176,7 +168,6 @@
 - 交通（先給一版粗略，之後你確定行程城市我再精煉）：
   - 建議自駕或包車較順（阿蘇/高森一帶大眾運輸相對不密）。
   - 若搭鐵道：可先到南阿蘇鐵道「高森站」一帶，再轉乘交通工具前往。
-
 ---
 # [景點] 堀越耕平《僕のヒーローアカデミア／我的英雄學院》原畫展（福岡會場）
 > 座標: 33.588698, 130.399963
@@ -205,7 +196,6 @@
 - 其他連結：
   - 福岡三越 活動頁（官方）：https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi/event_calendar/heroaca.html
   - 福岡三越 交通/地址（官方）：https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi/access.html
-
 ---
 # [美食] 手工花鹽布丁（またいちの塩 製塩所 工房とったん / Mataichi no Shio Tottan）
 > 座標: 33.577182, 130.089740
@@ -233,7 +223,6 @@
 - 優先度：想去
 - 其他連結：
   - 官網（工房とったん）：https://mataichi.info/tottan/
-
 ---
 # [景點] 太良嶽温泉 蟹御殿（Taradakeonsen Kanigoten）
 > 座標: 32.957887, 130.205616
@@ -263,7 +252,6 @@
 
 ### 其他
 - 電話：+81 954-68-2260
-
 ---
 # [景點] 祐德稻荷神社（祐徳稲荷神社 / Yūtoku Inari Shrine）
 > 座標: 33.073778, 130.107932
@@ -294,7 +282,6 @@
 ### 其他
 - 地址（Google Maps）：日本〒849-1321 Saga, Kashima, Furueda, 乙1855
 - 電話（Google Maps）：+81 954-62-2151
-
 ---
 # [景點] 志賀海神社（Shikaumi Shrine）
 > 座標: 33.667900, 130.313227
@@ -319,7 +306,6 @@
 - 其他連結：
   - IG（你提供）：https://www.instagram.com/reel/DT93p2pEQHA/?igsh=aGhoM2FvZnZmZXd4
   - Wiki（EN）：https://en.wikipedia.org/wiki/Shikaumi_Shrine
-
 ---
 # [景點] 太宰府天滿宮（Dazaifu Tenmangu / 太宰府天満宮）
 > 座標: 33.521370, 130.534824
@@ -348,7 +334,6 @@
 
 ### 其他
 - 地址（Wiki 記載）：福岡県太宰府市宰府4丁目7番1号
-
 ---
 # [景點] 寶滿宮 竃門神社（Hōmangū Kamado Shrine / 宝満宮竈門神社）
 > 座標: 33.528838, 130.552531
@@ -375,7 +360,6 @@
 ### 其他
 - 地址（官網）：〒818-0115 福岡県太宰府市内山883
 - 電話（官網）：092-922-4106（9:00–17:00）
-
 ---
 # [景點] 宮地嶽神社（Miyajidake Shrine / 宮地嶽神社）
 > 座標: 33.779914, 130.486233
@@ -402,7 +386,6 @@
   - 官方網站：http://www.miyajidake.or.jp/
   - Wiki（EN）：https://en.wikipedia.org/wiki/Miyajidake_Shrine
   - Wiki（日文）：https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%9C%B0%E5%B6%BD%E7%A5%9E%E7%A4%BE
-
 ---
 # [景點] 櫻井神社（桜井神社 / Sakurai Shrine）
 > 座標: 33.628159, 130.191943
@@ -431,7 +414,6 @@
   - 官方網站：https://sakuraijinja.com/
   - 糸島觀光協會介紹：https://kanko-itoshima.jp/spot/sakuraijinja/
   - 櫻井二見ヶ浦（福岡觀光）：https://www.crossroadfukuoka.jp/tw/spot/12456
-
 ---
 # [景點] 雷山千如寺 大悲王院（雷山千如寺 / Raizan Sennyoji Taihioin）
 > 座標: 33.494446, 130.228718
@@ -459,7 +441,6 @@
 ### 其他
 - 地址（官網 404 頁面/站內 footer 可見）：〒819-1145 福岡県糸島市雷山626
 - 電話（官網）：092-323-3547
-
 ---
 # [景點] 高良大社（Kōra Taisha / 高良大社）
 > 座標: 33.301648, 130.565855
@@ -489,7 +470,6 @@
   - Wiki（日文）：https://ja.wikipedia.org/wiki/%E9%AB%98%E8%89%AF%E5%A4%A7%E7%A4%BE
   - 福岡觀光（Crossroad Fukuoka）：https://www.crossroadfukuoka.jp/tw/spot/13622
   - 久留米觀光：https://welcome-kurume.com/tw/spots/detail/8b8be88c-7e83-4b47-ad84-382e5d64b622
-
 ---
 # [景點] 日輪寺（Nichirin-ji / 日輪寺）
 > 座標: 33.039782, 130.685517
@@ -511,7 +491,6 @@
 - 優先度：想去
 - 其他連結：
   - IG（你提供）：https://www.instagram.com/reel/DTuZIz_kipy/?igsh=Z2d2OHVuNjVob2E4
-
 ---
 # [景點] 高住神社（Takasumi Jinja / 高住神社）
 > 座標: 33.484136, 130.932932
@@ -538,7 +517,6 @@
 ### 其他
 - 地址（Google Maps）：27 Hikosan, Soeda, Tagawa District, Fukuoka 824-0721 日本
 - 電話（Google Maps）：+81 947-85-0073
-
 ---
 # [美食] 博多水炊き専門 橙
 > 座標: 33.589628, 130.381484
@@ -565,7 +543,6 @@
   - Place ID（Google Maps ftid）：0x3541922de9fb3c6f:0xd6b65ac17fda1202
   - Tabelog：https://tabelog.com/fukuoka/A4001/A400105/40035537/
   - 其他參考（Navitime）：https://www.navitime.co.jp/poi?spot=01125-fbm8001
-
 ---
 # [美食] めんたい料理 博多 椒房庵（Shobōan / 椒房庵）
 > 座標: 33.589968, 130.420050
@@ -594,7 +571,6 @@
 - 價位（Google Maps）：¥2,000–3,000 / 人（多人回報）
 - 地址（Google Maps）：日本〒812-0012 Fukuoka, Hakata Ward, Hakataekichuogai, 1−1 9F（AMU PLAZA博多／くうてん 9F）
 - 電話（Google Maps）：+81 92-409-6611
-
 ---
 # [美食] 水炊名店 鳥田 博多本店（とり田 / Toriden Hakata Honten）
 > 座標: 33.596036, 130.405893
@@ -624,7 +600,6 @@
 ### 其他
 - 地址（Google Maps）：日本〒812-0027 Fukuoka, Hakata Ward, Shimokawabatamachi, 10−5 1F
 - 電話（Google Maps）：+81 92-272-0920
-
 ---
 # [美食] PRESS BUTTER SAND 博多站店
 > 座標: 33.590427, 130.420820
@@ -653,7 +628,6 @@
 ### 其他
 - 地址（Google Maps）：日本〒812-0012 Fukuoka, Hakata Ward, Hakataekichuogai, 1−1 JR九州博多駅構内
 - 電話（Google Maps）：+81 120-319-235
-
 ---
 # [美食] Dacomecca（ダコメッカ）
 > 座標: 33.587440, 130.419344
@@ -682,7 +656,6 @@
 - 價位（Google Maps）：¥1,000–2,000 / 人（多人回報）
 - 地址（Google Maps）：日本〒812-0011 Fukuoka, Hakata Ward, Hakata Ekimae, 4 Chome−14−1 博多深見パークビルディング（1F）
 - 電話（Google Maps）：+81 92-477-1050
-
 ---
 # [美食] Full full（フルフル パンとワイン / Full full）
 > 座標: 33.592237, 130.397264
@@ -711,7 +684,6 @@
 - 價位（Google Maps）：¥1–1,000 / 人（多人回報）
 - 地址（Google Maps）：FULL FULL, BLD1階, 3 Chome-3-5 Tenjin, Chuo Ward, Fukuoka, 810-0001 日本
 - 電話（Google Maps）：+81 92-791-7431
-
 ---
 # [美食] 雞肉料理 地雞屋大和（ぢどり屋 大和 本館 / Jidoriya Yamato Honten）
 > 座標: 33.592867, 130.411733
@@ -742,7 +714,6 @@
 - 價位（Google Maps）：¥4,000–5,000 / 人
 - 地址（Google Maps）：2-12 Reisenmachi, Hakata Ward, Fukuoka, 812-0039 日本（1F）
 - 電話（Google Maps）：+81 50-5486-4495
-
 ---
 # [美食] 屋台炒拉麵 小金ちゃん（小金ちゃん / Kokinchan）
 > 座標: 33.591158, 130.395662
@@ -769,7 +740,6 @@
 - 價位（Google Maps）：¥2,000–3,000 / 人（多人回報）
 - 地址（Google Maps）：2 Chome-14-13 Tenjin, Chuo Ward, Fukuoka, 810-0001 日本
 - 電話（Google Maps）：+81 90-3072-4304
-
 ---
 # [美食] 蜂樂饅頭 熊本上通店（蜂楽饅頭 / Houraku Manju）
 > 座標: 32.804206, 130.711021
@@ -797,7 +767,6 @@
 ### 其他
 - 地址（Google Maps）：5-4 Kamitoricho, Chuo Ward, Kumamoto, 860-0845 日本
 - 電話（Google Maps）：+81 96-352-0380
-
 ---
 # [美食] 勝烈亭 新市街本店（Katsuretsutei Shinshigai Honten / 勝烈亭）
 > 座標: 32.798616, 130.705876
@@ -822,7 +791,6 @@
 - 價位（Google Maps）：¥2,000–3,000 / 人（多人回報）
 - 地址（Google Maps）：8-18 Shinshigai, Chuo Ward, Kumamoto, 860-0803 日本
 - 電話（Google Maps）：+81 96-322-8771
-
 ---
 # [景點] Sabataro（さばたろう）
 > 座標: 33.586439, 130.390627
@@ -852,7 +820,6 @@
 - 價位（Google Maps）：¥2,000–3,000 / 人（多人回報）
 - 地址（Google Maps）：1 Chome-5-11 Akasaka, Chuo Ward, Fukuoka, 810-0042 日本
 - 電話（Google Maps）：+81 92-406-4388
-
 ---
 # [美食] Pain Stock Tenjin（パンストック天神店）
 > 座標: 33.591652, 130.404042
@@ -878,7 +845,6 @@
   - Place ID（Google Maps ftid）：0x35419172d76cdbcf:0x30a9b694e5ca2b43
   - Tabelog：https://tabelog.com/fukuoka/A4001/A400103/40052317/
   - 官方/相關：https://stockonlineshop.com/
-
 ---
 # [美食] 博多もつ鍋前田屋 博多店
 > 座標: 33.589190, 130.416474
@@ -905,7 +871,6 @@
   - Place ID（Google Maps ftid）：0x354191b8cf465de3:0xba51a47ac9a69d30
   - Tabelog：https://tabelog.com/fukuoka/A4001/A400101/40040925/
   - 官網（店鋪資訊入口）：https://motsunabe-maedaya.com/store/honten/
-
 ---
 # [美食] 牛腸鍋 六花舍（もつ鍋 六花舎 / Motsunabe Rokkasha）
 > 座標: 33.586939, 130.419149
@@ -930,7 +895,6 @@
 
 ### 其他
 - 地址（由 Google Maps 條目顯示的所在建物）：4 Chome-13-27 Hakata Ekimae, Hakata Ward, Fukuoka, 812-0011 日本（1F）
-
 ---
 # [美食] 博多らーめん ShinShin 天神本店（博多ラーメン ShinShin 天神本店）
 > 座標: 33.592750, 130.396845
@@ -956,7 +920,6 @@
 - 其他連結：
   - Place ID（Google Maps ftid）：0x3541918ebfe75069:0x6950635bd344e25a
   - Tabelog：https://tabelog.com/fukuoka/A4001/A400103/40004980/
-
 ---
 # [住宿] 多美迎 PREMIUM 博多運河城前飯店（Dormy Inn Premium Hakata Canal City Mae）
 > 座標: 33.590619, 130.412306
@@ -982,7 +945,6 @@
 
 ### 其他
 - 地址（由 Booking 頁面抓取）：福岡縣, 福岡, Hakata, Gion 9-1, 日本
-
 ---
 # [住宿] Hotel IL PALAZZO（Il Palazzo飯店）
 > 座標: 33.589932, 130.407433
@@ -1006,7 +968,6 @@
 ### 其他
 - 地址（Google Maps）：3 Chome-13-1 Haruyoshi, Chuo Ward, Fukuoka, 810-0003 日本
 - Place ID（Google Maps ftid）：0x3541919420618f05:0x47941a11f2a411c4
-
 ---
 # [美食] 麵屋兼虎 天神本店（Menya Kanetora）
 > 座標: 33.587200, 130.401203
@@ -1031,7 +992,6 @@
 ### 其他
 - 地址（Google Maps）：日本〒810-0004 Fukuoka, Chuo Ward, Watanabedori, 4 Chome−9−18 福酒ビル 1F
 - 電話（Google Maps）：+81 92-726-6700
-
 ---
 # [美食] かわ屋 祇園店（Kawaya Gion）
 > 座標: 33.592653, 130.414766
@@ -1058,7 +1018,6 @@
 ### 其他
 - 地址（Google Maps）：日本〒812-0038 Fukuoka, Hakata Ward, Gionmachi, 2−8 Liens 祇園ビルディング
 - 電話（Google Maps）：+81 92-281-3100
-
 ---
 # [美食] 中津からあげ専門店 吉吾 湯布院店（Nakathu fried chicken / Kichigo）
 > 座標: 33.266951, 131.363412
@@ -1088,7 +1047,6 @@
 - 價位（Google Maps）：¥1–1,000 / 人
 - 地址（Google Maps）：1100-8 Yufuincho Kawakami, Yufu, Oita 879-5102 日本
 - 電話（Google Maps）：+81 977-84-5678
-
 ---
 # [美食] 由布まぶし 心 金鱗湖本店（由布釜飯「心」/ Yufu Mabushi Shin）
 > 座標: 33.267185, 131.367853
@@ -1118,7 +1076,6 @@
 - 價位（Google Maps）：¥2,000–3,000 / 人
 - 地址（Google Maps）：1492-1 Yufuincho Kawakami, Yufu, Oita 879-5102 日本
 - 電話（Google Maps）：+81 977-85-7880
-
 ---
 # [美食] 博多炉端 魚男（フィッシュマン）
 > 座標: 33.5843858, 130.3995851
@@ -1142,7 +1099,6 @@
 - 其他連結：
   - Maps short link（你提供）：https://maps.app.goo.gl/Ux6rU3Jvd2oy7sdy6?g_st=ic
   - 食べログ：https://tabelog.com/fukuoka/A4001/A400104/40006960/
-
 ---
 # [景點] 高千穂神社
 > 座標: 32.7064465, 131.3020093
@@ -1165,7 +1121,6 @@
 - 其他連結：
   - Maps short link（你提供）：https://maps.app.goo.gl/mvuitMAqhZ4JXw8bA
   - X（Google Maps 網站欄位）：https://mobile.twitter.com/takachihojinja
-
 ---
 # [景點] 高千穂峡（Takachiho Gorge）
 > 座標: 32.703747, 131.300358
@@ -1185,7 +1140,6 @@
 - 行政區：日本・宮崎県 西臼杵郡 高千穂町（三田井）
 - 其他連結：
   - Maps short link（你提供）：https://maps.app.goo.gl/bQqZZk7xPoV4JHKy5
-
 ---
 # [景點] 黒川温泉（黑川溫泉 / Kurokawa Onsen）
 > 座標: 33.0780191, 131.1416136
@@ -1204,7 +1158,6 @@
 - 行政區：日本・熊本県 阿蘇郡 南小国町（満願寺）
 - 其他連結：
   - Maps short link（你提供）：https://maps.app.goo.gl/ygiFr6T1x6aposX36
-
 ---
 # [景點] 世界之塔（グローバルタワー / Global Tower）
 > 座標: 33.2831944, 131.4861111
@@ -1223,7 +1176,6 @@
 - 營業時間（Google Maps）：09:00 開始（以現場/公告為準）
 - 電話（Google Maps）：+81 977-26-7111
 - Maps short link（你提供）：https://maps.app.goo.gl/EaWaUd4uAbff5PKHA
-
 ---
 # [美食] 味蔵民芸茶屋（Aji Kura Mingei Jaya）
 > 座標: 33.2987428, 131.4972382
@@ -1244,7 +1196,6 @@
 - 其他連結：
   - 官網：https://ajikura.info/
   - Maps short link（你提供）：https://maps.app.goo.gl/wgnw9R7tFNjVAXXeA
-
 ---
 # [景點] 青島神社
 > 座標: 31.804566, 131.4749474
@@ -1266,7 +1217,6 @@
 - 其他連結：
   - 官網：https://aoshima-jinja.jp/
   - Maps short link（你提供）：https://maps.app.goo.gl/4rBB9HvG9Nurxect7
-
 ---
 # [景點] 鵜戸神宮（うどじんぐう / Udo Jingu）
 > 座標: 31.6504477, 131.4666915
@@ -1287,7 +1237,6 @@
 - 其他連結：
   - 官網：https://www.udojingu.or.jp/
   - Maps short link（你提供）：https://maps.app.goo.gl/SqRqJhyXX7xqvhiT9
-
 ---
 # [住宿] AMANEK BEPPU YULA-RE（アマネク別府ゆらり）
 > 座標: 33.2803116, 131.5026268
@@ -1308,7 +1257,6 @@
 - 其他連結：
   - 官網：https://amanekhotels.jp/beppu/
   - Maps short link（你提供）：https://maps.app.goo.gl/Nid2tqqkrhEWYS3x8
-
 ---
 # [美食] LA ARADA（ラ・アラダ / 3 CEDARS COFFEE）
 > 座標: 33.2788098, 131.5045597
@@ -1329,7 +1277,6 @@
 - 其他連結：
   - IG（Google Maps 網站）：https://www.instagram.com/3cedarscoffee/
   - Maps short link（你提供）：https://maps.app.goo.gl/iQKkEhAugokBFYbi7
-
 ---
 # [美食] 友永パン屋（Tomonaga Bakery）
 > 座標: 33.2745879, 131.504148
@@ -1350,7 +1297,6 @@
 - 其他連結：
   - IG（Google Maps 網站）：https://www.instagram.com/tomonagapan/
   - Maps short link（你提供）：https://maps.app.goo.gl/3kpW6iFGGNdtDgVWA
-
 ---
 # [美食] CARNE 湯布院 串焼き
 > 座標: 33.264856, 131.3563542
@@ -1371,7 +1317,6 @@
 - 其他連結：
   - Facebook（Google Maps 網站）：https://www.facebook.com/CARNE-583610288343781/
   - Maps short link（你提供）：https://maps.app.goo.gl/LbEpF1AorSb18gjE6
-
 ---
 # [景點] 金鱗湖
 > 座標: 33.2666644, 131.3690272
@@ -1393,7 +1338,6 @@
 - 其他連結：
   - 官網（由布市觀光）：https://www.city.yufu.oita.jp/kankou/kankou-2/kankou_cate1_1/kinrinko
   - Maps short link（你提供）：https://maps.app.goo.gl/bFhcBcu6GuBSQGvL8
-
 ---
 # [住宿] 和モダンな温泉旅館 湯布院らんぷの宿
 > 座標: 33.2657643, 131.3536508
@@ -1411,7 +1355,6 @@
 - 其他連結：
   - 官網：https://yufuin.site/
   - Maps short link（你提供）：https://maps.app.goo.gl/Tny1NktgRc3BQzza7
-
 ---
 # [美食] 海鮮料理 和彩処おおがみ（おおがみ）
 > 座標: 33.2786238, 131.5054798
@@ -1431,7 +1374,6 @@
 - 營業時間（Google Maps）：18:00 開始（以現場/公告為準）
 - 電話（Google Maps）：+81 977-21-3553
 - Maps short link（你提供）：https://maps.app.goo.gl/yUdJXEhn37fgHBM88
-
 ---
 # [美食] 地獄蒸しプリン 岡本屋（岡本屋売店）
 > 座標: 33.3180542, 131.4526114
@@ -1451,7 +1393,6 @@
 - 電話（Google Maps）：+81 977-66-6115
 - 其他連結：
   - 官網：http://www.jigoku-prin.com/
-
 ---
 # [景點] 海神神社
 > 座標: 33.0509896, 129.8378584
@@ -1469,7 +1410,6 @@
 - 行政區：日本・長崎県 東彼杵郡 川棚町（三越郷）
 - Maps short link（你提供）：https://maps.app.goo.gl/asaVEUbMka832SReA?g_st=ic
 - Plus Code（Google Maps）：3R2Q+94 川棚町, 日本、長崎県
-
 ---
 # [景點] 福岡タワー（福岡塔 / Fukuoka Tower）
 > 座標: 33.5932846, 130.35151
@@ -1491,7 +1431,6 @@
 - 電話（Google Maps）：+81 92-823-0234
 - 其他連結：
   - 官網：https://www.fukuokatower.co.jp/
-
 ---
 # [景點] 福岡城跡（福岡城 / Fukuoka Castle Ruins）
 > 座標: 33.5852452, 130.3832159
@@ -1512,7 +1451,6 @@
 - 電話（Google Maps）：+81 92-732-4801
 - 其他連結：
   - 官網：https://fukuokajyo.com/
-
 ---
 # [景點] 大濠公園（Ōhori Park / 大濠公園）
 > 座標: 33.5898244, 130.3751317
@@ -1531,7 +1469,6 @@
 - 行政區：日本・福岡県 福岡市中央区
 - 其他連結：
   - 你之後如果要補「日本庭園/美術館」我可以拆成獨立 POI
-
 ---
 # [景點] 皿倉山展望台（皿倉山 / Sarakurayama Observation Deck）
 > 座標: 33.8467326, 130.7968029
@@ -1551,7 +1488,6 @@
 - 電話（Google Maps）：+81 93-671-4761
 - 其他連結：
   - 官網：http://www.sarakurayama-cablecar.co.jp/
-
 ---
 # [景點] 川端通商店街（Kawabata-dori Shopping Arcade / 川端通商店街）
 > 座標: 33.593537, 130.4083423
@@ -1571,7 +1507,6 @@
 - 電話（Google Maps）：+81 92-281-6223
 - 其他連結：
   - 官網：https://kawabatadori.com/
-
 ---
 # [景點] 生ノ松原緑地（Ikinomatsubara Green Space / 生の松原）
 > 座標: 33.5735171, 130.2990934
@@ -1588,7 +1523,6 @@
 #### 其他
 - 行政區：日本・福岡県 福岡市西区（生の松原）
 - 所在設施（Google Maps）：下山門西公園
-
 ---
 # [景點] 太宰府表参道（太宰府天満宮 参道 / Dazaifu Omotesando）
 > 座標: 33.5195648, 130.5319397
@@ -1606,7 +1540,6 @@
 #### 其他
 - 行政區：日本・福岡県 太宰府市（宰府）
 - 之後若你想把「Starbucks 太宰府天満宮表参道店」等店家拆出來，我可以再補成獨立餐廳/咖啡 POI。
-
 ---
 # [美食] 熊本ラーメン黒亭 下通店（Kokutei Shimotori / 黒亭）
 > 座標: 32.8008669, 130.7081925
@@ -1626,7 +1559,6 @@
 - 電話（Google Maps）：+81 96-321-6202
 - 其他連結：
   - 官網：https://www.kokutei.co.jp/
-
 ---
 # [景點] くまモンスクエア（熊本熊廣場 / Kumamon Square）
 > 座標: 32.8018121, 130.712455
@@ -1646,7 +1578,6 @@
 - 電話（Google Maps）：+81 96-327-9066
 - 其他連結：
   - 官網：http://www.kumamon-sq.jp/
-
 ---
 # [景點] 肥後よかモン市場（肥後Yokamon市場 / Higo Yokamon Ichiba）
 > 座標: 32.7897582, 130.6882638
@@ -1666,7 +1597,6 @@
 - 電話（Google Maps）：+81 96-206-2800
 - 其他連結：
   - 參考：https://www.jrkumamotocity.com/amu
-
 ---
 # [美食] 菅乃屋（桜の馬場 城彩苑 / Suganoya）
 > 座標: 32.803558, 130.7037866
@@ -1686,7 +1616,6 @@
 - 電話（Google Maps）：+81 96-312-0377
 - 其他連結：
   - 店鋪資訊：https://service.suganoya.com/shop/
-
 ---
 # [景點] 鶴屋百貨店（Tsuruya Department Store / 鶴屋百貨店）
 > 座標: 32.8023422, 130.7111236
@@ -1706,7 +1635,6 @@
 - 電話（Google Maps）：+81 96-356-2111
 - 其他連結：
   - 官網：http://www.tsuruya-dept.co.jp/
-
 ---
 # [景點] 下通アーケード（下通商店街 / Shimotori Arcade）
 > 座標: 32.8018853, 130.7089638
@@ -1725,7 +1653,6 @@
 - 電話（Google Maps）：+81 96-352-3377
 - 其他連結：
   - 官網：http://shimotoori.com/
-
 ---
 # [美食] お茶の泉園 熊本城店（抹茶冰淇淋/焙茶拿鐵）
 > 座標: 32.8035977, 130.703894
@@ -1745,7 +1672,6 @@
 - 電話（Google Maps）：+81 96-288-0015
 - 其他連結：
   - 官網：http://ochanoizumien.jp/
-
 ---
 # [美食] お菓子の香梅 熊本城香梅庵（陣太鼓冰淇淋）
 > 座標: 32.8039288, 130.7037358
@@ -1765,7 +1691,6 @@
 - 電話（Google Maps）：+81 96-288-0039
 - 其他連結：
   - 官網：https://kobai.jp/
-
 ---
 # [景點] 桜井二見ヶ浦 夫婦岩（Sakurai Futamigaura / 夫婦岩）
 > 座標: 33.640495, 130.1964802
@@ -1815,4 +1740,3 @@
 - 吃拉麵（人均約 ¥1,000–2,000）
 
 #### 其他
-
