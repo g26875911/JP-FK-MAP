@@ -36,6 +36,11 @@
     <div id="settingsModal" class="modal-overlay">
         <div class="modal-content">
             <h3 class="modal-title"><i class="fa-solid fa-calendar-days"></i> 旅遊行程設定</h3>
+            <label class="modal-label">GitHub Token（只存在本機，不會上傳）</label>
+            <input type="password" id="inputGhToken" class="modal-input" placeholder="ghp_xxxxxxxxxxxx">
+            <p style="font-size:11px; color:var(--text-sub); margin:-8px 0 8px;">
+              需要 Contents: Read and Write 權限。<a href="https://github.com/settings/tokens" target="_blank">產生 Token</a>
+            </p>
             <label class="modal-label">出發日期 (可選)</label>
             <input type="date" id="inputStartDate" class="modal-input">
             <label class="modal-label">總天數</label>

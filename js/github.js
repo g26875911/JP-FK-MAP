@@ -1,15 +1,24 @@
 // js/github.js - GitHub API 底層 + notes.md 文字操作函式
-const GH_TOKEN  = atob('Z2l0aHViX3BhdF8xMUJPNEQ2T0kwYUJnd3VaaUtHQXYzX0JXNkljOGQzSGtSYnFERk9BdHdYempJYWgxSDdPaHVtVjZHZHAzeUFiRWdTSEdQTkpNUFJIaElST0M1');
+import { state } from './state.js';
 const GH_OWNER  = 'g26875911';
 const GH_REPO   = 'JP-FK-MAP';
 const GH_BRANCH = 'main';
 const GH_FILE   = 'notes.md';
 const GH_API    = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`;
 
+// ── Token 檢查 ──────────────────────────────────────────
+export function requireToken() {
+    if (!state.githubToken) {
+        alert('請先在設定 ⚙ 中填入 GitHub Token 才能編輯');
+        return false;
+    }
+    return true;
+}
+
 // ── GitHub Contents API ─────────────────────────────────
 export async function githubGetFile() {
     const res = await fetch(`${GH_API}?ref=${GH_BRANCH}&t=${Date.now()}`, {
-        headers: { Authorization: `Bearer ${GH_TOKEN}` }
+        headers: { Authorization: `Bearer ${state.githubToken}` }
     });
     if (!res.ok) throw new Error(String(res.status));
     const json = await res.json();
@@ -24,7 +33,7 @@ export async function githubPutFile(newText, sha, message) {
     const res = await fetch(GH_API, {
         method: 'PUT',
         headers: {
-            Authorization: `Bearer ${GH_TOKEN}`,
+            Authorization: `Bearer ${state.githubToken}`,
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({ message, content, sha, branch: GH_BRANCH })
