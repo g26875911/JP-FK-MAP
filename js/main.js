@@ -76,6 +76,22 @@ window.toggleCardNotes = toggleCardNotes;
 // ★ 新增：供 HTML 呼叫的重新載入函式
 window.refreshData = refreshData;
 
+// 桌面 Popup 用：收集同一個住宿 popup 內所有 checked 值，呼叫 updateDay
+window.updateDayFromCheckboxes = function(name, locId) {
+    const container = document.getElementById(`day-checkboxes-${locId}`);
+    if (!container) return;
+    const checked = Array.from(container.querySelectorAll('input:checked')).map(cb => cb.value);
+    updateDay(name, checked.length > 0 ? checked.join(', ') : '0');
+};
+
+// 手機詳細頁用：收集 #detail-day-checkboxes 內所有 checked 值，呼叫 updateDayFromDetail
+window.updateDayCheckboxFromDetail = function() {
+    const container = document.getElementById('detail-day-checkboxes');
+    if (!container) return;
+    const checked = Array.from(container.querySelectorAll('input:checked')).map(cb => cb.value);
+    updateDayFromDetail(checked.length > 0 ? checked.join(', ') : '0');
+};
+
 // =========================================
 // 4. 設定 UI 元件
 // =========================================

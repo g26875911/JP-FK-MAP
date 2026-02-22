@@ -142,15 +142,36 @@ export function openDetailView(loc) {
     
     const dayBadge = document.getElementById('detail-day-badge');
     if (dayBadge) {
-        if (loc.day) { dayBadge.innerText = `D${loc.day}`; dayBadge.style.display = 'inline-flex'; }
-        else { dayBadge.style.display = 'none'; }
+        if (loc.day) {
+            const days = String(loc.day).split(',').map(d => d.trim());
+            dayBadge.innerText = days.map(d => `D${d}`).join(' ');
+            dayBadge.style.display = 'inline-flex';
+        } else { dayBadge.style.display = 'none'; }
     }
 
     const daySelect = document.getElementById('detail-day-select');
-    if (daySelect) {
-        let optionsHtml = `<option value="0" ${!loc.day ? 'selected' : ''}>未安排</option>`;
-        for (let i = 1; i <= state.totalDays; i++) { optionsHtml += `<option value="${i}" ${loc.day == i ? 'selected' : ''}>${getDayString(i)}</option>`; }
-        daySelect.innerHTML = optionsHtml;
+    const dayCheckboxes = document.getElementById('detail-day-checkboxes');
+
+    if (loc.category === 'hotel') {
+        if (daySelect) daySelect.style.display = 'none';
+        if (dayCheckboxes) {
+            dayCheckboxes.style.display = 'flex';
+            const selectedDays = loc.day ? String(loc.day).split(',').map(d => d.trim()) : [];
+            dayCheckboxes.innerHTML = Array.from({ length: state.totalDays }, (_, i) => {
+                const d = String(i + 1);
+                return `<label class="day-checkbox-label"><input type="checkbox" value="${d}" ${selectedDays.includes(d) ? 'checked' : ''} onchange="updateDayCheckboxFromDetail()"> D${d}</label>`;
+            }).join('');
+        }
+    } else {
+        if (daySelect) {
+            daySelect.style.display = '';
+            let optionsHtml = `<option value="0" ${!loc.day ? 'selected' : ''}>未安排</option>`;
+            for (let i = 1; i <= state.totalDays; i++) {
+                optionsHtml += `<option value="${i}" ${loc.day == i ? 'selected' : ''}>${getDayString(i)}</option>`;
+            }
+            daySelect.innerHTML = optionsHtml;
+        }
+        if (dayCheckboxes) dayCheckboxes.style.display = 'none';
     }
 
     const navBtn = document.getElementById('detail-nav-btn');
@@ -335,7 +356,12 @@ export function updateView(fitMap = true) {
 
     let filteredData = state.allLocations.filter(loc => {
         let catMatch = true;
-        if (state.currentFilter.startsWith('day')) { catMatch = loc.day == state.currentFilter.replace('day', ''); } 
+        if (state.currentFilter.startsWith('day')) {
+            const filterDay = state.currentFilter.replace('day', '');
+            catMatch = loc.day
+                ? String(loc.day).split(',').map(d => d.trim()).includes(filterDay)
+                : false;
+        }
         else { catMatch = state.currentFilter === 'all' || loc.category === state.currentFilter; }
         return catMatch && loc.searchText.includes(searchVal);
     });
@@ -360,7 +386,7 @@ export function updateView(fitMap = true) {
                 className: 'custom-icon',
                 html: `<div class="marker-inner" data-id="${loc.id}" style="background-color:${color}; width:28px; height:28px; border-radius:50%; border:3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);">
                         <i class="fa-solid ${iconClass}" style="color:white; font-size:13px;"></i>
-                       ${loc.day ? `<div style="position:absolute;top:-6px;right:-6px;background:var(--primary);color:white;font-size:10px;font-weight:bold;width:16px;height:16px;border-radius:50%;text-align:center;line-height:16px;border:2px solid white;">${loc.day}</div>` : ''}
+                       ${loc.day ? `<div style="position:absolute;top:-6px;right:-6px;background:var(--primary);color:white;font-size:10px;font-weight:bold;width:16px;height:16px;border-radius:50%;text-align:center;line-height:16px;border:2px solid white;">${String(loc.day).split(',')[0].trim()}</div>` : ''}
                        </div>`,
                 iconSize: [34, 34], iconAnchor: [17, 17], popupAnchor: [0, -17]
             });
@@ -369,8 +395,19 @@ export function updateView(fitMap = true) {
             marker.bindTooltip(loc.name, { permanent: true, direction: 'bottom', className: 'map-tooltip', offset: [0, 8] });
 
             if (window.innerWidth >= 768) {
-                let optionsHtml = `<option value="0" ${!loc.day ? 'selected' : ''}>📍 未安排</option>`;
-                for (let i = 1; i <= state.totalDays; i++) { optionsHtml += `<option value="${i}" ${loc.day == i ? 'selected' : ''}>${getDayString(i)}</option>`; }
+                let daySelectorHtml;
+                if (loc.category === 'hotel') {
+                    const selectedDays = loc.day ? String(loc.day).split(',').map(d => d.trim()) : [];
+                    const checkboxes = Array.from({ length: state.totalDays }, (_, i) => {
+                        const d = String(i + 1);
+                        return `<label class="day-checkbox-label"><input type="checkbox" value="${d}" ${selectedDays.includes(d) ? 'checked' : ''} onchange="updateDayFromCheckboxes('${loc.name}', '${loc.id}')"> D${d}</label>`;
+                    }).join('');
+                    daySelectorHtml = `<div class="day-selector"><div class="day-checkboxes" id="day-checkboxes-${loc.id}">${checkboxes}</div></div>`;
+                } else {
+                    let optionsHtml = `<option value="0" ${!loc.day ? 'selected' : ''}>📍 未安排</option>`;
+                    for (let i = 1; i <= state.totalDays; i++) { optionsHtml += `<option value="${i}" ${loc.day == i ? 'selected' : ''}>${getDayString(i)}</option>`; }
+                    daySelectorHtml = `<div class="day-selector"><select class="day-select" onchange="updateDay('${loc.name}', this.value)">${optionsHtml}</select></div>`;
+                }
                 let navLink = loc.link ? loc.link : `https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`;
                 const todoData = processMarkdownForDisplay(loc.todo); const notesData = processMarkdownForDisplay(loc.notes); const otherData = processMarkdownForDisplay(loc.other);
                 const combinedImages = [...todoData.images, ...notesData.images, ...otherData.images];
@@ -396,7 +433,7 @@ export function updateView(fitMap = true) {
                             <hr class="popup-divider" id="divider-${loc.id}" style="display: ${notesData.htmlText ? 'block' : 'none'};">
                             <div id="view-notes-${loc.id}">${notesData.htmlText ? `<div class="scrollable-content"><p class="popup-text" style="color:var(--text-sub); font-size: 12px;"><strong>備註</strong><br>${notesData.htmlText}</p></div>` : ''}</div>
                             ${formattedOtherDesktop} ${galleryHtml}
-                            <div class="day-selector"><select class="day-select" onchange="updateDay('${loc.name}', this.value)">${optionsHtml}</select></div>
+                            ${daySelectorHtml}
                             <a href="${navLink}" target="_blank" class="nav-btn"><i class="fa-solid fa-location-arrow"></i> 導航去這裡</a>
                         </div>
                         <div id="edit-mode-${loc.id}" style="display:none;">
@@ -464,7 +501,7 @@ export function updateView(fitMap = true) {
 
         card.innerHTML = `
             ${dragHandleHtml} ${expandBtnHtml}
-            <div class="card-header"><h3 class="card-title">${loc.day ? `<span class="day-badge">D${loc.day}</span>` : ''}${loc.name}</h3><span class="badge cat-${loc.category}">${getCatName(loc.category)}</span></div>
+            <div class="card-header"><h3 class="card-title">${loc.day ? String(loc.day).split(',').map(d => `<span class="day-badge">D${d.trim()}</span>`).join('') : ''}${loc.name}</h3><span class="badge cat-${loc.category}">${getCatName(loc.category)}</span></div>
             <div class="card-todo" id="card-todo-${loc.id}">${cleanCardTodo}</div>
             <div class="card-notes" id="card-notes-content-${loc.id}">${notesDataForCard.htmlText}</div>
         `;
