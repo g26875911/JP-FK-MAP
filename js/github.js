@@ -1,5 +1,5 @@
 // js/github.js - GitHub API 底層 + notes.md 文字操作函式
-const GH_TOKEN  = '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';
+const GH_TOKEN  = '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';
 const GH_OWNER  = 'g26875911';
 const GH_REPO   = 'JP-FK-MAP';
 const GH_BRANCH = 'main';
