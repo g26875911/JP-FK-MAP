@@ -2,8 +2,7 @@
 import { state } from './state.js';
 import { updateLabelBtnVisual, toggleTheme, toggleMapLabels, toggleFab, toggleSearch, exportItinerary } from './theme.js';
 import { initMap } from './map.js';
-// ★ 修改：從 data.js 引入 refreshData
-import { loadData, updateDay, saveContent, refreshData } from './data.js';
+import { loadData, updateDay, saveContent, updateOrder, refreshData } from './data.js';
 import { openSettings, closeSettings, saveSettings } from './settings.js';
 import {
     updateView, filterData,
@@ -63,6 +62,7 @@ window.updateDayFromDetail = updateDayFromDetail;
 window.saveDetailContent = saveDetailContent;
 window.updateDay = updateDay;
 window.saveContent = saveContent;
+window.updateOrder = updateOrder;
 window.toggleEditMode = toggleEditMode;
 window.toggleCardNotes = toggleCardNotes;
 

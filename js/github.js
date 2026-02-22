@@ -1,0 +1,130 @@
+// js/github.js - GitHub API 底層 + notes.md 文字操作函式（無循環依賴）
+import { state } from './state.js';
+
+const GH_OWNER  = 'g26875911';
+const GH_REPO   = 'JP-FK-MAP';
+const GH_BRANCH = 'main';
+const GH_FILE   = 'notes.md';
+const GH_API    = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_FILE}`;
+
+// ── Token 檢查 ──────────────────────────────────────────
+export function requireToken() {
+    if (!state.githubToken) {
+        alert('請先在設定 ⚙ 中填入 GitHub Token 才能編輯');
+        return false;
+    }
+    return true;
+}
+
+// ── GitHub Contents API ─────────────────────────────────
+export async function githubGetFile() {
+    const res = await fetch(`${GH_API}?ref=${GH_BRANCH}&t=${Date.now()}`, {
+        headers: { Authorization: `Bearer ${state.githubToken}` }
+    });
+    if (!res.ok) throw new Error(String(res.status));
+    const json = await res.json();
+    return {
+        text: decodeURIComponent(escape(atob(json.content.replace(/\n/g, '')))),
+        sha: json.sha
+    };
+}
+
+export async function githubPutFile(newText, sha, message) {
+    const content = btoa(unescape(encodeURIComponent(newText)));
+    const res = await fetch(GH_API, {
+        method: 'PUT',
+        headers: {
+            Authorization: `Bearer ${state.githubToken}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message, content, sha, branch: GH_BRANCH })
+    });
+    if (!res.ok) throw new Error(String(res.status));
+}
+
+export function handleGithubError(e) {
+    if (e.message === '401' || e.message === '403') alert('GitHub Token 無效或權限不足，請更新設定');
+    else if (e.message === '409') alert('儲存衝突（SHA 過期），請重新整理後再試');
+    else alert('儲存失敗，請確認網路連線');
+}
+
+// ── notes.md 文字操作 ────────────────────────────────────
+
+// 更新/新增/刪除景點的 > Day: 行
+export function notesMd_setDay(text, name, newDay) {
+    const blocks = text.split(/(?=^# \[)/gm);
+    const idx = blocks.findIndex(b => {
+        const m = b.match(/^# \[.*?\]\s+(.*?)(?:\n|$)/);
+        return m && m[1].trim() === name.trim();
+    });
+    if (idx === -1) return text;
+
+    let block = blocks[idx];
+    const dayLineRegex = /^> (Day|行程)[：:]\s*.*\n?/m;
+    if (newDay === '0' || !newDay) {
+        // 刪除 Day 行（含換行）
+        block = block.replace(dayLineRegex, '');
+    } else if (/^> (Day|行程)[：:]\s*.*$/m.test(block)) {
+        // 修改既有 Day 行
+        block = block.replace(/^> (Day|行程)[：:]\s*.*$/m, `> Day: ${newDay}`);
+    } else {
+        // 新增：插在最後一個 > 行的後面
+        block = block.replace(/((?:^> [^\n]*\n)+)/m, `$1> Day: ${newDay}\n`);
+    }
+    blocks[idx] = block;
+    return blocks.join('');
+}
+
+// 更新景點的 ### 想做什麼 / ### 備註 小節
+export function notesMd_setContent(text, name, newTodo, newNotes) {
+    const blocks = text.split(/(?=^# \[)/gm);
+    const idx = blocks.findIndex(b => {
+        const m = b.match(/^# \[.*?\]\s+(.*?)(?:\n|$)/);
+        return m && m[1].trim() === name.trim();
+    });
+    if (idx === -1) return text;
+
+    let block = blocks[idx];
+    const sectionSplit = /(?=^### )/m;
+    const metaEnd = block.search(sectionSplit);
+    const metaPart = metaEnd === -1 ? block : block.substring(0, metaEnd);
+    const sectionsPart = metaEnd === -1 ? '' : block.substring(metaEnd);
+    const sections = sectionsPart ? sectionsPart.split(sectionSplit) : [''];
+
+    let newSections = [];
+    let hasTodo = false, hasNotes = false;
+    for (const sec of sections) {
+        if (sec.startsWith('### 想做什麼')) {
+            newSections.push(`### 想做什麼\n${newTodo}\n`); hasTodo = true;
+        } else if (sec.startsWith('### 備註')) {
+            newSections.push(`### 備註\n${newNotes}\n`); hasNotes = true;
+        } else {
+            newSections.push(sec);
+        }
+    }
+    if (!hasTodo) newSections.unshift(`### 想做什麼\n${newTodo}\n`);
+    if (!hasNotes) newSections.push(`### 備註\n${newNotes}\n`);
+
+    blocks[idx] = metaPart + newSections.join('');
+    return blocks.join('');
+}
+
+// 更新 [設定] block 的 dayX_Order 行
+export function notesMd_setOrder(text, day, order) {
+    const dayNum = day.replace('day', '');
+    const orderStr = order.join(', ');
+    const regex = new RegExp(`^> day${dayNum}_Order:.*$`, 'mi');
+    if (regex.test(text)) {
+        return text.replace(regex, `> day${dayNum}_Order: ${orderStr}`);
+    }
+    // 不存在則插入到 [設定] block 末尾的 > 行後
+    return text.replace(/(# \[設定\][^\n]*\n(?:> [^\n]*\n)+)/m,
+        `$1> day${dayNum}_Order: ${orderStr}\n`);
+}
+
+// 更新 [設定] block 的開始日期與總天數
+export function notesMd_setSettings(text, newDate, newDays) {
+    if (newDate) text = text.replace(/^(> 開始日期[：:]\s*).*$/m, `$1${newDate}`);
+    if (newDays) text = text.replace(/^(> 總天數[：:]\s*).*$/m, `$1${newDays}`);
+    return text;
+}

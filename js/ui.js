@@ -3,6 +3,7 @@ import { state, iconMap } from './state.js';
 import { getDayString, getCatName, processMarkdownForDisplay, updateTripInfoBar } from './utils.js';
 import { showWeatherForDay } from './weather.js';
 import { highlightMarker } from './map.js';
+import { requireToken, githubGetFile, githubPutFile, handleGithubError, notesMd_setContent, notesMd_setDay, notesMd_setOrder } from './github.js';
 
 export function getSnapHeights() {
     const h = window.innerHeight;
@@ -90,15 +91,18 @@ export function setupSortable() {
     if (!listContainer) return;
     new Sortable(listContainer, {
         animation: 150, handle: '.drag-handle', ghostClass: 'sortable-ghost', dragClass: 'sortable-drag', forceFallback: true,
-        onEnd: function () {
+        onEnd: async function () {
             if (state.currentFilter.startsWith('day')) {
                 const newOrder = Array.from(listContainer.children).map(el => el.getAttribute('data-name'));
                 state.dayOrders[state.currentFilter] = newOrder;
-                fetch('/api/update-order', {
-                    method: 'POST', headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ day: state.currentFilter, order: newOrder })
-                });
                 updateView(false);
+                if (requireToken()) {
+                    try {
+                        const { text, sha } = await githubGetFile();
+                        const newText = notesMd_setOrder(text, state.currentFilter, newOrder);
+                        await githubPutFile(newText, sha, `update: order for ${state.currentFilter}`);
+                    } catch(e) { handleGithubError(e); }
+                }
             }
         }
     });
@@ -228,29 +232,29 @@ export function toggleDetailEditMode(show) {
 }
 
 export async function saveDetailContent() {
+    if (!requireToken()) return;
     const loc = state.allLocations.find(l => l.id === state.currentDetailLocId); if (!loc) return;
     const newTodo = document.getElementById('detail-edit-todo').value;
     const newNotes = document.getElementById('detail-edit-notes').value;
     try {
-        const res = await fetch('/api/update-content', {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: loc.name, todo: newTodo, notes: newNotes })
-        });
-        if (res.ok) { loc.todo = newTodo; loc.notes = newNotes; updateView(false); openDetailView(loc); }
-        else if (res.status === 403) { location.reload(); }
-    } catch(e) {}
+        const { text, sha } = await githubGetFile();
+        const newText = notesMd_setContent(text, loc.name, newTodo, newNotes);
+        await githubPutFile(newText, sha, `update: content for ${loc.name}`);
+        loc.todo = newTodo; loc.notes = newNotes;
+        updateView(false); openDetailView(loc);
+    } catch(e) { handleGithubError(e); }
 }
 
 export async function updateDayFromDetail(newDay) {
+    if (!requireToken()) return;
     const loc = state.allLocations.find(l => l.id === state.currentDetailLocId); if (!loc) return;
     try {
-        const res = await fetch('/api/update-day', {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: loc.name, day: newDay })
-        });
-        if (res.ok) { loc.day = newDay === '0' ? null : newDay; updateView(false); openDetailView(loc); }
-        else if (res.status === 403) { location.reload(); }
-    } catch(e) {}
+        const { text, sha } = await githubGetFile();
+        const newText = notesMd_setDay(text, loc.name, newDay);
+        await githubPutFile(newText, sha, `update: day assignment for ${loc.name}`);
+        loc.day = (newDay === '0' || !newDay) ? null : newDay;
+        updateView(false); openDetailView(loc);
+    } catch(e) { handleGithubError(e); }
 }
 
 export function openReadingModal(loc) {

@@ -21,9 +21,11 @@ export function processMarkdownForDisplay(text) {
     if (!text) return { htmlText: '', images: [] };
     let images = [];
     const imgRegex = /!\[(.*?)\]\((.*?)\)/g;
+    const GH_RAW = 'https://raw.githubusercontent.com/g26875911/JP-FK-MAP/main/';
     let match;
     while ((match = imgRegex.exec(text)) !== null) {
-        images.push({ alt: match[1], url: match[2] });
+        const url = match[2].startsWith('http') ? match[2] : GH_RAW + match[2];
+        images.push({ alt: match[1], url });
     }
     let cleanText = text.replace(imgRegex, '');
     cleanText = cleanText.replace(/^[ \t]*[-*+][ \t]*$/gm, '');

@@ -2,6 +2,7 @@
 import { state, categoryMap } from './state.js';
 import { updateTripInfoBar } from './utils.js';
 import { updateView, initDayDropdown } from './ui.js';
+import { requireToken, githubGetFile, githubPutFile, handleGithubError, notesMd_setDay, notesMd_setContent, notesMd_setOrder } from './github.js';
 
 export function parseMarkdown(text) {
     const results = [];
@@ -88,34 +89,39 @@ export async function loadData() {
 }
 
 export async function updateDay(name, newDay) {
+    if (!requireToken()) return;
     try {
-        const res = await fetch('/api/update-day', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name, day: newDay })
-        });
-        if (res.ok) {
-            const target = state.allLocations.find(l => l.name === name);
-            if (target) target.day = newDay === '0' ? null : newDay;
-            updateView(false);
-        } else if (res.status === 403) { location.reload(); }
-    } catch(e) {}
+        const { text, sha } = await githubGetFile();
+        const newText = notesMd_setDay(text, name, newDay);
+        await githubPutFile(newText, sha, `update: day assignment for ${name}`);
+        const target = state.allLocations.find(l => l.name === name);
+        if (target) target.day = (newDay === '0' || !newDay) ? null : newDay;
+        updateView(false);
+    } catch(e) { handleGithubError(e); }
 }
 
 export async function saveContent(id) {
+    if (!requireToken()) return;
     const loc = state.allLocations.find(l => l.id === id);
     if (!loc) return;
     const newTodo = document.getElementById(`edit-todo-${id}`).value;
     const newNotes = document.getElementById(`edit-notes-${id}`).value;
     try {
-        const res = await fetch('/api/update-content', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: loc.name, todo: newTodo, notes: newNotes })
-        });
-        if (res.ok) { loc.todo = newTodo; loc.notes = newNotes; updateView(false); }
-        else if (res.status === 403) { location.reload(); }
-    } catch(e) {}
+        const { text, sha } = await githubGetFile();
+        const newText = notesMd_setContent(text, loc.name, newTodo, newNotes);
+        await githubPutFile(newText, sha, `update: content for ${loc.name}`);
+        loc.todo = newTodo; loc.notes = newNotes;
+        updateView(false);
+    } catch(e) { handleGithubError(e); }
+}
+
+export async function updateOrder(day, order) {
+    if (!requireToken()) return;
+    try {
+        const { text, sha } = await githubGetFile();
+        const newText = notesMd_setOrder(text, day, order);
+        await githubPutFile(newText, sha, `update: order for ${day}`);
+    } catch(e) { handleGithubError(e); }
 }
 
 // ★ 新增：無縫重新讀取並觸發按鈕動畫

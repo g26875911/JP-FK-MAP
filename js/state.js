@@ -14,6 +14,7 @@ export const state = {
     totalDays: 8,
     dayOrders: {},
     isDarkMode: localStorage.getItem('theme') === 'dark',
+    githubToken: localStorage.getItem('gh_token') || '',
     isLabelsEnabled: localStorage.getItem('mapLabels') === 'true',
     userMarker: null,
     userCircle: null,
