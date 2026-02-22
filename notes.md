@@ -1484,6 +1484,7 @@
 > 座標: 33.5195648, 130.5319397
 > 地址: 日本、〒818-0117 福岡県太宰府市宰府３丁目１
 > 連結: https://www.google.com/maps/place/%E8%A1%A8%E5%8F%82%E9%81%93/@33.5195648,130.5271761,17z/data=!4m10!1m2!2m1!1z5aSq5a6w5bqcIOihqOWPgumBkw!3m6!1s0x35419ba28a8ae4e5:0xe3b7f28d87c41f62!8m2!3d33.5195648!4d130.5319397!15sChPlpKrlrrDlupwg6KGo5Y-C6YGTWhUiE-WkquWusOW6nCDooajlj4LpgZOSARJ0b3VyaXN0X2F0dHJhY3Rpb27gAQA!16s%2Fg%2F11f53gvlsl?hl=ja&entry=ttu
+> Day: 3
 
 ### 想做什麼
 - 逛太宰府天満宮前的參道商店街（小吃/伴手禮）
