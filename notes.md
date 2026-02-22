@@ -1512,6 +1512,7 @@
 > 座標: 32.8008669, 130.7081925
 > 地址: 日本、〒860-0807 熊本県熊本市中央区下通１丁目７−１４ ノグチビル １階
 > 連結: https://www.google.com/maps/place/%E7%86%8A%E6%9C%AC%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E9%BB%92%E4%BA%AD+%E4%B8%8B%E9%80%9A%E5%BA%97/@32.8008669,130.6319748,13z/data=!3m1!5s0x3540f40d27e5106f:0xb27c288d82f88dbd!4m10!1m2!2m1!1z6buS5LqtIOeGiuacrA!3m6!1s0x3540f4097ec95555:0xbe9bb9834ecd00f5!8m2!3d32.8008669!4d130.7081925!15sCg3pu5Lkuq0g54aK5pysIgOIAQFaECIO6buSIOS6rSDnhormnKySARByYW1lbl9yZXN0YXVyYW504AEA!16s%2Fg%2F11dymvflhq?hl=ja&entry=ttu
+> Day: 8
 
 ### 想做什麼
 - 吃熊本拉麵（下通商圈）
