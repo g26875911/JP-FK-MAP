@@ -402,6 +402,13 @@ cd /Users/zi-jianchen/.openclaw/workspace/projects/japan && ./start.sh
   - 原本 `cd "$(dirname "$0")"` 在相對路徑呼叫時無效，導致 `python3 server.py` 靜默失敗
   - 改為硬寫絕對路徑 `SCRIPT_DIR`，確保從任何目錄執行都能正確啟動
 
+### 2026-02-22（第三批）
+- **「已排程」篩選按鈕**（`index.html` + `js/ui.js`）
+  - 篩選列新增 `[已排程]` 按鈕（`filterData('scheduled')`），排在「購物」與「行程天數▼」之間
+  - **`updateView()`**（`js/ui.js`）：在 `else if (state.currentFilter === 'scheduled')` 分支中以 `!!loc.day` 篩選，只顯示有 Day 值的景點
+  - **`filterData()`**（`js/ui.js`）：將 `'scheduled'` 加入有效 cat 清單，並補上 `b.innerText === '已排程'` 的 active 高亮判斷
+  - 不需新增 CSS（完全復用 `.filter-btn`）、不需新增狀態變數、不影響 Day dropdown / 天氣列 / 路線按鈕 / cluster 模式
+
 ### 2026-02-22（第二批）
 - **住宿（hotel）多日指派功能**（`js/ui.js` + `js/main.js` + `index.html` + `styles.css`）
   - `notes.md` 的 `> Day:` 欄位支援逗號分隔多天（如 `> Day: 1, 3, 5`），向下相容單天格式

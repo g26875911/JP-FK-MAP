@@ -347,7 +347,7 @@ export function updateView(fitMap = true) {
     state.markers.forEach(m => state.map.removeLayer(m));
     state.markers = [];
 
-    const isDayFilter = state.currentFilter.startsWith('day');
+    const isDayFilter = state.currentFilter.startsWith('day') || state.currentFilter === 'scheduled';
     if (isDayFilter) {
         state.markerClusterGroup = null;
     } else {

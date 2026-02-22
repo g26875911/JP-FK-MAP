@@ -101,6 +101,7 @@ html, body { margin: 0; padding: 0; font-family: 'Noto Sans TC', sans-serif; dis
 .cat-food { background-color: #e74c3c; } .cat-spot { background-color: #3498db; } .cat-hotel { background-color: #27ae60; } .cat-shop { background-color: #f39c12; } .cat-other { background-color: #95a5a6; }
 
 #map { flex: 1; height: 100%; z-index: 1; background: #e5e5e5; position: relative; }
+[data-theme="dark"] .leaflet-tile-pane { filter: invert(100%) hue-rotate(180deg); }
 
 .marker-highlight { transform: scale(1.25); box-shadow: 0 0 0 6px rgba(52, 152, 219, 0.4) !important; border-color: var(--accent) !important; z-index: 1000 !important; }
 
