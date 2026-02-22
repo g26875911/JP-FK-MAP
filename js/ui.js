@@ -2,7 +2,7 @@
 import { state, iconMap } from './state.js';
 import { getDayString, getCatName, processMarkdownForDisplay, updateTripInfoBar } from './utils.js';
 import { showWeatherForDay } from './weather.js';
-import { highlightMarker } from './map.js';
+import { highlightMarker, checkMapLabels } from './map.js';
 import { requireToken, githubGetFile, githubPutFile, handleGithubError, notesMd_setContent, notesMd_setDay, notesMd_setOrder } from './github.js';
 
 export function getSnapHeights() {
@@ -555,7 +555,10 @@ export function updateView(fitMap = true) {
         listContainer.appendChild(card);
     });
 
-    if (!isDayFilter && state.markerClusterGroup) state.map.addLayer(state.markerClusterGroup);
+    if (!isDayFilter && state.markerClusterGroup) {
+        state.map.addLayer(state.markerClusterGroup);
+        state.markerClusterGroup.on('animationend', checkMapLabels);
+    }
     state.map.fire('zoomend');
 
     if (fitMap && state.markers.length > 0) { state.map.fitBounds(L.featureGroup(state.markers).getBounds().pad(0.1)); }

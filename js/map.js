@@ -27,10 +27,20 @@ export function initMap() {
 }
 
 export function checkMapLabels() {
-    if (state.isLabelsEnabled && state.map.getZoom() >= 15) {
-        document.getElementById('map').classList.add('show-map-labels');
+    const mapEl = document.getElementById('map');
+    if (state.isLabelsEnabled) {
+        mapEl.classList.add('show-map-labels');
     } else {
-        document.getElementById('map').classList.remove('show-map-labels');
+        mapEl.classList.remove('show-map-labels');
+    }
+    // 叢集感知：叢集內的 marker tooltip 加上 label-clustered class
+    if (state.markerClusterGroup) {
+        state.markers.forEach(marker => {
+            const el = marker.getTooltip()?.getElement();
+            if (!el) return;
+            const isClustered = state.markerClusterGroup.getVisibleParent(marker) !== marker;
+            el.classList.toggle('label-clustered', isClustered);
+        });
     }
 }
 
