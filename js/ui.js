@@ -311,15 +311,42 @@ export function openReadingModal(loc) {
     }
     if (!html) html = '<p style="text-align:center; color:var(--text-sub); margin-top:20px;">無詳細內容</p>';
     if (!loc.lat || !loc.lng) {
+        const escapedName = loc.name.replace(/'/g, "\\'").replace(/"/g, '&quot;');
         html += `
-            <div id="geocode-section" style="margin-top:16px; border-top:1px dashed var(--border); padding-top:12px;">
-                <p style="font-size:13px; color:var(--text-sub); margin-bottom:8px;">
+            <div id="geocode-section" style="margin-top:16px; border-top:1px dashed var(--border); padding-top:14px;">
+                <p style="font-size:13px; font-weight:600; color:var(--text-main); margin:0 0 12px 0;">
                     <i class="fa-solid fa-map-pin"></i> 此景點缺少座標
                 </p>
-                <button class="save-btn" onclick="geocodeAndSave('${loc.name.replace(/'/g, "\\'")}')">
-                    <i class="fa-solid fa-magnifying-glass-location"></i> 自動搜尋並儲存座標
-                </button>
-                <div id="geocode-result" style="margin-top:10px; font-size:12px; color:var(--text-sub);"></div>
+
+                <p style="font-size:12px; color:var(--text-sub); margin:0 0 6px 0;">
+                    🔍 搜尋關鍵字（可改為日文或英文，命中率更高）：
+                </p>
+                <div style="display:flex; gap:8px; align-items:center; margin-bottom:4px;">
+                    <input id="geocode-search-input" class="modal-input"
+                           style="flex:1; height:40px; margin:0; font-size:13px;"
+                           value="${escapedName}"
+                           placeholder="例：一蘭 博多 / ichiran hakata">
+                    <button class="save-btn" style="flex-shrink:0; white-space:nowrap;"
+                            onclick="geocodeAndSave('${escapedName}')">搜尋</button>
+                </div>
+                <p style="font-size:11px; color:var(--text-sub); margin:0 0 10px 0;">
+                    提示：OSM 以日文為主，「一蘭拉麵 博多店」→ 改搜「一蘭 博多」命中率更高
+                </p>
+                <div id="geocode-result" style="font-size:12px; color:var(--text-sub); min-height:16px;"></div>
+
+                <div style="margin-top:14px; border-top:1px dashed var(--border); padding-top:12px;">
+                    <p style="font-size:12px; color:var(--text-sub); margin:0 0 6px 0;">
+                        📌 或直接貼上座標（Google Maps 右鍵第一行）：
+                    </p>
+                    <div style="display:flex; gap:8px; align-items:center;">
+                        <input id="manual-coords-input" class="modal-input"
+                               style="flex:1; height:40px; margin:0; font-size:13px;"
+                               placeholder="33.5897, 130.4207">
+                        <button class="save-btn" style="flex-shrink:0; white-space:nowrap;"
+                                onclick="saveManualCoords('${escapedName}')">儲存座標</button>
+                    </div>
+                    <div id="manual-coords-result" style="margin-top:6px; font-size:12px; color:#e74c3c;"></div>
+                </div>
             </div>`;
     }
     const body = document.getElementById('readingBody');

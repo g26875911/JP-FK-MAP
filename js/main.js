@@ -157,25 +157,63 @@ window.saveNewLocation = async () => {
     finally { if (btn) { btn.disabled = false; btn.innerText = '儲存'; } }
 };
 
-// F5: 無座標快速定位
+// F5: 無座標快速定位（name 用於寫入 notes.md，query 從搜尋欄讀取）
 window.geocodeAndSave = async (name) => {
     if (!requireToken()) return;
     const resultEl = document.getElementById('geocode-result');
+    const searchInput = document.getElementById('geocode-search-input');
+    const query = searchInput ? searchInput.value.trim() : name;
+    if (!query) return;
     if (resultEl) resultEl.innerText = '搜尋中...';
     try {
-        const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(name)}&format=json&limit=1&countrycodes=jp&accept-language=zh-TW`;
-        const res = await fetch(url);
-        const data = await res.json();
-        if (!data.length) { if (resultEl) resultEl.innerText = '找不到座標，請手動輸入'; return; }
+        // 策略1：搜尋欄關鍵字（不限 countrycodes）
+        let res = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=3&accept-language=zh-TW,ja`);
+        let data = await res.json();
+
+        // 策略2：加上 Japan 縮小範圍
+        if (!data.length) {
+            res = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query + ' Japan')}&format=json&limit=3&accept-language=zh-TW,ja`);
+            data = await res.json();
+        }
+
+        if (!data.length) {
+            if (resultEl) resultEl.innerText = '找不到結果，請換個關鍵字或直接貼座標';
+            return;
+        }
+
         const { lat, lon, display_name } = data[0];
-        if (resultEl) resultEl.innerHTML = `找到：${parseFloat(lat).toFixed(4)}, ${parseFloat(lon).toFixed(4)}<br><span style="color:var(--text-sub)">${display_name}</span>`;
+        if (resultEl) resultEl.innerHTML = `✅ 找到：${parseFloat(lat).toFixed(4)}, ${parseFloat(lon).toFixed(4)}<br><span style="color:var(--text-sub)">${display_name}</span>`;
         if (!confirm(`確認儲存座標？\n${parseFloat(lat).toFixed(6)}, ${parseFloat(lon).toFixed(6)}\n\n${display_name}`)) return;
         const { text, sha } = await githubGetFile();
         const newText = notesMd_setCoords(text, name, parseFloat(lat).toFixed(6), parseFloat(lon).toFixed(6));
         await githubPutFile(newText, sha, `update: coords for ${name}`);
         closeReadingModal();
         await loadData();
-    } catch(e) { handleGithubError(e); if (resultEl) resultEl.innerText = '搜尋失敗'; }
+    } catch(e) { handleGithubError(e); if (resultEl) resultEl.innerText = '搜尋失敗，請直接貼座標'; }
+};
+
+// F5: 手動儲存座標
+window.saveManualCoords = async (name) => {
+    if (!requireToken()) return;
+    const input = document.getElementById('manual-coords-input');
+    const errEl = document.getElementById('manual-coords-result');
+    if (!input) return;
+    const val = input.value.trim();
+    const m = val.match(/([0-9.]+)\s*[,，]\s*([0-9.]+)/);
+    if (!m) {
+        if (errEl) errEl.innerText = '格式錯誤，請輸入「緯度, 經度」';
+        return;
+    }
+    const lat = parseFloat(m[1]).toFixed(6);
+    const lng = parseFloat(m[2]).toFixed(6);
+    if (!confirm(`確認儲存座標？\n${lat}, ${lng}`)) return;
+    try {
+        const { text, sha } = await githubGetFile();
+        const newText = notesMd_setCoords(text, name, lat, lng);
+        await githubPutFile(newText, sha, `update: coords for ${name}`);
+        closeReadingModal();
+        await loadData();
+    } catch(e) { handleGithubError(e); }
 };
 
 // =========================================
