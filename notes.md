@@ -1774,7 +1774,7 @@
 # [購物] Pokémon Center FUKUOKA（ポケモンセンター福岡）
 > 座標: 33.5890033, 130.4192564
 > 地址: 日本〒812-0012 福岡県福岡市博多区博多駅中央街９−１ 博多マルイ 2F
-> 連結: Google Maps：https://www.google.com/maps/place/Pok%C3%A9mon+Center+FUKUOKA/@33.5890033,130.4192564,17z/data=!3m2!4b1!5s0x354191b86e62e40b:0xc0f0ae3f44ec30b1!4m6!3m5!1s0x354191c78cd082ef:0x5f80c33c1baae5a2!8m2!3d33.5890033!4d130.4192564!16s%2Fg%2F12ml2ytj5?hl=ja&entry=ttu
+> 連結: https://www.google.com/maps/place/Pok%C3%A9mon+Center+FUKUOKA/@33.5890033,130.4192564,17z/data=!3m2!4b1!5s0x354191b86e62e40b:0xc0f0ae3f44ec30b1!4m6!3m5!1s0x354191c78cd082ef:0x5f80c33c1baae5a2!8m2!3d33.5890033!4d130.4192564!16s%2Fg%2F12ml2ytj5?hl=ja&entry=ttu
 
 ### 想做什麼
 - 買限定周邊、扭蛋/小物
@@ -1787,3 +1787,21 @@
 
 #### 其他
 - 樓層：博多マルイ 2F
+---
+# [美食] 赤坂こみかん（Akasaka Komikan）
+> 座標: 33.5860926, 130.3914958
+> 地址: １Ｆ, 1 Chome-7-10 Daimyo, Chuo Ward, Fukuoka, 810-0041 日本
+> 連結: Google Maps：https://www.google.com/maps/place/Akasaka+Komikan/@33.5860926,130.3914958,17z/data=!3m1!4b1!4m6!3m5!1s0x35419f584eb71979:0x6da965275afde268!8m2!3d33.5860926!4d130.3914958!16s%2Fg%2F11f62w6gk2?hl=ja&entry=ttu
+
+### 想做什麼
+- 可能需要預約（先記下：到現場/官網/電話確認）
+
+### 備註
+- Google Maps 短連結：https://maps.app.goo.gl/V6qGpqteQBs72GbNA
+- 指定照片 1：https://www.google.com/maps/place/Akasaka+Komikan/@33.5860333,130.3913416,3a,75y,90t/data=!3m8!1e2!3m6!1sCIABIhAY_2YEW8MvcuO4_PPEx79A!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAweoJ4Vg5_gAtMc433lDonZdIJvCpUxXGzNcSS2RGF65T4BAYLuy33588Id1ZYvS2Ymc0zQ0ncr5vxcQGc5YwWqVqEQO0nrql2NzCjnxwrJlEznBan1ADNFiioxNYVcxx2pSxQWydSBGLxx_H%3Dw203-h152-k-no!7i8057!8i6043!4m9!3m8!1s0x35419f584eb71979:0x6da965275afde268!8m2!3d33.5860926!4d130.3914958!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11f62w6gk2!18m1!1e1?entry=ttu
+- 指定照片 2：https://www.google.com/maps/place/Akasaka+Komikan/@33.5860926,130.3914958,3a,75y,90t/data=!3m8!1e2!3m6!1sCIABIhCQyoH3SNVgd38vtyeaNeO4!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAwepl_PKCj-A05Vlm0UVZI_albDyYYHGhONoVKroWDsWM3nPLhUCtJZVmdZZGsGrSoE4tyeSTHwyArmYHRdfq_TNchq2ajTfrHaHK-EQ5mXgRZaars2itYKjX9O0u3zyTfUJFiVVyS1DoVF8U%3Dw203-h152-k-no!7i7105!8i5329!4m9!3m8!1s0x35419f584eb71979:0x6da965275afde268!8m2!3d33.5860926!4d130.3914958!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11f62w6gk2!18m1!1e1?entry=ttu
+- ![赤坂こみかん_1](assets/akasaka-komikan-01.jpg)
+- ![赤坂こみかん_2](assets/akasaka-komikan-02.jpg)
+
+#### 其他
+- 電話：+81 92-734-3090（以 Google Maps 為準）
