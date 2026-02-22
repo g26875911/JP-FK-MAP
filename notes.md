@@ -1,31 +1,19 @@
-# 日本旅遊筆記
+# [設定] 旅遊資訊
+> 開始日期: 2026-04-18
+> 總天數: 9
 
-> 統一格式：地點 / 行政區 / 想做什麼 / 連結 / 備註 / 交通 / 預估停留時間 / 優先度
-
-> 補充規則：收到 `JP, ...` 先檢查是否已在本文出現（名稱/別名/Google Maps 連結），避免重複新增。
-
----
-
-> 格式：每筆用 `# [分類] 名稱` 作為主標題；硬數據（座標/地址/連結…）用 Blockquote；文字說明用 `###` 小標。
-
-
----
 # [整理] 熊本 3 日精選（IG Reel 整理）
 > 座標: N/A
 > 地址: N/A
 > 連結: N/A
 
 ### 備註
-
+- 熊本市區可步行/路面電車串連（熊本城→城下町），再延伸 1 小時車程到阿蘇火山群自駕最順。
+- 必訪清單 櫻の馬場／熊本城／阿蘇火口／草千里／米塚
 #### 其他
 - 其他連結：
   - 來源連結：https://www.instagram.com/reel/DUK4Rk7El-V/
 
-### 核心概念
-熊本市區可步行/路面電車串連（熊本城→城下町），再延伸 1 小時車程到阿蘇火山群自駕最順。
-
-### 熊本必訪清單（原文）
-櫻の馬場／熊本城／阿蘇火口／草千里／米塚
 
 ---
 # [景點] 櫻の馬場 城彩苑（桜の馬場 城彩苑 / Sakura-no-baba Josaien）
@@ -59,6 +47,7 @@
 
 ### 備註
 - 以熊本城為核心發展的城下町結構，是理解熊本市區的起點。
+- ![熊本城](assets/kumamoto-castle-01.png)
 
 #### 其他
 - 行政區：日本・熊本縣 熊本市
@@ -186,9 +175,10 @@
 > 座標: 33.588698, 130.399963
 > 地址: 〒810-8544 福岡県福岡市中央区天神２丁目１−１
 > 連結: Google Maps：https://www.google.com/maps/place/%E7%A6%8F%E5%B2%A1%E4%B8%89%E8%B6%8A/@33.588698,130.3999632,17z/data=!3m1!4b1!4m6!3m5!1s0x3541918feaf49173:0xbdd1ef5242007a7c!8m2!3d33.588698!4d130.3999632!16s%2Fg%2F120p9zpp?hl=ja
+> Day: 3
 
 ### 想做什麼
-看原畫展／買周邊／拍展場佈置
+看原畫展／買周邊／拍展場佈置/已訂票 4/20 10:00
 
 ### 備註
 - 你提供的分段日程/售票：
@@ -861,9 +851,10 @@
 > 座標: 33.589190, 130.416474
 > 地址: 〒812-0011 福岡県福岡市博多区博多駅前３丁目２６−５
 > 連結: Google Maps：https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E7%89%9B%E9%9B%9C%E9%8D%8B%E5%89%8D%E7%94%B0%E5%B1%8B+%E5%8D%9A%E5%A4%9A%E5%BA%97/@33.5891902,130.4164739,17z/data=!3m1!4b1!4m6!3m5!1s0x354191b8cf465de3:0xba51a47ac9a69d30!8m2!3d33.5891902!4d130.4164739!16s%2Fg%2F11c3v6c8q7?hl=ja
+> Day: 3
 
 ### 想做什麼
-- 吃もつ鍋（牛腸鍋）
+- 吃もつ鍋（牛腸鍋）/ 已訂位4/20 19:30
 
 ### 備註
 - 熱門時段可能需要排隊；若行程卡很緊，建議提早去或用可訂位管道先確認。
@@ -913,6 +904,8 @@
 
 ### 想做什麼
 - 吃博多豚骨拉麵
+- 炒飯要點
+
 
 ### 備註
 - 你聽說需要提前預約：我建議以店家公告/現場規則為準（這類拉麵名店多數是現場排隊制）。
@@ -1082,3 +1075,338 @@
 - 價位（Google Maps）：¥2,000–3,000 / 人
 - 地址（Google Maps）：1492-1 Yufuincho Kawakami, Yufu, Oita 879-5102 日本
 - 電話（Google Maps）：+81 977-85-7880
+
+---
+# [美食] 博多炉端 魚男（フィッシュマン）
+> 座標: 33.5843858, 130.3995851
+> 地址: 日本、〒810-0021 福岡県福岡市中央区今泉１丁目４−２３
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%8D%9A%E5%A4%9A%E7%82%89%E7%AB%AF+%E9%AD%9A%E7%94%B7+%EF%BC%88%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9E%E3%83%B3%EF%BC%89/@33.5843858,130.3995851,17z/data=!3m1!4b1!4m6!3m5!1s0x35419184bfae8e31:0x9880f28c4c804413!8m2!3d33.5843858!4d130.3995851!16s%2Fg%2F1tp0bfzg?hl=ja&entry=ttu
+
+### 想做什麼
+- 吃炉端燒＋海鮮／刺身（Google Maps 簡介提到有「階段狀木板盛刺身」的趣向套餐）
+- 當作天神／今泉一帶晚餐或續攤的居酒屋選項
+- 必點：海膽玉子燒／蟹味增／雞肉鴨肉丸／蟹肉／鮭魚斧飯／布丁
+
+
+### 備註
+- Google Maps 類別：居酒屋
+- ![魚男 布丁](assets/uoman-01.png)
+- ![魚男 店門口](assets/uoman-02.png)
+
+#### 其他
+- 行政區：日本・福岡県 福岡市中央区（今泉）
+- 電話（Google Maps）：+81 80-4358-3875
+- 其他連結：
+  - Maps short link（你提供）：https://maps.app.goo.gl/Ux6rU3Jvd2oy7sdy6?g_st=ic
+  - 食べログ：https://tabelog.com/fukuoka/A4001/A400104/40006960/
+
+---
+# [景點] 高千穂神社
+> 座標: 32.7064465, 131.3020093
+> 地址: 日本、〒882-1101 宮崎県西臼杵郡高千穂町三田井１０３７
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%AB%98%E5%8D%83%E7%A9%97%E7%A5%9E%E7%A4%BE/@32.7064465,131.2994344,17z/data=!3m1!4b1!4m6!3m5!1s0x35472ce8730bc035:0xbedd34618e78cbfa!8m2!3d32.7064465!4d131.3020093!16s%2Fm%2F0drxsvr?hl=ja&entry=ttu
+
+### 想做什麼
+- 看神話相關的能量景點
+- 如果時間允許：搭配高千穂峡安排半日～一日
+
+### 備註
+- Google Maps 類別：神社
+- Google Maps 簡介提到：可欣賞以神話為題材的舞踊（夜神楽相關）
+
+#### 其他
+- 行政區：日本・宮崎県 西臼杵郡 高千穂町（三田井）
+- 營業時間（Google Maps）：08:00 開始（以現場/公告為準）
+- 電話（Google Maps）：+81 982-72-2413
+- 其他連結：
+  - Maps short link（你提供）：https://maps.app.goo.gl/mvuitMAqhZ4JXw8bA
+  - X（Google Maps 網站欄位）：https://mobile.twitter.com/takachihojinja
+
+---
+# [景點] 高千穂峡（Takachiho Gorge）
+> 座標: 32.703747, 131.300358
+> 地址: 日本、〒882-1101 宮崎県西臼杵郡高千穂町三田井９８３
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%AB%98%E5%8D%83%E7%A9%82%E5%B3%A1/@32.7064465,131.2994344,17z/data=!4m6!3m5!1s0x35472d000a817703:0x8b953916ce12449e!8m2!3d32.703747!4d131.300358!16s%2Fg%2F11wh_2wntl?hl=ja&entry=ttu
+
+### 想做什麼
+- 看峽谷景觀、走步道
+- 如果時間允許：安排划船（ボート）體驗
+
+### 備註
+- Google Maps 類別：景勝地
+- Google Maps 顯示：24 小時開放（以現場/公告為準）
+
+#### 其他
+- 行政區：日本・宮崎県 西臼杵郡 高千穂町（三田井）
+- 其他連結：
+  - Maps short link（你提供）：https://maps.app.goo.gl/bQqZZk7xPoV4JHKy5
+
+---
+# [景點] 黒川温泉（黑川溫泉 / Kurokawa Onsen）
+> 座標: 33.0780191, 131.1416136
+> 地址: 日本、〒869-2402 熊本県阿蘇郡南小国町満願寺
+> 連結: Google Maps：https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E3%80%81%E3%80%92869-2402+%E7%86%8A%E6%9C%AC%E7%9C%8C%E9%98%BF%E8%98%87%E9%83%A1%E5%8D%97%E5%B0%8F%E5%9B%BD%E7%94%BA%E6%BA%80%E9%A1%98%E5%AF%BA+%E9%BB%92%E5%B7%9D%E6%B8%A9%E6%B3%89/@33.0743588,131.1403042,15z/data=!3m1!4b1!4m6!3m5!1s0x354130ea944142cd:0x4a9388f9ba71150!8m2!3d33.0780191!4d131.1416136!16s%2Fg%2F120rg0gs?hl=ja&entry=ttu
+
+### 想做什麼
+- 泡溫泉、住溫泉旅館
+- 安排溫泉街散步
+
+### 備註
+- 這是一個溫泉區域點（不是單一旅館）；之後如果你有「想住哪一間」我可以再拆成獨立住宿條目。
+
+#### 其他
+- 行政區：日本・熊本県 阿蘇郡 南小国町（満願寺）
+- 其他連結：
+  - Maps short link（你提供）：https://maps.app.goo.gl/ygiFr6T1x6aposX36
+
+---
+# [景點] 世界之塔（グローバルタワー / Global Tower）
+> 座標: 33.2831944, 131.4861111
+> 地址: 日本、〒874-0828 大分県別府市山の手町１２−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E3%82%BF%E3%83%AF%E3%83%BC/@33.2831944,131.4861111,17z/data=!3m1!4b1!4m6!3m5!1s0x3546a6f72b653295:0x59691d21a5d08825!8m2!3d33.2831944!4d131.4861111!16s%2Fg%2F1tdwbr45?hl=ja&entry=ttu
+
+### 想做什麼
+- 上展望塔看別府市景／夜景
+
+### 備註
+- Google Maps 顯示所在施設：ビーコンプラザ
+
+#### 其他
+- 行政區：日本・大分県 別府市（山の手町）
+- 營業時間（Google Maps）：09:00 開始（以現場/公告為準）
+- 電話（Google Maps）：+81 977-26-7111
+- Maps short link（你提供）：https://maps.app.goo.gl/EaWaUd4uAbff5PKHA
+
+---
+# [美食] 味蔵民芸茶屋（Aji Kura Mingei Jaya）
+> 座標: 33.2987428, 131.4972382
+> 地址: 日本、〒874-0919 大分県別府市石垣東６丁目７−３９
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%91%B3%E8%94%B5%E6%B0%91%E8%8A%B8%E8%8C%B6%E5%B1%8B/@33.2987428,131.4972382,17z/data=!3m1!4b1!4m6!3m5!1s0x3546a719ef48dd75:0x63237c479f169f2e!8m2!3d33.2987428!4d131.4972382!16s%2Fg%2F1tdz2mh8?hl=ja&entry=ttu
+
+### 想做什麼
+- 吃大分名物：とり天
+
+### 備註
+- Google Maps 簡介：木造古民家風的店，主打大分名物とり天；附白飯與味噌湯。
+
+#### 其他
+- 行政區：日本・大分県 別府市（石垣東）
+- 營業時間（Google Maps）：10:30 開始（以現場/公告為準）
+- 電話（Google Maps）：+81 977-21-0548
+- 其他連結：
+  - 官網：https://ajikura.info/
+  - Maps short link（你提供）：https://maps.app.goo.gl/wgnw9R7tFNjVAXXeA
+
+---
+# [景點] 青島神社
+> 座標: 31.804566, 131.4749474
+> 地址: 日本、〒889-2162 宮崎県宮崎市青島２丁目１３−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%9D%92%E5%B3%B6%E7%A5%9E%E7%A4%BE/@31.804566,131.4749474,17z/data=!3m1!4b1!4m6!3m5!1s0x3538c7ac43aced4f:0x7f1161a9e99f85b0!8m2!3d31.804566!4d131.4749474!16s%2Fg%2F11fx7vv9vv?hl=ja&entry=ttu
+
+### 想做什麼
+- 去海邊小島上的神社參拜、拍照
+- 順路看「鬼の洗濯板」海岸地形（如果你有要收我也可以再加一筆）
+
+### 備註
+- Google Maps 簡介：綠意很多的小島上的古風神社。
+
+#### 其他
+- 行政區：日本・宮崎県 宮崎市（青島）
+- 營業時間（Google Maps）：08:00 開始（以現場/公告為準）
+- 電話（Google Maps）：+81 985-65-1262
+- 其他連結：
+  - 官網：https://aoshima-jinja.jp/
+  - Maps short link（你提供）：https://maps.app.goo.gl/4rBB9HvG9Nurxect7
+
+---
+# [景點] 鵜戸神宮（うどじんぐう / Udo Jingu）
+> 座標: 31.6504477, 131.4666915
+> 地址: 日本、〒887-0101 宮崎県日南市宮浦３２３２
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%B5%9C%E6%88%B8%E7%A5%9E%E5%AE%AE/@31.565155,131.4653128,12z/data=!4m6!3m5!1s0x3538da594b439fb1:0x8715e701f1b3cc1b!8m2!3d31.6504477!4d131.4666915!16s%2Fm%2F0ds879f?hl=ja&entry=ttu
+
+### 想做什麼
+- 去海岸洞窟裡的本殿參拜（超有特色）
+
+### 備註
+- Google Maps 簡介提到：洞窟內有本殿、可以投「運玉」祈願。
+
+#### 其他
+- 行政區：日本・宮崎県 日南市（宮浦）
+- 營業時間（Google Maps）：06:00 開始（以現場/公告為準）
+- 電話（Google Maps）：+81 987-29-1001
+- 其他連結：
+  - 官網：https://www.udojingu.or.jp/
+  - Maps short link（你提供）：https://maps.app.goo.gl/SqRqJhyXX7xqvhiT9
+
+---
+# [住宿] AMANEK BEPPU YULA-RE（アマネク別府ゆらり）
+> 座標: 33.2803116, 131.5026268
+> 地址: 日本、〒874-0934 大分県別府市駅前本町６−３５
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%82%A2%E3%83%9E%E3%83%8D%E3%82%AF%E5%88%A5%E5%BA%9C%E3%82%86%E3%82%89%E3%82%8A/@33.2803004,131.5001258,17z/data=!4m9!3m8!1s0x3546a6dd129c0033:0x8b21d919495b5b62!5m2!4m1!1i2!8m2!3d33.2803116!4d131.5026268!16s%2Fg%2F11nn1c8hws?hl=ja&entry=ttu
+
+### 想做什麼
+- 住別府市區（站前一帶）
+- 有大浴場：想泡湯放鬆
+
+### 備註
+- Google Maps 顯示：Check-in 15:00 / Check-out 11:00（以官方為準）
+
+#### 其他
+- 行政區：日本・大分県 別府市（駅前本町）
+- 電話（Google Maps）：+81 977-76-5566
+- 其他連結：
+  - 官網：https://amanekhotels.jp/beppu/
+  - Maps short link（你提供）：https://maps.app.goo.gl/Nid2tqqkrhEWYS3x8
+
+---
+# [美食] LA ARADA（ラ・アラダ / 3 CEDARS COFFEE）
+> 座標: 33.2788098, 131.5045597
+> 地址: 日本、〒874-0920 大分県別府市北浜１丁目１０−１
+> 連結: Google Maps：https://www.google.com/maps/place/LA+ARADA(3+CEDARS+COFFEE)+%E3%83%A9%E3%83%BB%E3%82%A2%E3%83%A9%E3%83%80(%E3%82%B9%E3%83%AA%E3%83%BC%E3%82%B7%E3%83%80%E3%83%BC%E3%82%BA%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC)/@33.5076606,131.4047872,10z/data=!4m7!3m6!1s0x3546a7000af3b359:0xd9a960171ac7c35f!8m2!3d33.2788098!4d131.5045597!15sCghMQSBBUkFEQVoKIghsYSBhcmFkYZIBC2NvZmZlZV9zaG9w4AEA!16s%2Fg%2F11xnmh3q6h?hl=ja
+
+### 想做什麼
+- 喝「冠軍咖啡」等級的咖啡（你標註）
+
+### 備註
+- Google Maps 類別：コーヒーショップ・喫茶店
+- Google Maps 網站欄位指向 IG：3cedarscoffee
+
+#### 其他
+- 行政區：日本・大分県 別府市（北浜）
+- 營業時間（Google Maps）：09:00 開始（以現場/公告為準）
+- 其他連結：
+  - IG（Google Maps 網站）：https://www.instagram.com/3cedarscoffee/
+  - Maps short link（你提供）：https://maps.app.goo.gl/iQKkEhAugokBFYbi7
+
+---
+# [美食] 友永パン屋（Tomonaga Bakery）
+> 座標: 33.2745879, 131.504148
+> 地址: 日本、〒874-0942 大分県別府市千代町２−２９
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%8F%8B%E6%B0%B8%E3%83%91%E3%83%B3%E5%B1%8B/@33.2745879,131.504148,17z/data=!3m1!4b1!4m6!3m5!1s0x3546a6c3b67a8ff7:0x3feb11a15c177bc1!8m2!3d33.2745879!4d131.504148!16s%2Fg%2F1tg6shwq?hl=ja&entry=ttu
+
+### 想做什麼
+- 逛別府在地麵包店、買早餐/點心
+
+### 備註
+- Google Maps 網站欄位是 IG（之後你想補必買麵包我再加）
+
+#### 其他
+- 行政區：日本・大分県 別府市（千代町）
+- 營業時間（Google Maps）：08:30 開始（以現場/公告為準）
+- 電話（Google Maps）：+81 977-23-0969
+- 其他連結：
+  - IG（Google Maps 網站）：https://www.instagram.com/tomonagapan/
+  - Maps short link（你提供）：https://maps.app.goo.gl/3kpW6iFGGNdtDgVWA
+
+---
+# [美食] CARNE 湯布院 串焼き
+> 座標: 33.264856, 131.3563542
+> 地址: 日本、〒879-5102 大分県由布市湯布院町川上３７２５−５
+> 連結: Google Maps：https://www.google.com/maps/place/CARNE+%E6%B9%AF%E5%B8%83%E9%99%A2+%E4%B8%B2%E7%84%BC%E3%81%8D/@33.264856,131.3563542,17z/data=!3m1!4b1!4m6!3m5!1s0x3546add733e95555:0xc5f8592cae55a801!8m2!3d33.264856!4d131.3563542!16s%2Fg%2F11fslrvsy3?hl=ja&entry=ttu
+
+### 想做什麼
+- 吃串燒（湯布院晚餐候選）
+
+### 備註
+- Google Maps 網站欄位：Facebook
+
+#### 其他
+- 行政區：日本・大分県 由布市（湯布院町川上）
+- 營業時間（Google Maps）：17:30 開始（以現場/公告為準）
+- 電話（Google Maps）：+81 977-85-7540
+- 其他連結：
+  - Facebook（Google Maps 網站）：https://www.facebook.com/CARNE-583610288343781/
+  - Maps short link（你提供）：https://maps.app.goo.gl/LbEpF1AorSb18gjE6
+
+---
+# [景點] 金鱗湖
+> 座標: 33.2666644, 131.3690272
+> 地址: 日本、〒879-5102 大分県由布市湯布院町川上１５６１−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E9%87%91%E9%B1%97%E6%B9%96/@33.2665421,131.3663526,17z/data=!4m6!3m5!1s0x3546ae7d9e05b46b:0x8e77ad60f3cd87e6!8m2!3d33.2666644!4d131.3690272!16s%2Fg%2F1239vfsr?hl=ja&entry=ttu
+
+### 想做什麼
+- 早上看湖面＋晨霧景（Google Maps 也特別提到「朝霧」）
+- 湯布院散步路線的終點/折返點
+
+### 備註
+- Google Maps 類別：景勝地
+- Google Maps 簡介：以朝霧聞名，南端有一座小神社。
+
+#### 其他
+- 行政區：日本・大分県 由布市（湯布院町川上）
+- 營業時間（Google Maps）：24 小時（以現場/公告為準）
+- 其他連結：
+  - 官網（由布市觀光）：https://www.city.yufu.oita.jp/kankou/kankou-2/kankou_cate1_1/kinrinko
+  - Maps short link（你提供）：https://maps.app.goo.gl/bFhcBcu6GuBSQGvL8
+
+---
+# [住宿] 和モダンな温泉旅館 湯布院らんぷの宿
+> 座標: 33.2657643, 131.3536508
+> 地址: 日本、〒879-5102 大分県由布市湯布院町川上３６３９−１
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%92%8C%E3%83%A2%E3%83%80%E3%83%B3%E3%81%AA%E6%B8%A9%E6%B3%89%E6%97%85%E9%A4%A8+%E6%B9%AF%E5%B8%83%E9%99%A2%E3%82%89%E3%82%93%E3%81%B7%E3%81%AE%E5%AE%BF/@33.2657643,131.3536508,17z/data=!3m1!4b1!4m9!3m8!1s0x3546add0f59ccb6b:0x38aeb3081e7b1f42!5m2!4m1!1i2!8m2!3d33.2657643!4d131.3536508!16s%2Fg%2F11f61dn5sr?hl=ja&entry=ttu
+
+### 想做什麼
+- 住溫泉旅館（和モダン風）
+
+### 備註
+- Google Maps 顯示：Check-in 15:00 / Check-out 10:00（以官方為準）
+
+#### 其他
+- 其他連結：
+  - 官網：https://yufuin.site/
+  - Maps short link（你提供）：https://maps.app.goo.gl/Tny1NktgRc3BQzza7
+
+---
+# [美食] 海鮮料理 和彩処おおがみ（おおがみ）
+> 座標: 33.2786238, 131.5054798
+> 地址: 日本、〒874-0920 大分県別府市北浜１丁目１２−２
+> 連結: Google Maps：https://www.google.com/maps/place/%E3%81%8A%E3%81%8A%E3%81%8C%E3%81%BF/@33.2786238,131.5054798,17z/data=!3m1!4b1!4m6!3m5!1s0x3546a6dc97587213:0x7d35f41f0fc583c6!8m2!3d33.2786238!4d131.5054798!16s%2Fg%2F1pv0vf3_q?hl=ja&entry=ttu
+
+### 想做什麼
+- 吃頂級海鮮居酒屋／海鮮料理（你註記：日本最頂的海鮮居酒屋等級）
+
+### 備註
+- 你註記：價格偏高，但評價很頂。
+- Google Maps 類別：和食店
+
+#### 其他
+- 行政區：日本・大分県 別府市（北浜）
+- 營業時間（Google Maps）：18:00 開始（以現場/公告為準）
+- 電話（Google Maps）：+81 977-21-3553
+- Maps short link（你提供）：https://maps.app.goo.gl/yUdJXEhn37fgHBM88
+
+---
+# [美食] 地獄蒸しプリン 岡本屋（岡本屋売店）
+> 座標: 33.3180542, 131.4526114
+> 地址: 日本、〒874-0840 大分県別府市明礬３組
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%B2%A1%E6%9C%AC%E5%B1%8B%E5%A3%B2%E5%BA%97/@33.3180542,131.4500365,17z/data=!3m1!4b1!4m6!3m5!1s0x3546a7c568807701:0xcf09508c83842569!8m2!3d33.3180542!4d131.4526114!16s%2Fg%2F11b74680ww?hl=ja&entry=ttu
+
+### 想做什麼
+- 吃「地獄蒸しプリン」（地獄蒸布丁）
+
+### 備註
+- Google Maps 類別：カフェ・喫茶
+
+#### 其他
+- 行政區：日本・大分県 別府市（明礬）
+- 營業時間（Google Maps）：08:30 開始（以現場/公告為準）
+- 電話（Google Maps）：+81 977-66-6115
+- 其他連結：
+  - 官網：http://www.jigoku-prin.com/
+
+---
+# [景點] 海神神社
+> 座標: 33.0509896, 129.8378584
+> 地址: 日本、〒859-3617 長崎県東彼杵郡川棚町三越郷
+> 連結: Google Maps：https://www.google.com/maps/place/%E6%B5%B7%E7%A5%9E%E7%A5%9E%E7%A4%BE/@33.0509896,129.8378584,17z/data=!3m1!4b1!4m6!3m5!1s0x356aa2e7f04e1a17:0xe53269970af001eb!8m2!3d33.0509896!4d129.8378584!16s%2Fg%2F11cnbb07bb?hl=ja&entry=ttu
+
+### 想做什麼
+- 去海邊的神社參拜、拍照
+
+### 備註
+- Google Maps 類別：神社
+
+#### 其他
+- 行政區：日本・長崎県 東彼杵郡 川棚町（三越郷）
+- Maps short link（你提供）：https://maps.app.goo.gl/asaVEUbMka832SReA?g_st=ic
+- Plus Code（Google Maps）：3R2Q+94 川棚町, 日本、長崎県
