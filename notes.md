@@ -1680,6 +1680,7 @@
 > 座標: 32.853794, 131.158520
 > 地址: 〒869-1601 熊本県阿蘇郡高森町上色見２６１９
 > 連結: https://www.google.com/maps/place/%E4%B8%8A%E8%89%B2%E8%A6%8B%E7%86%8A%E9%87%8E%E5%BA%A7%E7%A5%9E%E7%A4%BE/@32.8537942,131.1497658,15z/data=!4m10!1m2!2m1!1z5LiK6Imy6KaL54aK6YeO5bqn56We56S-!3m6!1s0x3540d7ccee5ea361:0x75772fd6f78ac77e!8m2!3d32.8537942!4d131.1585205!15sChjkuIroibLopovnhorph47luqfnpZ7npL5aHyId5LiKIOiJsiDoposg54aK6YeOIOW6pyDnpZ7npL6SAQ1zaGludG9fc2hyaW5l4AEA!16s%2Fg%2F11gzqgzhl?hl=ja
+> Day: 7
 
 ### 想做什麼
 - 參道拍照（石燈籠＋鳥居一路延伸的「異世界入口」感）
