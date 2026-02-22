@@ -1752,6 +1752,7 @@
 > 座標: 33.5929546, 130.4104589
 > 地址: 1-41 Kamikawabatamachi, Hakata Ward, Fukuoka, 812-0026 日本
 > 連結: Google Maps：https://www.google.com/maps/place/%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE/@33.5929546,130.4104589,17z/data=!3m1!4b1!4m6!3m5!1s0x354191eaaa536a57:0xa1896c7e84458da4!8m2!3d33.5929546!4d130.4104589!16s%2Fm%2F0ds2_4l?hl=ja&entry=ttu
+> Day: 3
 
 ### 想做什麼
 - 逛博多總鎮守（博多祇園山笠相關）
