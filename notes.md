@@ -1462,9 +1462,6 @@
 - 纜車最晚只到19:20
 - ![皿倉山展望台](assets/sarakurayama-observation-deck-01.jpg)
 # [景點] 川端通商店街（Kawabata-dori Shopping Arcade / 川端通商店街）
-> 座標: 33.593537, 130.4083423
-> 地址: 日本、〒812-0026 福岡県福岡市博多区上川端町６−１３５
-> 連結: https://www.google.com/maps/place/%E5%B7%9D%E7%AB%AF%E9%80%9A%E5%95%86%E5%BA%97%E8%A1%97/@33.593537,130.4083423,17z/data=!3m1!4b1!4m6!3m5!1s0x354191eb4d562889:0x7cb17c65cc4038a8!8m2!3d33.593537!4d130.4083423!16s%2Fg%2F1232v3r2?hl=ja&entry=ttu
 
 ### 想做什麼
 - 逛傳統商店街（有屋簷雨天也能逛）
@@ -1822,3 +1819,22 @@
 
 #### 其他
 - 電話：+81 92-734-3090（以 Google Maps 為準）
+---
+# [景點] 川端通商店街（Kawabata-dori Shopping Arcade / 川端通商店街）
+> 座標: 33.593537, 130.4083423
+> 地址: 日本、〒812-0026 福岡県福岡市博多区上川端町６−１３５
+> 連結: Google Maps：https://www.google.com/maps/place/%E5%B7%9D%E7%AB%AF%E9%80%9A%E5%95%86%E5%BA%97%E8%A1%97/@33.593537,130.4083423,17z/data=!3m1!4b1!4m6!3m5!1s0x354191eb4d562889:0x7cb17c65cc4038a8!8m2!3d33.593537!4d130.4083423!16s%2Fg%2F1232v3r2?hl=ja&entry=ttu
+
+### 想做什麼
+- 逛傳統商店街（有屋簷雨天也能逛）
+- 找拉麵/小吃、買伴手禮（工藝品等）
+
+### 備註
+- Google Maps 簡介：アーケード商店街；有拉麵店、博多人形等工藝品店。
+- ![川端通商店街](assets/kawabata-dori-shopping-arcade-01.jpg)
+
+#### 其他
+- 行政區：日本・福岡県 福岡市博多区（上川端町）
+- 電話（Google Maps）：+81 92-281-6223
+- 其他連結：
+  - 官網：https://kawabatadori.com/
