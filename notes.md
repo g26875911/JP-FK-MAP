@@ -3,7 +3,7 @@
 > 地址: N/A
 > 開始日期: 2026-04-18
 > 總天數: 9
-> day1_Order: 肉の山翔（Niku no Yamasho）,宮地嶽神社（Miyajidake Shrine / 宮地嶽神社）,博多水炊き専門 橙
+> day1_Order: 宮地嶽神社（Miyajidake Shrine / 宮地嶽神社）, 肉の山翔（Niku no Yamasho）, 博多水炊き専門 橙
 
 # [整理] 熊本 3 日精選（IG Reel 整理）
 > 連結: N/A
