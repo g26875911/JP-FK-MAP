@@ -62,6 +62,7 @@
 > 座標: 32.884907, 131.084934
 > 地址: 〒869-2225 熊本県阿蘇市黒川
 > 連結: https://www.google.com/maps/place/%E9%98%BF%E8%98%87%E4%B8%AD%E5%B2%B3+%E7%AC%AC1%E7%81%AB%E5%8F%A3/@32.884907,131.0801708,17z/data=!4m10!1m2!2m1!1z6Zi_6JiH5Lit5bKz54Gr5Y-j!3m6!1s0x3540d86157b2ad15:0x8e6c816a9f4528e8!8m2!3d32.884907!4d131.0849344!15sChLpmL_omIfkuK3lsrPngavlj6NaFiIU6Zi_6JiHIOS4reWysyDngavlj6OSARJ0b3VyaXN0X2F0dHJhY3Rpb27gAQA!16s%2Fg%2F1tgj6lt3?hl=ja
+> Day: 7
 
 ### 想做什麼
 - 看世界級火山口地形（震撼、壯觀）
