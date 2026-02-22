@@ -1838,3 +1838,6 @@
 - 電話（Google Maps）：+81 92-281-6223
 - 其他連結：
   - 官網：https://kawabatadori.com/
+
+# [美食] 一蘭拉麵 博多店
+
