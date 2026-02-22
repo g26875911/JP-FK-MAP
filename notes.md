@@ -5,7 +5,7 @@
 > 總天數: 9
 > day1_Order: 肉の山翔（Niku no Yamasho）, 宮地嶽神社（Miyajidake Shrine / 宮地嶽神社）, 博多水炊き専門 橙
 > day2_Order: 櫻井神社（桜井神社 / Sakurai Shrine）, 桜井二見ヶ浦 夫婦岩（Sakurai Futamigaura / 夫婦岩）, かわ屋 祇園店（Kawaya Gion）
-> day3_Order: 堀越耕平《僕のヒーローアカデミア／我的英雄學院》原畫展（福岡會場）, 太宰府天滿宮（Dazaifu Tenmangu / 太宰府天満宮）, 太宰府表参道（太宰府天満宮 参道 / Dazaifu Omotesando）, 博多もつ鍋前田屋 博多店
+> day3_Order: 堀越耕平《僕のヒーローアカデミア／我的英雄學院》原畫展（福岡會場）, 太宰府天滿宮（Dazaifu Tenmangu / 太宰府天満宮）, 太宰府表参道（太宰府天満宮 参道 / Dazaifu Omotesando）, 櫛田神社（Kushida Shrine）, 博多もつ鍋前田屋 博多店
 
 # [整理] 熊本 3 日精選（IG Reel 整理）
 > 連結: N/A
@@ -1752,6 +1752,7 @@
 > 座標: 33.5929546, 130.4104589
 > 地址: 1-41 Kamikawabatamachi, Hakata Ward, Fukuoka, 812-0026 日本
 > 連結: Google Maps：https://www.google.com/maps/place/%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE/@33.5929546,130.4104589,17z/data=!3m1!4b1!4m6!3m5!1s0x354191eaaa536a57:0xa1896c7e84458da4!8m2!3d33.5929546!4d130.4104589!16s%2Fm%2F0ds2_4l?hl=ja&entry=ttu
+> Day: 3
 
 ### 想做什麼
 - 逛博多總鎮守（博多祇園山笠相關）
