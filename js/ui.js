@@ -425,8 +425,7 @@ export function updateView(fitMap = true) {
                 }
                 const popupHtml = `
                     <div class="popup-header">
-                        <div class="popup-top-row"><span class="badge cat-${loc.category}">${getCatName(loc.category)}</span><div class="popup-actions"><button class="popup-icon-btn edit-btn" onclick="toggleEditMode('${loc.id}', true)"><i class="fa-solid fa-pen"></i></button><button class="popup-icon-btn close-btn" onclick="map.closePopup()"><i class="fa-solid fa-xmark"></i></button></div></div>
-                        <div class="popup-title">${loc.name}</div>
+                        <div class="popup-top-row"><div class="popup-title-group"><span class="badge cat-${loc.category}">${getCatName(loc.category)}</span><div class="popup-title">${loc.name}</div></div><div class="popup-actions"><button class="popup-icon-btn edit-btn" onclick="toggleEditMode('${loc.id}', true)"><i class="fa-solid fa-pen"></i></button><button class="popup-icon-btn close-btn" onclick="map.closePopup()"><i class="fa-solid fa-xmark"></i></button></div></div>
                     </div>
                     <div class="popup-body">
                         <div id="view-mode-${loc.id}" class="popup-view-two-col">

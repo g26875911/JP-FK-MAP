@@ -119,9 +119,11 @@ html, body { margin: 0; padding: 0; font-family: 'Noto Sans TC', sans-serif; dis
 .leaflet-popup-tip-container { display: none; }
 .leaflet-container a.leaflet-popup-close-button { display: none !important; }
 
-.popup-header { background: var(--popup-header-bg); padding: 16px 20px; display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--border); transition: background 0.3s; }
-.popup-top-row { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+.popup-header { background: var(--popup-header-bg); padding: 16px 20px; border-bottom: 1px solid var(--border); transition: background 0.3s; }
+.popup-top-row { display: flex; justify-content: space-between; align-items: flex-start; width: 100%; }
+.popup-title-group { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; flex-wrap: wrap; }
 .popup-title { margin: 0; font-size: 18px; font-weight: 700; letter-spacing: -0.3px; line-height: 1.4; color: var(--text-main); }
+.popup-header .badge { height: 28px; font-size: 13px; padding: 0 10px; margin-left: 0; flex-shrink: 0; }
 
 .popup-actions { display: flex; gap: 8px; align-items: center; }
 .popup-icon-btn { background: var(--popup-icon-bg); border: none; color: var(--text-sub); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.2s; font-size: 13px; }
