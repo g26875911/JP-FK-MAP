@@ -362,6 +362,7 @@ export function updateView(fitMap = true) {
                 ? String(loc.day).split(',').map(d => d.trim()).includes(filterDay)
                 : false;
         }
+        else if (state.currentFilter === 'scheduled') { catMatch = !!loc.day; }
         else { catMatch = state.currentFilter === 'all' || loc.category === state.currentFilter; }
         return catMatch && loc.searchText.includes(searchVal);
     });
@@ -575,10 +576,10 @@ export function filterData(cat) {
     state.currentFilter = cat;
     const btns = document.querySelectorAll('.filter-btn');
     btns.forEach(b => {
-        if (['all', 'food', 'spot', 'hotel', 'shop'].includes(cat)) {
+        if (['all', 'food', 'spot', 'hotel', 'shop', 'scheduled'].includes(cat)) {
             const dropdown = document.getElementById('dayFilterDropdown');
             if(dropdown) { dropdown.value = ""; dropdown.classList.remove('active'); }
-            if ((cat === 'all' && b.innerText === '全部') || (cat === 'food' && b.innerText === '美食') || (cat === 'spot' && b.innerText === '景點') || (cat === 'hotel' && b.innerText === '住宿') || (cat === 'shop' && b.innerText === '購物')) {
+            if ((cat === 'all' && b.innerText === '全部') || (cat === 'food' && b.innerText === '美食') || (cat === 'spot' && b.innerText === '景點') || (cat === 'hotel' && b.innerText === '住宿') || (cat === 'shop' && b.innerText === '購物') || (cat === 'scheduled' && b.innerText === '已排程')) {
                 b.classList.add('active');
             } else { b.classList.remove('active'); }
         } else { b.classList.remove('active'); }
