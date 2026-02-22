@@ -1,5 +1,6 @@
 // js/main.js - 入口點：初始化所有模組並暴露全域函式
 import { state } from './state.js';
+import { initAuth, checkPassword } from './auth.js';
 import { updateLabelBtnVisual, toggleTheme, toggleMapLabels, toggleFab, toggleSearch, exportItinerary } from './theme.js';
 import { initMap } from './map.js';
 import { loadData, updateDay, saveContent, updateOrder, refreshData } from './data.js';
@@ -13,6 +14,12 @@ import {
     setSidebarHeight, getSnapHeights,
     setupBottomSheet, setupSortable, setupSearch, openDayRoute
 } from './ui.js';
+
+// =========================================
+// 0. 密碼保護
+// =========================================
+window.checkPassword = checkPassword;
+initAuth();
 
 // =========================================
 // 1. 主題初始化（flash 防閃爍由 <head> 內嵌 script 處理）

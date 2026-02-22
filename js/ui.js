@@ -3,7 +3,7 @@ import { state, iconMap } from './state.js';
 import { getDayString, getCatName, processMarkdownForDisplay, updateTripInfoBar } from './utils.js';
 import { showWeatherForDay } from './weather.js';
 import { highlightMarker } from './map.js';
-import { requireToken, githubGetFile, githubPutFile, handleGithubError, notesMd_setContent, notesMd_setDay, notesMd_setOrder } from './github.js';
+import { githubGetFile, githubPutFile, handleGithubError, notesMd_setContent, notesMd_setDay, notesMd_setOrder } from './github.js';
 
 export function getSnapHeights() {
     const h = window.innerHeight;
@@ -96,13 +96,11 @@ export function setupSortable() {
                 const newOrder = Array.from(listContainer.children).map(el => el.getAttribute('data-name'));
                 state.dayOrders[state.currentFilter] = newOrder;
                 updateView(false);
-                if (requireToken()) {
-                    try {
-                        const { text, sha } = await githubGetFile();
-                        const newText = notesMd_setOrder(text, state.currentFilter, newOrder);
-                        await githubPutFile(newText, sha, `update: order for ${state.currentFilter}`);
-                    } catch(e) { handleGithubError(e); }
-                }
+                try {
+                    const { text, sha } = await githubGetFile();
+                    const newText = notesMd_setOrder(text, state.currentFilter, newOrder);
+                    await githubPutFile(newText, sha, `update: order for ${state.currentFilter}`);
+                } catch(e) { handleGithubError(e); }
             }
         }
     });
@@ -232,7 +230,6 @@ export function toggleDetailEditMode(show) {
 }
 
 export async function saveDetailContent() {
-    if (!requireToken()) return;
     const loc = state.allLocations.find(l => l.id === state.currentDetailLocId); if (!loc) return;
     const newTodo = document.getElementById('detail-edit-todo').value;
     const newNotes = document.getElementById('detail-edit-notes').value;
@@ -246,7 +243,6 @@ export async function saveDetailContent() {
 }
 
 export async function updateDayFromDetail(newDay) {
-    if (!requireToken()) return;
     const loc = state.allLocations.find(l => l.id === state.currentDetailLocId); if (!loc) return;
     try {
         const { text, sha } = await githubGetFile();

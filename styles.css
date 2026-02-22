@@ -260,7 +260,39 @@ html, body { margin: 0; padding: 0; font-family: 'Noto Sans TC', sans-serif; dis
 }
 
 /* =========================================
-   3. 動畫與微互動 (新增這區塊即可)
+   3. 密碼保護覆蓋層
+   ========================================= */
+.password-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-main, #f5f5f5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+.password-card {
+    background: var(--surface, #ffffff);
+    border-radius: 20px;
+    padding: 36px 32px 28px;
+    width: 300px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+    text-align: center;
+}
+.password-icon {
+    font-size: 36px;
+    color: var(--primary, #e74c3c);
+    margin-bottom: 10px;
+}
+.password-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: var(--text-main, #333);
+}
+
+/* =========================================
+   4. 動畫與微互動
    ========================================= */
 @keyframes spin-once {
     from { transform: rotate(0deg); }

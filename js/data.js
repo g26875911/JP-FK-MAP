@@ -2,7 +2,7 @@
 import { state, categoryMap } from './state.js';
 import { updateTripInfoBar } from './utils.js';
 import { updateView, initDayDropdown } from './ui.js';
-import { requireToken, githubGetFile, githubPutFile, handleGithubError, notesMd_setDay, notesMd_setContent, notesMd_setOrder } from './github.js';
+import { githubGetFile, githubPutFile, handleGithubError, notesMd_setDay, notesMd_setContent, notesMd_setOrder } from './github.js';
 
 export function parseMarkdown(text) {
     const results = [];
@@ -89,7 +89,6 @@ export async function loadData() {
 }
 
 export async function updateDay(name, newDay) {
-    if (!requireToken()) return;
     try {
         const { text, sha } = await githubGetFile();
         const newText = notesMd_setDay(text, name, newDay);
@@ -101,7 +100,6 @@ export async function updateDay(name, newDay) {
 }
 
 export async function saveContent(id) {
-    if (!requireToken()) return;
     const loc = state.allLocations.find(l => l.id === id);
     if (!loc) return;
     const newTodo = document.getElementById(`edit-todo-${id}`).value;
@@ -116,7 +114,6 @@ export async function saveContent(id) {
 }
 
 export async function updateOrder(day, order) {
-    if (!requireToken()) return;
     try {
         const { text, sha } = await githubGetFile();
         const newText = notesMd_setOrder(text, day, order);
