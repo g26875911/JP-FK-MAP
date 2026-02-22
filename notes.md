@@ -1753,7 +1753,7 @@
 # [景點] 櫛田神社（Kushida Shrine）
 > 座標: 33.5929546, 130.4104589
 > 地址: 1-41 Kamikawabatamachi, Hakata Ward, Fukuoka, 812-0026 日本
-> 連結: Google Maps：https://www.google.com/maps/place/%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE/@33.5929546,130.4104589,17z/data=!3m1!4b1!4m6!3m5!1s0x354191eaaa536a57:0xa1896c7e84458da4!8m2!3d33.5929546!4d130.4104589!16s%2Fm%2F0ds2_4l?hl=ja&entry=ttu
+> 連結: https://www.google.com/maps/place/%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE/@33.5929546,130.4104589,17z/data=!3m1!4b1!4m6!3m5!1s0x354191eaaa536a57:0xa1896c7e84458da4!8m2!3d33.5929546!4d130.4104589!16s%2Fm%2F0ds2_4l?hl=ja&entry=ttu
 > Day: 3
 
 ### 想做什麼
@@ -1762,6 +1762,11 @@
 ### 備註
 - Google Maps 短連結：https://maps.app.goo.gl/qTE1cwKHYvM8YoHv7
 - 指定照片來源：https://www.google.com/maps/place/%E6%AB%9B%E7%94%B0%E7%A5%9E%E7%A4%BE/@33.5929546,130.4104589,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICZ_Jm3Ww!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAwepEMtqNfvyfeeUVM9ZJuzr0N5joJ-I9z3Idc2Uxm5s4Fm6yIr6TJk38zknBVO38bDOj09WZqEp93RUtzXkBwc_r8gAwJkt43Gr1iAWhntYH2KZVWuTSXgbEh0FyaRwrih9fQjg%3Dw203-h152-k-no!7i4032!8i3024!4m7!3m6!1s0x354191eaaa536a57:0xa1896c7e84458da4!8m2!3d33.5929546!4d130.4104589!10e5!16s%2Fm%2F0ds2_4l!18m1!1e1?entry=ttu
+- ![櫛田神社](assets/kushida-shrine-01.jpg)
+
+#### 其他
+
+### 備註
 - ![櫛田神社](assets/kushida-shrine-01.jpg)
 
 #### 其他
